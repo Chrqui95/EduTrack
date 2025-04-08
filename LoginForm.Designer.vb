@@ -34,11 +34,11 @@ Partial Class LoginForm
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.cmbRole = New System.Windows.Forms.ComboBox()
+        Me.btnLogin = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.cmbRole = New System.Windows.Forms.ComboBox()
-        Me.btnLogin = New System.Windows.Forms.Button()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -126,6 +126,7 @@ Partial Class LoginForm
         Me.txtUsername.Font = New System.Drawing.Font("Trebuchet MS", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsername.Location = New System.Drawing.Point(440, 206)
         Me.txtUsername.MaximumSize = New System.Drawing.Size(327, 50)
+        Me.txtUsername.MaxLength = 40
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(327, 27)
         Me.txtUsername.TabIndex = 13
@@ -153,6 +154,30 @@ Partial Class LoginForm
         Me.Label9.TabIndex = 15
         Me.Label9.Text = "Role"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'cmbRole
+        '
+        Me.cmbRole.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbRole.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbRole.Font = New System.Drawing.Font("Trebuchet MS", 13.8!)
+        Me.cmbRole.Items.AddRange(New Object() {"Admin", "Parent/Student", "Teacher"})
+        Me.cmbRole.Location = New System.Drawing.Point(407, 368)
+        Me.cmbRole.MinimumSize = New System.Drawing.Size(116, 0)
+        Me.cmbRole.Name = "cmbRole"
+        Me.cmbRole.Size = New System.Drawing.Size(236, 36)
+        Me.cmbRole.Sorted = True
+        Me.cmbRole.TabIndex = 17
+        '
+        'btnLogin
+        '
+        Me.btnLogin.Font = New System.Drawing.Font("Trebuchet MS", 7.8!)
+        Me.btnLogin.Location = New System.Drawing.Point(466, 434)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Size = New System.Drawing.Size(211, 44)
+        Me.btnLogin.TabIndex = 18
+        Me.btnLogin.Text = "LOGIN"
+        Me.btnLogin.UseVisualStyleBackColor = True
         '
         'PictureBox3
         '
@@ -186,28 +211,6 @@ Partial Class LoginForm
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
-        '
-        'cmbRole
-        '
-        Me.cmbRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbRole.Font = New System.Drawing.Font("Trebuchet MS", 13.8!)
-        Me.cmbRole.Items.AddRange(New Object() {"Admin", "Parent/Student", "Teacher"})
-        Me.cmbRole.Location = New System.Drawing.Point(407, 368)
-        Me.cmbRole.MinimumSize = New System.Drawing.Size(116, 0)
-        Me.cmbRole.Name = "cmbRole"
-        Me.cmbRole.Size = New System.Drawing.Size(236, 36)
-        Me.cmbRole.Sorted = True
-        Me.cmbRole.TabIndex = 17
-        '
-        'btnLogin
-        '
-        Me.btnLogin.Font = New System.Drawing.Font("Trebuchet MS", 7.8!)
-        Me.btnLogin.Location = New System.Drawing.Point(466, 434)
-        Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(211, 44)
-        Me.btnLogin.TabIndex = 18
-        Me.btnLogin.Text = "LOGIN"
-        Me.btnLogin.UseVisualStyleBackColor = True
         '
         'LoginForm
         '

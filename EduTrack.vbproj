@@ -94,13 +94,17 @@
     <Compile Include="BaseForm.Designer.vb">
       <DependentUpon>BaseForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="BaseForm.vb">
+    <Compile Include="BaseForm.vb" />
+    <Compile Include="BaseForm1.Designer.vb">
+      <DependentUpon>BaseForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EduTrackDBDataSet.Designer.vb">
+    <Compile Include="EduTrackDBDS.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EduTrackDBDataSet.xsd</DependentUpon>
+      <DependentUpon>EduTrackDBDS.xsd</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.vb">
       <SubType>Form</SubType>
@@ -127,6 +131,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -138,16 +145,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="EduTrackDBDataSet.xsc">
-      <DependentUpon>EduTrackDBDataSet.xsd</DependentUpon>
+    <None Include="EduTrackDBDS.xsc">
+      <DependentUpon>EduTrackDBDS.xsd</DependentUpon>
     </None>
-    <None Include="EduTrackDBDataSet.xsd">
+    <None Include="EduTrackDBDS.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EduTrackDBDataSet.Designer.vb</LastGenOutput>
+      <LastGenOutput>EduTrackDBDS.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="EduTrackDBDataSet.xss">
-      <DependentUpon>EduTrackDBDataSet.xsd</DependentUpon>
+    <None Include="EduTrackDBDS.xss">
+      <DependentUpon>EduTrackDBDS.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
