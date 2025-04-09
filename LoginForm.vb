@@ -8,9 +8,9 @@ Public Class LoginForm
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Dim username As String = txtUsername.Text.Trim()
         Dim password As String = txtPassword.Text.Trim()
-        Dim role As String = cmbRole.Text()
+        ' Dim role As String = cmbRole.Text()
 
-        If username = "" Or password = "" Or String.IsNullOrEmpty(role) Then
+        If username = "" Or password = "" Then
             MessageBox.Show("Please enter Username, Password, and select Role.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return
         End If
@@ -22,7 +22,7 @@ Public Class LoginForm
                 Using cmd As New SqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@user", username)
                     cmd.Parameters.AddWithValue("@pass", password)
-                    cmd.Parameters.AddWithValue("@role", role)
+                    ' cmd.Parameters.AddWithValue("@role", role)
 
                     Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
 
@@ -38,5 +38,9 @@ Public Class LoginForm
         Catch ex As Exception
             MessageBox.Show("Database error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
+    End Sub
+
+    Private Sub btnPassword_Click(sender As Object, e As EventArgs) Handles btnPassword.Click
+        MessageBox.Show("To reset your password contact :" & Environment.NewLine & "admin@edu-track.tech" & Environment.NewLine & "675-8524", "Contact Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 End Class
