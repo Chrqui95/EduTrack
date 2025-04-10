@@ -18,7 +18,7 @@ Public Class LoginForm
         Try
             Using conn As New SqlConnection(connectionString)
                 conn.Open()
-                Dim query As String = "SELECT COUNT(*) FROM [Table] WHERE UserID = @user AND Password = @pass AND Role = @role"
+                Dim query As String = "SELECT COUNT(*) FROM [Table] WHERE UserID = @user AND Password = @pass"
                 Using cmd As New SqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@user", username)
                     cmd.Parameters.AddWithValue("@pass", password)
@@ -29,7 +29,7 @@ Public Class LoginForm
                     If count > 0 Then
                         MessageBox.Show("Login successful!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         Me.Hide()
-                        BaseForm1.Show()
+                        frmAdmin.Show()
                     Else
                         MessageBox.Show("Invalid credentials. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                     End If
