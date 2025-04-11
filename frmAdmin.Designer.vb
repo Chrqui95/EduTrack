@@ -26,13 +26,13 @@ Partial Class frmAdmin
         Me.lblDash = New System.Windows.Forms.Label()
         Me.lblWelcome = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.imgDash = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.imgDash, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -79,6 +79,17 @@ Partial Class frmAdmin
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(249, 742)
         Me.Panel1.TabIndex = 27
+        '
+        'Button1
+        '
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(39, 158)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(179, 44)
+        Me.Button1.TabIndex = 34
+        Me.Button1.Text = "GRADES"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'imgDash
         '
@@ -132,17 +143,6 @@ Partial Class frmAdmin
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(227, 151)
         Me.Panel4.TabIndex = 33
-        '
-        'Button1
-        '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(39, 158)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(179, 44)
-        Me.Button1.TabIndex = 34
-        Me.Button1.Text = "GRADES"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'frmAdmin
         '

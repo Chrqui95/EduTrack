@@ -5,7 +5,7 @@ Public Class LoginForm
     Dim connectionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
 
 
-    Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+    Public Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Dim username As String = txtUsername.Text.Trim()
         Dim password As String = txtPassword.Text.Trim()
         ' Dim role As String = cmbRole.Text()
