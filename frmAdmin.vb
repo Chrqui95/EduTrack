@@ -6,7 +6,8 @@ Public Class frmAdmin
         lblWelcome.Text = "Logged in as: " & username
     End Sub
 
-    Private Sub frmAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub btnTeacherGrade_Click(sender As Object, e As EventArgs) Handles btnTeacherGrade.Click
+        Me.Hide()
+        frmGradeManager.Show()
     End Sub
 End Class

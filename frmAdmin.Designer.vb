@@ -41,25 +41,30 @@ Partial Class frmAdmin
         Me.btnStudentSettings = New System.Windows.Forms.Button()
         Me.EduTrackDBDS = New EduTrack.EduTrackDBDS()
         Me.EduTrackDBDSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.btnAccount = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnSettings = New System.Windows.Forms.Button()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.btnAdminManage = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.btnTeacherAttendance = New System.Windows.Forms.Button()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.btnTeacherGrades = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnAdminManager = New System.Windows.Forms.Button()
         Me.AboutUsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.btnTeacherGrade = New System.Windows.Forms.Button()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.btnAccount = New System.Windows.Forms.Button()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnSettings = New System.Windows.Forms.Button()
+        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -67,16 +72,18 @@ Partial Class frmAdmin
         Me.Panel4.SuspendLayout()
         CType(Me.EduTrackDBDS, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EduTrackDBDSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel8.SuspendLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblDash
@@ -163,6 +170,7 @@ Partial Class frmAdmin
         '
         'FileToolStripMenuItem
         '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HomeToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FileToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.FileToolStripMenuItem.Margin = New System.Windows.Forms.Padding(0, 0, 50, 0)
@@ -193,7 +201,7 @@ Partial Class frmAdmin
         Me.Panel2.BackColor = System.Drawing.Color.Gainsboro
         Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Controls.Add(Me.btnStudentGrades)
-        Me.Panel2.Location = New System.Drawing.Point(401, 255)
+        Me.Panel2.Location = New System.Drawing.Point(383, 255)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(227, 151)
         Me.Panel2.TabIndex = 31
@@ -241,7 +249,7 @@ Partial Class frmAdmin
         Me.Panel4.BackColor = System.Drawing.Color.Gainsboro
         Me.Panel4.Controls.Add(Me.PictureBox3)
         Me.Panel4.Controls.Add(Me.btnStudentSettings)
-        Me.Panel4.Location = New System.Drawing.Point(1096, 255)
+        Me.Panel4.Location = New System.Drawing.Point(1097, 255)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(227, 151)
         Me.Panel4.TabIndex = 33
@@ -269,6 +277,170 @@ Partial Class frmAdmin
         Me.EduTrackDBDSBindingSource.DataSource = Me.EduTrackDBDS
         Me.EduTrackDBDSBindingSource.Position = 0
         '
+        'btnAdminManage
+        '
+        Me.btnAdminManage.BackColor = System.Drawing.Color.Teal
+        Me.btnAdminManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAdminManage.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdminManage.ForeColor = System.Drawing.Color.White
+        Me.btnAdminManage.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnAdminManage.Location = New System.Drawing.Point(26, 369)
+        Me.btnAdminManage.Name = "btnAdminManage"
+        Me.btnAdminManage.Size = New System.Drawing.Size(192, 44)
+        Me.btnAdminManage.TabIndex = 37
+        Me.btnAdminManage.Text = "User Management"
+        Me.btnAdminManage.UseVisualStyleBackColor = False
+        '
+        'Panel6
+        '
+        Me.Panel6.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel6.Controls.Add(Me.PictureBox5)
+        Me.Panel6.Controls.Add(Me.btnTeacherAttendance)
+        Me.Panel6.Location = New System.Drawing.Point(0, 0)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(227, 151)
+        Me.Panel6.TabIndex = 38
+        '
+        'btnTeacherAttendance
+        '
+        Me.btnTeacherAttendance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
+        Me.btnTeacherAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTeacherAttendance.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTeacherAttendance.ForeColor = System.Drawing.Color.White
+        Me.btnTeacherAttendance.Location = New System.Drawing.Point(18, 93)
+        Me.btnTeacherAttendance.Name = "btnTeacherAttendance"
+        Me.btnTeacherAttendance.Size = New System.Drawing.Size(192, 44)
+        Me.btnTeacherAttendance.TabIndex = 37
+        Me.btnTeacherAttendance.Text = "Manage Attendance"
+        Me.btnTeacherAttendance.UseVisualStyleBackColor = False
+        '
+        'Panel7
+        '
+        Me.Panel7.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel7.Controls.Add(Me.PictureBox6)
+        Me.Panel7.Controls.Add(Me.btnTeacherGrades)
+        Me.Panel7.Location = New System.Drawing.Point(-337, 0)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(227, 151)
+        Me.Panel7.TabIndex = 37
+        '
+        'btnTeacherGrades
+        '
+        Me.btnTeacherGrades.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
+        Me.btnTeacherGrades.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTeacherGrades.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTeacherGrades.ForeColor = System.Drawing.Color.White
+        Me.btnTeacherGrades.Location = New System.Drawing.Point(17, 93)
+        Me.btnTeacherGrades.Name = "btnTeacherGrades"
+        Me.btnTeacherGrades.Size = New System.Drawing.Size(192, 44)
+        Me.btnTeacherGrades.TabIndex = 37
+        Me.btnTeacherGrades.Text = "Manage Grades"
+        Me.btnTeacherGrades.UseVisualStyleBackColor = False
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel5.Controls.Add(Me.PictureBox4)
+        Me.Panel5.Controls.Add(Me.btnAdminManager)
+        Me.Panel5.Location = New System.Drawing.Point(738, 477)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(227, 151)
+        Me.Panel5.TabIndex = 39
+        '
+        'btnAdminManager
+        '
+        Me.btnAdminManager.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
+        Me.btnAdminManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAdminManager.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdminManager.ForeColor = System.Drawing.Color.White
+        Me.btnAdminManager.Location = New System.Drawing.Point(18, 93)
+        Me.btnAdminManager.Name = "btnAdminManager"
+        Me.btnAdminManager.Size = New System.Drawing.Size(192, 44)
+        Me.btnAdminManager.TabIndex = 37
+        Me.btnAdminManager.Text = "User Management"
+        Me.btnAdminManager.UseVisualStyleBackColor = False
+        '
+        'AboutUsToolStripMenuItem
+        '
+        Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
+        Me.AboutUsToolStripMenuItem.Text = "About Us"
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
+        Me.HelpToolStripMenuItem.Text = "Help"
+        '
+        'lblTitle
+        '
+        Me.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblTitle.BackColor = System.Drawing.Color.Transparent
+        Me.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI Black", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.lblTitle.Location = New System.Drawing.Point(723, 89)
+        Me.lblTitle.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(351, 93)
+        Me.lblTitle.TabIndex = 40
+        Me.lblTitle.Text = "EduTrack"
+        Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel8.Controls.Add(Me.PictureBox8)
+        Me.Panel8.Controls.Add(Me.btnTeacherGrade)
+        Me.Panel8.Location = New System.Drawing.Point(383, 255)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(227, 151)
+        Me.Panel8.TabIndex = 42
+        '
+        'btnTeacherGrade
+        '
+        Me.btnTeacherGrade.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
+        Me.btnTeacherGrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTeacherGrade.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTeacherGrade.ForeColor = System.Drawing.Color.White
+        Me.btnTeacherGrade.Location = New System.Drawing.Point(17, 93)
+        Me.btnTeacherGrade.Name = "btnTeacherGrade"
+        Me.btnTeacherGrade.Size = New System.Drawing.Size(192, 44)
+        Me.btnTeacherGrade.TabIndex = 37
+        Me.btnTeacherGrade.Text = "Manage Grades"
+        Me.btnTeacherGrade.UseVisualStyleBackColor = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackgroundImage = Global.EduTrack.My.Resources.Resources.test
+        Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox8.Location = New System.Drawing.Point(56, 24)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(112, 63)
+        Me.PictureBox8.TabIndex = 38
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox7.BackgroundImage = Global.EduTrack.My.Resources.Resources.edu
+        Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox7.Location = New System.Drawing.Point(600, 70)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(139, 127)
+        Me.PictureBox7.TabIndex = 41
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackgroundImage = Global.EduTrack.My.Resources.Resources.user
+        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox4.Location = New System.Drawing.Point(74, 24)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(94, 63)
+        Me.PictureBox4.TabIndex = 39
+        Me.PictureBox4.TabStop = False
+        '
         'btnAccount
         '
         Me.btnAccount.BackgroundImage = Global.EduTrack.My.Resources.Resources.user
@@ -282,6 +454,16 @@ Partial Class frmAdmin
         Me.btnAccount.TabIndex = 36
         Me.btnAccount.UseVisualStyleBackColor = True
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackgroundImage = Global.EduTrack.My.Resources.Resources.settings
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox3.Location = New System.Drawing.Point(55, 24)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(112, 63)
+        Me.PictureBox3.TabIndex = 39
+        Me.PictureBox3.TabStop = False
+        '
         'PictureBox2
         '
         Me.PictureBox2.BackgroundImage = Global.EduTrack.My.Resources.Resources.check
@@ -291,6 +473,26 @@ Partial Class frmAdmin
         Me.PictureBox2.Size = New System.Drawing.Size(94, 63)
         Me.PictureBox2.TabIndex = 39
         Me.PictureBox2.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackgroundImage = Global.EduTrack.My.Resources.Resources.check
+        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox5.Location = New System.Drawing.Point(74, 24)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(94, 63)
+        Me.PictureBox5.TabIndex = 39
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackgroundImage = Global.EduTrack.My.Resources.Resources.test
+        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox6.Location = New System.Drawing.Point(56, 24)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(112, 63)
+        Me.PictureBox6.TabIndex = 38
+        Me.PictureBox6.TabStop = False
         '
         'PictureBox1
         '
@@ -319,166 +521,17 @@ Partial Class frmAdmin
         Me.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSettings.UseVisualStyleBackColor = True
         '
-        'PictureBox3
+        'HomeToolStripMenuItem
         '
-        Me.PictureBox3.BackgroundImage = Global.EduTrack.My.Resources.Resources.settings
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox3.Location = New System.Drawing.Point(55, 24)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(112, 63)
-        Me.PictureBox3.TabIndex = 39
-        Me.PictureBox3.TabStop = False
+        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.HomeToolStripMenuItem.Text = "Home "
         '
-        'btnAdminManage
+        'ExitToolStripMenuItem
         '
-        Me.btnAdminManage.BackColor = System.Drawing.Color.Teal
-        Me.btnAdminManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAdminManage.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdminManage.ForeColor = System.Drawing.Color.White
-        Me.btnAdminManage.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnAdminManage.Location = New System.Drawing.Point(26, 369)
-        Me.btnAdminManage.Name = "btnAdminManage"
-        Me.btnAdminManage.Size = New System.Drawing.Size(192, 44)
-        Me.btnAdminManage.TabIndex = 37
-        Me.btnAdminManage.Text = "User Management"
-        Me.btnAdminManage.UseVisualStyleBackColor = False
-        '
-        'Panel6
-        '
-        Me.Panel6.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel6.Controls.Add(Me.PictureBox5)
-        Me.Panel6.Controls.Add(Me.btnTeacherAttendance)
-        Me.Panel6.Location = New System.Drawing.Point(0, 0)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(227, 151)
-        Me.Panel6.TabIndex = 38
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackgroundImage = Global.EduTrack.My.Resources.Resources.check
-        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox5.Location = New System.Drawing.Point(74, 24)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(94, 63)
-        Me.PictureBox5.TabIndex = 39
-        Me.PictureBox5.TabStop = False
-        '
-        'btnTeacherAttendance
-        '
-        Me.btnTeacherAttendance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
-        Me.btnTeacherAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTeacherAttendance.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTeacherAttendance.ForeColor = System.Drawing.Color.White
-        Me.btnTeacherAttendance.Location = New System.Drawing.Point(18, 93)
-        Me.btnTeacherAttendance.Name = "btnTeacherAttendance"
-        Me.btnTeacherAttendance.Size = New System.Drawing.Size(192, 44)
-        Me.btnTeacherAttendance.TabIndex = 37
-        Me.btnTeacherAttendance.Text = "Manage Attendance"
-        Me.btnTeacherAttendance.UseVisualStyleBackColor = False
-        '
-        'Panel7
-        '
-        Me.Panel7.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel7.Controls.Add(Me.PictureBox6)
-        Me.Panel7.Controls.Add(Me.btnTeacherGrades)
-        Me.Panel7.Location = New System.Drawing.Point(-337, 0)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(227, 151)
-        Me.Panel7.TabIndex = 37
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackgroundImage = Global.EduTrack.My.Resources.Resources.test
-        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox6.Location = New System.Drawing.Point(56, 24)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(112, 63)
-        Me.PictureBox6.TabIndex = 38
-        Me.PictureBox6.TabStop = False
-        '
-        'btnTeacherGrades
-        '
-        Me.btnTeacherGrades.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
-        Me.btnTeacherGrades.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTeacherGrades.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTeacherGrades.ForeColor = System.Drawing.Color.White
-        Me.btnTeacherGrades.Location = New System.Drawing.Point(17, 93)
-        Me.btnTeacherGrades.Name = "btnTeacherGrades"
-        Me.btnTeacherGrades.Size = New System.Drawing.Size(192, 44)
-        Me.btnTeacherGrades.TabIndex = 37
-        Me.btnTeacherGrades.Text = "Manage Grades"
-        Me.btnTeacherGrades.UseVisualStyleBackColor = False
-        '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel5.Controls.Add(Me.PictureBox4)
-        Me.Panel5.Controls.Add(Me.Button1)
-        Me.Panel5.Location = New System.Drawing.Point(738, 460)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(227, 151)
-        Me.Panel5.TabIndex = 39
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackgroundImage = Global.EduTrack.My.Resources.Resources.user
-        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox4.Location = New System.Drawing.Point(74, 24)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(94, 63)
-        Me.PictureBox4.TabIndex = 39
-        Me.PictureBox4.TabStop = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(18, 93)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(192, 44)
-        Me.Button1.TabIndex = 37
-        Me.Button1.Text = "User Management"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'AboutUsToolStripMenuItem
-        '
-        Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.AboutUsToolStripMenuItem.Text = "About Us"
-        '
-        'HelpToolStripMenuItem
-        '
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.HelpToolStripMenuItem.Text = "Help"
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.PictureBox7.BackgroundImage = Global.EduTrack.My.Resources.Resources.edu
-        Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox7.Location = New System.Drawing.Point(600, 70)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(139, 127)
-        Me.PictureBox7.TabIndex = 41
-        Me.PictureBox7.TabStop = False
-        '
-        'lblTitle
-        '
-        Me.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblTitle.BackColor = System.Drawing.Color.Transparent
-        Me.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI Black", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblTitle.Location = New System.Drawing.Point(723, 89)
-        Me.lblTitle.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(351, 93)
-        Me.lblTitle.TabIndex = 40
-        Me.lblTitle.Text = "EduTrack"
-        Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'frmAdmin
         '
@@ -486,6 +539,7 @@ Partial Class frmAdmin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1445, 771)
+        Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.Panel5)
@@ -509,16 +563,18 @@ Partial Class frmAdmin
         Me.Panel4.ResumeLayout(False)
         CType(Me.EduTrackDBDS, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EduTrackDBDSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel8.ResumeLayout(False)
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -556,7 +612,12 @@ Partial Class frmAdmin
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Panel5 As Panel
     Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnAdminManager As Button
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents lblTitle As Label
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents btnTeacherGrade As Button
+    Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
 End Class

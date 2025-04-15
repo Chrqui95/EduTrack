@@ -98,10 +98,10 @@
       <DependentUpon>BaseForm.vb</DependentUpon>
     </Compile>
     <Compile Include="BaseForm.vb" />
-    <Compile Include="BaseForm1.Designer.vb">
-      <DependentUpon>BaseForm1.vb</DependentUpon>
+    <Compile Include="frmGradeManager.Designer.vb">
+      <DependentUpon>frmGradeManager.vb</DependentUpon>
     </Compile>
-    <Compile Include="BaseForm1.vb">
+    <Compile Include="frmGradeManager.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EduTrackDBDS.Designer.vb">
@@ -149,8 +149,8 @@
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BaseForm1.resx">
-      <DependentUpon>BaseForm1.vb</DependentUpon>
+    <EmbeddedResource Include="frmGradeManager.resx">
+      <DependentUpon>frmGradeManager.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdmin.resx">
       <DependentUpon>frmAdmin.vb</DependentUpon>
@@ -200,6 +200,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>EduTrackDB.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\close.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\next1.png" />
+    <None Include="Resources\next-button.png" />
+    <None Include="Resources\next-button1.png" />
     <None Include="Resources\check.png" />
     <None Include="Resources\test.png" />
     <None Include="Resources\back.png" />
