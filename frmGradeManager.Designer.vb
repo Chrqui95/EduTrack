@@ -29,8 +29,8 @@ Partial Class frmGradeManager
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
@@ -38,6 +38,8 @@ Partial Class frmGradeManager
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutUsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -52,8 +54,6 @@ Partial Class frmGradeManager
         Me.cmbCourse = New System.Windows.Forms.ComboBox()
         Me.lblGrade = New System.Windows.Forms.Label()
         Me.imgEdu = New System.Windows.Forms.PictureBox()
-        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BindingNavigator1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -118,6 +118,11 @@ Partial Class frmGradeManager
         Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 32)
         Me.BindingNavigatorMoveFirstItem.Text = "Move first"
         '
+        'BindingNavigatorSeparator
+        '
+        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 35)
+        '
         'BindingNavigatorMovePreviousItem
         '
         Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -126,11 +131,6 @@ Partial Class frmGradeManager
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
         Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 32)
         Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
-        '
-        'BindingNavigatorSeparator
-        '
-        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 35)
         '
         'BindingNavigatorPositionItem
         '
@@ -191,6 +191,18 @@ Partial Class frmGradeManager
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(40, 25)
         Me.FileToolStripMenuItem.Text = "File"
         '
+        'HomeToolStripMenuItem
+        '
+        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
+        Me.HomeToolStripMenuItem.Text = "Home"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
+        '
         'OptionsToolStripMenuItem
         '
         Me.OptionsToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -212,13 +224,13 @@ Partial Class frmGradeManager
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.AboutUsToolStripMenuItem.Text = "About Us"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'lblEdu
@@ -333,18 +345,6 @@ Partial Class frmGradeManager
         Me.imgEdu.TabIndex = 42
         Me.imgEdu.TabStop = False
         '
-        'HomeToolStripMenuItem
-        '
-        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.HomeToolStripMenuItem.Text = "Home"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
-        '
         'frmGradeManager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -362,7 +362,9 @@ Partial Class frmGradeManager
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.BindingNavigator1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmGradeManager"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Grade Manager"
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BindingNavigator1.ResumeLayout(False)
