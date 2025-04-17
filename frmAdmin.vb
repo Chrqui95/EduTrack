@@ -15,4 +15,9 @@ Public Class frmAdmin
         Me.Hide()
         frmStudentManager.Show()
     End Sub
+
+    Private Sub btnTeacherAttendance_Click(sender As Object, e As EventArgs) Handles btnTeacherAttendance.Click
+        Me.Hide()
+        frmAttendance.Show()
+    End Sub
 End Class
