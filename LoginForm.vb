@@ -28,7 +28,7 @@ Public Class LoginForm
                     If count > 0 Then
                         MessageBox.Show("Login successful!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         Me.Hide()
-                        frmAdmin.Show()
+                        frmMain.Show()
                     Else
                         MessageBox.Show("Invalid credentials. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                     End If

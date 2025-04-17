@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmAdmin
+Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,11 +23,12 @@ Partial Class frmAdmin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAdmin))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.lblDash = New System.Windows.Forms.Label()
         Me.lblWelcome = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnAdminManage = New System.Windows.Forms.Button()
+        Me.btnSettings = New System.Windows.Forms.Button()
         Me.btnDashAttendance = New System.Windows.Forms.Button()
         Me.btnDashGrades = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -39,51 +40,50 @@ Partial Class frmAdmin
         Me.AboutUsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnStudentGrades = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.btnTeacherAttendance = New System.Windows.Forms.Button()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.btnTeacherGrades = New System.Windows.Forms.Button()
         Me.btnStudentAttendance = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.btnStudentSettings = New System.Windows.Forms.Button()
         Me.EduTrackDBDS = New EduTrack.EduTrackDBDS()
         Me.EduTrackDBDSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.btnStudentManager = New System.Windows.Forms.Button()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.btnTeacherGrade = New System.Windows.Forms.Button()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.btnTeacherGrade = New System.Windows.Forms.Button()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.btnAccount = New System.Windows.Forms.Button()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnSettings = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EduTrackDBDS, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EduTrackDBDSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblDash
@@ -143,6 +143,23 @@ Partial Class frmAdmin
         Me.btnAdminManage.TabIndex = 37
         Me.btnAdminManage.Text = "User Management"
         Me.btnAdminManage.UseVisualStyleBackColor = False
+        '
+        'btnSettings
+        '
+        Me.btnSettings.BackgroundImage = Global.EduTrack.My.Resources.Resources.settings
+        Me.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnSettings.FlatAppearance.BorderSize = 0
+        Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSettings.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSettings.Image = Global.EduTrack.My.Resources.Resources.settings1
+        Me.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnSettings.Location = New System.Drawing.Point(12, 686)
+        Me.btnSettings.Name = "btnSettings"
+        Me.btnSettings.Size = New System.Drawing.Size(105, 44)
+        Me.btnSettings.TabIndex = 37
+        Me.btnSettings.Text = "Settings"
+        Me.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnSettings.UseVisualStyleBackColor = True
         '
         'btnDashAttendance
         '
@@ -244,6 +261,16 @@ Partial Class frmAdmin
         Me.Panel2.Size = New System.Drawing.Size(227, 151)
         Me.Panel2.TabIndex = 31
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.EduTrack.My.Resources.Resources.test
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(56, 24)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(112, 63)
+        Me.PictureBox1.TabIndex = 38
+        Me.PictureBox1.TabStop = False
+        '
         'btnStudentGrades
         '
         Me.btnStudentGrades.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
@@ -269,6 +296,16 @@ Partial Class frmAdmin
         Me.Panel3.Size = New System.Drawing.Size(227, 151)
         Me.Panel3.TabIndex = 32
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = Global.EduTrack.My.Resources.Resources.check
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox2.Location = New System.Drawing.Point(74, 24)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(94, 63)
+        Me.PictureBox2.TabIndex = 39
+        Me.PictureBox2.TabStop = False
+        '
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.Gainsboro
@@ -278,6 +315,16 @@ Partial Class frmAdmin
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(227, 151)
         Me.Panel6.TabIndex = 38
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackgroundImage = Global.EduTrack.My.Resources.Resources.check
+        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox5.Location = New System.Drawing.Point(74, 24)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(94, 63)
+        Me.PictureBox5.TabIndex = 39
+        Me.PictureBox5.TabStop = False
         '
         'btnTeacherAttendance
         '
@@ -301,6 +348,16 @@ Partial Class frmAdmin
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(227, 151)
         Me.Panel7.TabIndex = 37
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackgroundImage = Global.EduTrack.My.Resources.Resources.test
+        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox6.Location = New System.Drawing.Point(56, 24)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(112, 63)
+        Me.PictureBox6.TabIndex = 38
+        Me.PictureBox6.TabStop = False
         '
         'btnTeacherGrades
         '
@@ -338,6 +395,16 @@ Partial Class frmAdmin
         Me.Panel4.Size = New System.Drawing.Size(227, 151)
         Me.Panel4.TabIndex = 33
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackgroundImage = Global.EduTrack.My.Resources.Resources.settings
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox3.Location = New System.Drawing.Point(55, 24)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(112, 63)
+        Me.PictureBox3.TabIndex = 39
+        Me.PictureBox3.TabStop = False
+        '
         'btnStudentSettings
         '
         Me.btnStudentSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
@@ -370,6 +437,16 @@ Partial Class frmAdmin
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(227, 151)
         Me.Panel5.TabIndex = 39
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackgroundImage = Global.EduTrack.My.Resources.Resources.user
+        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox4.Location = New System.Drawing.Point(74, 24)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(94, 63)
+        Me.PictureBox4.TabIndex = 39
+        Me.PictureBox4.TabStop = False
         '
         'btnStudentManager
         '
@@ -409,6 +486,16 @@ Partial Class frmAdmin
         Me.Panel8.Size = New System.Drawing.Size(227, 151)
         Me.Panel8.TabIndex = 42
         '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackgroundImage = Global.EduTrack.My.Resources.Resources.test
+        Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox8.Location = New System.Drawing.Point(56, 24)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(112, 63)
+        Me.PictureBox8.TabIndex = 38
+        Me.PictureBox8.TabStop = False
+        '
         'btnTeacherGrade
         '
         Me.btnTeacherGrade.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
@@ -422,16 +509,6 @@ Partial Class frmAdmin
         Me.btnTeacherGrade.Text = "Manage Grades"
         Me.btnTeacherGrade.UseVisualStyleBackColor = False
         '
-        'PictureBox8
-        '
-        Me.PictureBox8.BackgroundImage = Global.EduTrack.My.Resources.Resources.test
-        Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox8.Location = New System.Drawing.Point(56, 24)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(112, 63)
-        Me.PictureBox8.TabIndex = 38
-        Me.PictureBox8.TabStop = False
-        '
         'PictureBox7
         '
         Me.PictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -442,16 +519,6 @@ Partial Class frmAdmin
         Me.PictureBox7.Size = New System.Drawing.Size(139, 127)
         Me.PictureBox7.TabIndex = 41
         Me.PictureBox7.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackgroundImage = Global.EduTrack.My.Resources.Resources.user
-        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox4.Location = New System.Drawing.Point(74, 24)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(94, 63)
-        Me.PictureBox4.TabIndex = 39
-        Me.PictureBox4.TabStop = False
         '
         'btnAccount
         '
@@ -466,74 +533,7 @@ Partial Class frmAdmin
         Me.btnAccount.TabIndex = 36
         Me.btnAccount.UseVisualStyleBackColor = True
         '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackgroundImage = Global.EduTrack.My.Resources.Resources.settings
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox3.Location = New System.Drawing.Point(55, 24)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(112, 63)
-        Me.PictureBox3.TabIndex = 39
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackgroundImage = Global.EduTrack.My.Resources.Resources.check
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox2.Location = New System.Drawing.Point(74, 24)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(94, 63)
-        Me.PictureBox2.TabIndex = 39
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackgroundImage = Global.EduTrack.My.Resources.Resources.check
-        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox5.Location = New System.Drawing.Point(74, 24)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(94, 63)
-        Me.PictureBox5.TabIndex = 39
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackgroundImage = Global.EduTrack.My.Resources.Resources.test
-        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox6.Location = New System.Drawing.Point(56, 24)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(112, 63)
-        Me.PictureBox6.TabIndex = 38
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.EduTrack.My.Resources.Resources.test
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(56, 24)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(112, 63)
-        Me.PictureBox1.TabIndex = 38
-        Me.PictureBox1.TabStop = False
-        '
-        'btnSettings
-        '
-        Me.btnSettings.BackgroundImage = Global.EduTrack.My.Resources.Resources.settings
-        Me.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnSettings.FlatAppearance.BorderSize = 0
-        Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSettings.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSettings.Image = Global.EduTrack.My.Resources.Resources.settings1
-        Me.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSettings.Location = New System.Drawing.Point(12, 686)
-        Me.btnSettings.Name = "btnSettings"
-        Me.btnSettings.Size = New System.Drawing.Size(105, 44)
-        Me.btnSettings.TabIndex = 37
-        Me.btnSettings.Text = "Settings"
-        Me.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnSettings.UseVisualStyleBackColor = True
-        '
-        'frmAdmin
+        'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -552,29 +552,29 @@ Partial Class frmAdmin
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.Name = "frmAdmin"
+        Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin View -Debug"
         Me.Panel1.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EduTrackDBDS, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EduTrackDBDSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

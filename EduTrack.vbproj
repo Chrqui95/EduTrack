@@ -121,10 +121,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EduTrackDBDS.xsd</DependentUpon>
     </Compile>
-    <Compile Include="frmAdmin.Designer.vb">
-      <DependentUpon>frmAdmin.vb</DependentUpon>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmAdmin.vb">
+    <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmGradeViewer.Designer.vb">
@@ -182,8 +182,8 @@
     <EmbeddedResource Include="frmGradeManager.resx">
       <DependentUpon>frmGradeManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAdmin.resx">
-      <DependentUpon>frmAdmin.vb</DependentUpon>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGradeViewer.resx">
       <DependentUpon>frmGradeViewer.vb</DependentUpon>

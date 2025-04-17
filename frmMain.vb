@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 ' Chris fix this
-Public Class frmAdmin
+Public Class frmMain
     ' Method to set the username in the lblWelcome label
     Public Sub SetUsername(username As String)
         lblWelcome.Text = "Logged in as: " & username
@@ -19,5 +19,15 @@ Public Class frmAdmin
     Private Sub btnTeacherAttendance_Click(sender As Object, e As EventArgs) Handles btnTeacherAttendance.Click
         Me.Hide()
         frmAttendance.Show()
+    End Sub
+
+    Private Sub btnDashGrades_Click(sender As Object, e As EventArgs) Handles btnDashGrades.Click
+        Me.Hide()
+        frmGradeViewer.Show()
+    End Sub
+
+    Private Sub btnDashAttendance_Click(sender As Object, e As EventArgs) Handles btnDashAttendance.Click
+        Me.Hide()
+        frmAttendanceView.Show()
     End Sub
 End Class
