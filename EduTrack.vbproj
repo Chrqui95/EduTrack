@@ -139,6 +139,12 @@
     <Compile Include="frmStudentManager.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmUserManager.Designer.vb">
+      <DependentUpon>frmUserManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LoginForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmStudentManager.resx">
       <DependentUpon>frmStudentManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserManager.resx">
+      <DependentUpon>frmUserManager.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
