@@ -18,7 +18,7 @@ Public Class frmRegister
         Try
             Using conn As New SqlConnection(connectionString)
                 conn.Open()
-                Dim query As String = "INSERT INTO [Table] (UserID, Password, Role, IsActive, FirstName, LastName, DOB) 
+                Dim query As String = "INSERT INTO [Table] (UserID, Password, Role, IsActivated, First Name, Last Name, DOB) 
                                        VALUES (@user, @pass, @role, 0, @fname, @lname, @dob)"
                 Using cmd As New SqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@user", username)

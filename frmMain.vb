@@ -1,6 +1,35 @@
 ﻿Imports System.Data.SqlClient
 ' Chris fix this
+
 Public Class frmMain
+    Public UserRole As String
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Hide all panels initially
+        pnlMngAttendance.Visible = False
+        pnlMngGrades.Visible = False
+        pnlMngStudent.Visible = False
+        pnlViewAttendance.Visible = False
+        pnlViewGrades.Visible = False
+
+        Select Case UserRole
+            Case "Admin"
+                pnlMngAttendance.Visible = True
+                pnlMngGrades.Visible = True
+                pnlMngStudent.Visible = True
+
+            Case "Teacher"
+                pnlMngAttendance.Visible = True
+                pnlMngGrades.Visible = True
+
+            Case "Student/Parent"
+                pnlViewAttendance.Visible = True
+                pnlViewGrades.Visible = True
+
+            Case Else
+                MessageBox.Show("Unknown role. Limited access.")
+        End Select
+    End Sub
+
     ' Method to set the username in the lblWelcome label
     Public Sub SetUsername(username As String)
         lblWelcome.Text = "Logged in as: " & username
