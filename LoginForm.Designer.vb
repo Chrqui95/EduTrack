@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class LoginForm
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class frmLogin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,8 @@ Partial Class LoginForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginForm))
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.pnlLogin = New System.Windows.Forms.Panel()
@@ -34,6 +33,7 @@ Partial Class LoginForm
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.btnPassword = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.btnPlaceholderExit = New System.Windows.Forms.Button()
         Me.pnlLogin.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -158,7 +158,7 @@ Partial Class LoginForm
         Me.btnPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPassword.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.btnPassword.Location = New System.Drawing.Point(115, 197)
+        Me.btnPassword.Location = New System.Drawing.Point(19, 197)
         Me.btnPassword.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPassword.Name = "btnPassword"
         Me.btnPassword.Size = New System.Drawing.Size(156, 28)
@@ -177,22 +177,35 @@ Partial Class LoginForm
         Me.PictureBox3.TabIndex = 20
         Me.PictureBox3.TabStop = False
         '
-        'LoginForm
+        'btnPlaceholderExit
         '
+        Me.btnPlaceholderExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnPlaceholderExit.Location = New System.Drawing.Point(22, 11)
+        Me.btnPlaceholderExit.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnPlaceholderExit.Name = "btnPlaceholderExit"
+        Me.btnPlaceholderExit.Size = New System.Drawing.Size(1, 1)
+        Me.btnPlaceholderExit.TabIndex = 21
+        Me.btnPlaceholderExit.Text = "0"
+        Me.btnPlaceholderExit.UseVisualStyleBackColor = True
+        '
+        'frmLogin
+        '
+        Me.AcceptButton = Me.btnLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Teal
         Me.BackgroundImage = Global.EduTrack.My.Resources.Resources.back
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CancelButton = Me.btnPlaceholderExit
         Me.ClientSize = New System.Drawing.Size(606, 468)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.pnlLogin)
         Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.btnPlaceholderExit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
-        Me.Name = "LoginForm"
+        Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "EduTrack"
         Me.pnlLogin.ResumeLayout(False)
@@ -214,4 +227,5 @@ Partial Class LoginForm
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents lblPassword As Label
     Friend WithEvents lblUsername As Label
+    Friend WithEvents btnPlaceholderExit As Button
 End Class

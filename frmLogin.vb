@@ -1,6 +1,6 @@
 Imports System.Data.SqlClient
 
-Public Class LoginForm
+Public Class frmLogin
     ' Adjust the path based on where your .mdf is located and its name
     Dim connectionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
 
@@ -11,7 +11,7 @@ Public Class LoginForm
         ' Dim role As String = cmbRole.Text()
 
         If username = "" Or password = "" Then
-            MessageBox.Show("Please enter Username, Password, and select Role.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Please enter Username or Password.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return
         End If
 
@@ -41,5 +41,13 @@ Public Class LoginForm
 
     Private Sub btnPassword_Click(sender As Object, e As EventArgs) Handles btnPassword.Click
         MessageBox.Show("To reset your password contact :" & Environment.NewLine & "admin@edu-track.tech" & Environment.NewLine & "675-8524", "Contact Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+
+    Private Sub btnPlaceholderExit_Click(sender As Object, e As EventArgs) Handles btnPlaceholderExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnRegister_Click(sender As Object, e As EventArgs)
+        Me.Close()
     End Sub
 End Class

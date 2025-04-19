@@ -93,10 +93,9 @@ Partial Class frmMain
         Me.lblDash.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.lblDash.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDash.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblDash.Location = New System.Drawing.Point(39, 41)
-        Me.lblDash.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblDash.Location = New System.Drawing.Point(52, 50)
         Me.lblDash.Name = "lblDash"
-        Me.lblDash.Size = New System.Drawing.Size(160, 41)
+        Me.lblDash.Size = New System.Drawing.Size(213, 50)
         Me.lblDash.TabIndex = 21
         Me.lblDash.Text = "Dashboard"
         Me.lblDash.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -108,10 +107,9 @@ Partial Class frmMain
         Me.lblWelcome.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.lblWelcome.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblWelcome.Location = New System.Drawing.Point(1195, 50)
-        Me.lblWelcome.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblWelcome.Location = New System.Drawing.Point(1593, 62)
         Me.lblWelcome.Name = "lblWelcome"
-        Me.lblWelcome.Size = New System.Drawing.Size(197, 23)
+        Me.lblWelcome.Size = New System.Drawing.Size(263, 28)
         Me.lblWelcome.TabIndex = 30
         Me.lblWelcome.Text = "Welcome: Username"
         Me.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -125,9 +123,10 @@ Partial Class frmMain
         Me.Panel1.Controls.Add(Me.btnDashGrades)
         Me.Panel1.Controls.Add(Me.lblDash)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 29)
+        Me.Panel1.Location = New System.Drawing.Point(0, 36)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(249, 742)
+        Me.Panel1.Size = New System.Drawing.Size(332, 913)
         Me.Panel1.TabIndex = 27
         '
         'btnAdminManage
@@ -137,9 +136,10 @@ Partial Class frmMain
         Me.btnAdminManage.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAdminManage.ForeColor = System.Drawing.Color.White
         Me.btnAdminManage.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnAdminManage.Location = New System.Drawing.Point(26, 369)
+        Me.btnAdminManage.Location = New System.Drawing.Point(35, 454)
+        Me.btnAdminManage.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAdminManage.Name = "btnAdminManage"
-        Me.btnAdminManage.Size = New System.Drawing.Size(192, 44)
+        Me.btnAdminManage.Size = New System.Drawing.Size(256, 54)
         Me.btnAdminManage.TabIndex = 37
         Me.btnAdminManage.Text = "User Management"
         Me.btnAdminManage.UseVisualStyleBackColor = False
@@ -153,9 +153,10 @@ Partial Class frmMain
         Me.btnSettings.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSettings.Image = Global.EduTrack.My.Resources.Resources.settings1
         Me.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSettings.Location = New System.Drawing.Point(12, 686)
+        Me.btnSettings.Location = New System.Drawing.Point(13, 846)
+        Me.btnSettings.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSettings.Name = "btnSettings"
-        Me.btnSettings.Size = New System.Drawing.Size(105, 44)
+        Me.btnSettings.Size = New System.Drawing.Size(140, 54)
         Me.btnSettings.TabIndex = 37
         Me.btnSettings.Text = "Settings"
         Me.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -167,9 +168,10 @@ Partial Class frmMain
         Me.btnDashAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDashAttendance.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDashAttendance.ForeColor = System.Drawing.Color.White
-        Me.btnDashAttendance.Location = New System.Drawing.Point(26, 254)
+        Me.btnDashAttendance.Location = New System.Drawing.Point(35, 313)
+        Me.btnDashAttendance.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDashAttendance.Name = "btnDashAttendance"
-        Me.btnDashAttendance.Size = New System.Drawing.Size(192, 44)
+        Me.btnDashAttendance.Size = New System.Drawing.Size(256, 54)
         Me.btnDashAttendance.TabIndex = 35
         Me.btnDashAttendance.Text = "My Attendance"
         Me.btnDashAttendance.UseVisualStyleBackColor = False
@@ -181,9 +183,10 @@ Partial Class frmMain
         Me.btnDashGrades.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDashGrades.ForeColor = System.Drawing.Color.White
         Me.btnDashGrades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDashGrades.Location = New System.Drawing.Point(26, 134)
+        Me.btnDashGrades.Location = New System.Drawing.Point(35, 165)
+        Me.btnDashGrades.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDashGrades.Name = "btnDashGrades"
-        Me.btnDashGrades.Size = New System.Drawing.Size(192, 44)
+        Me.btnDashGrades.Size = New System.Drawing.Size(256, 54)
         Me.btnDashGrades.TabIndex = 34
         Me.btnDashGrades.Text = "My Grades"
         Me.btnDashGrades.UseVisualStyleBackColor = False
@@ -192,10 +195,11 @@ Partial Class frmMain
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.Color.Teal
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.OptionsToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1445, 29)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1924, 36)
         Me.MenuStrip1.TabIndex = 28
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -206,19 +210,19 @@ Partial Class frmMain
         Me.FileToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.FileToolStripMenuItem.Margin = New System.Windows.Forms.Padding(0, 0, 50, 0)
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(40, 25)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(50, 32)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'HomeToolStripMenuItem
         '
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(146, 28)
         Me.HomeToolStripMenuItem.Text = "Home "
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(146, 28)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'OptionsToolStripMenuItem
@@ -227,7 +231,7 @@ Partial Class frmMain
         Me.OptionsToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.OptionsToolStripMenuItem.Margin = New System.Windows.Forms.Padding(0, 0, 50, 0)
         Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(68, 25)
+        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(84, 32)
         Me.OptionsToolStripMenuItem.Text = "Options"
         '
         'AboutToolStripMenuItem
@@ -236,19 +240,19 @@ Partial Class frmMain
         Me.AboutToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AboutToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(58, 25)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(71, 32)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(165, 28)
         Me.AboutUsToolStripMenuItem.Text = "About Us"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(165, 28)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'Panel2
@@ -256,18 +260,20 @@ Partial Class frmMain
         Me.Panel2.BackColor = System.Drawing.Color.Gainsboro
         Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Controls.Add(Me.btnStudentGrades)
-        Me.Panel2.Location = New System.Drawing.Point(383, 255)
+        Me.Panel2.Location = New System.Drawing.Point(511, 314)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(227, 151)
+        Me.Panel2.Size = New System.Drawing.Size(303, 186)
         Me.Panel2.TabIndex = 31
         '
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImage = Global.EduTrack.My.Resources.Resources.test
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(56, 24)
+        Me.PictureBox1.Location = New System.Drawing.Point(75, 30)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(112, 63)
+        Me.PictureBox1.Size = New System.Drawing.Size(149, 78)
         Me.PictureBox1.TabIndex = 38
         Me.PictureBox1.TabStop = False
         '
@@ -277,9 +283,10 @@ Partial Class frmMain
         Me.btnStudentGrades.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnStudentGrades.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStudentGrades.ForeColor = System.Drawing.Color.White
-        Me.btnStudentGrades.Location = New System.Drawing.Point(17, 93)
+        Me.btnStudentGrades.Location = New System.Drawing.Point(23, 114)
+        Me.btnStudentGrades.Margin = New System.Windows.Forms.Padding(4)
         Me.btnStudentGrades.Name = "btnStudentGrades"
-        Me.btnStudentGrades.Size = New System.Drawing.Size(192, 44)
+        Me.btnStudentGrades.Size = New System.Drawing.Size(256, 54)
         Me.btnStudentGrades.TabIndex = 37
         Me.btnStudentGrades.Text = "View Grades"
         Me.btnStudentGrades.UseVisualStyleBackColor = False
@@ -291,18 +298,20 @@ Partial Class frmMain
         Me.Panel3.Controls.Add(Me.Panel6)
         Me.Panel3.Controls.Add(Me.Panel7)
         Me.Panel3.Controls.Add(Me.btnStudentAttendance)
-        Me.Panel3.Location = New System.Drawing.Point(738, 255)
+        Me.Panel3.Location = New System.Drawing.Point(984, 314)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(227, 151)
+        Me.Panel3.Size = New System.Drawing.Size(303, 186)
         Me.Panel3.TabIndex = 32
         '
         'PictureBox2
         '
         Me.PictureBox2.BackgroundImage = Global.EduTrack.My.Resources.Resources.check
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox2.Location = New System.Drawing.Point(74, 24)
+        Me.PictureBox2.Location = New System.Drawing.Point(99, 30)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(94, 63)
+        Me.PictureBox2.Size = New System.Drawing.Size(125, 78)
         Me.PictureBox2.TabIndex = 39
         Me.PictureBox2.TabStop = False
         '
@@ -312,17 +321,19 @@ Partial Class frmMain
         Me.Panel6.Controls.Add(Me.PictureBox5)
         Me.Panel6.Controls.Add(Me.btnTeacherAttendance)
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(227, 151)
+        Me.Panel6.Size = New System.Drawing.Size(303, 186)
         Me.Panel6.TabIndex = 38
         '
         'PictureBox5
         '
         Me.PictureBox5.BackgroundImage = Global.EduTrack.My.Resources.Resources.check
         Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox5.Location = New System.Drawing.Point(74, 24)
+        Me.PictureBox5.Location = New System.Drawing.Point(99, 30)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(94, 63)
+        Me.PictureBox5.Size = New System.Drawing.Size(125, 78)
         Me.PictureBox5.TabIndex = 39
         Me.PictureBox5.TabStop = False
         '
@@ -332,9 +343,10 @@ Partial Class frmMain
         Me.btnTeacherAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTeacherAttendance.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTeacherAttendance.ForeColor = System.Drawing.Color.White
-        Me.btnTeacherAttendance.Location = New System.Drawing.Point(18, 93)
+        Me.btnTeacherAttendance.Location = New System.Drawing.Point(24, 114)
+        Me.btnTeacherAttendance.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTeacherAttendance.Name = "btnTeacherAttendance"
-        Me.btnTeacherAttendance.Size = New System.Drawing.Size(192, 44)
+        Me.btnTeacherAttendance.Size = New System.Drawing.Size(256, 54)
         Me.btnTeacherAttendance.TabIndex = 37
         Me.btnTeacherAttendance.Text = "Manage Attendance"
         Me.btnTeacherAttendance.UseVisualStyleBackColor = False
@@ -344,18 +356,20 @@ Partial Class frmMain
         Me.Panel7.BackColor = System.Drawing.Color.Gainsboro
         Me.Panel7.Controls.Add(Me.PictureBox6)
         Me.Panel7.Controls.Add(Me.btnTeacherGrades)
-        Me.Panel7.Location = New System.Drawing.Point(-337, 0)
+        Me.Panel7.Location = New System.Drawing.Point(-449, 0)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(227, 151)
+        Me.Panel7.Size = New System.Drawing.Size(303, 186)
         Me.Panel7.TabIndex = 37
         '
         'PictureBox6
         '
         Me.PictureBox6.BackgroundImage = Global.EduTrack.My.Resources.Resources.test
         Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox6.Location = New System.Drawing.Point(56, 24)
+        Me.PictureBox6.Location = New System.Drawing.Point(75, 30)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(112, 63)
+        Me.PictureBox6.Size = New System.Drawing.Size(149, 78)
         Me.PictureBox6.TabIndex = 38
         Me.PictureBox6.TabStop = False
         '
@@ -365,9 +379,10 @@ Partial Class frmMain
         Me.btnTeacherGrades.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTeacherGrades.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTeacherGrades.ForeColor = System.Drawing.Color.White
-        Me.btnTeacherGrades.Location = New System.Drawing.Point(17, 93)
+        Me.btnTeacherGrades.Location = New System.Drawing.Point(23, 114)
+        Me.btnTeacherGrades.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTeacherGrades.Name = "btnTeacherGrades"
-        Me.btnTeacherGrades.Size = New System.Drawing.Size(192, 44)
+        Me.btnTeacherGrades.Size = New System.Drawing.Size(256, 54)
         Me.btnTeacherGrades.TabIndex = 37
         Me.btnTeacherGrades.Text = "Manage Grades"
         Me.btnTeacherGrades.UseVisualStyleBackColor = False
@@ -378,9 +393,10 @@ Partial Class frmMain
         Me.btnStudentAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnStudentAttendance.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStudentAttendance.ForeColor = System.Drawing.Color.White
-        Me.btnStudentAttendance.Location = New System.Drawing.Point(18, 93)
+        Me.btnStudentAttendance.Location = New System.Drawing.Point(24, 114)
+        Me.btnStudentAttendance.Margin = New System.Windows.Forms.Padding(4)
         Me.btnStudentAttendance.Name = "btnStudentAttendance"
-        Me.btnStudentAttendance.Size = New System.Drawing.Size(192, 44)
+        Me.btnStudentAttendance.Size = New System.Drawing.Size(256, 54)
         Me.btnStudentAttendance.TabIndex = 37
         Me.btnStudentAttendance.Text = "View Attendance"
         Me.btnStudentAttendance.UseVisualStyleBackColor = False
@@ -390,18 +406,20 @@ Partial Class frmMain
         Me.Panel4.BackColor = System.Drawing.Color.Gainsboro
         Me.Panel4.Controls.Add(Me.PictureBox3)
         Me.Panel4.Controls.Add(Me.btnStudentSettings)
-        Me.Panel4.Location = New System.Drawing.Point(1097, 255)
+        Me.Panel4.Location = New System.Drawing.Point(1463, 314)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(227, 151)
+        Me.Panel4.Size = New System.Drawing.Size(303, 186)
         Me.Panel4.TabIndex = 33
         '
         'PictureBox3
         '
         Me.PictureBox3.BackgroundImage = Global.EduTrack.My.Resources.Resources.settings
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox3.Location = New System.Drawing.Point(55, 24)
+        Me.PictureBox3.Location = New System.Drawing.Point(73, 30)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(112, 63)
+        Me.PictureBox3.Size = New System.Drawing.Size(149, 78)
         Me.PictureBox3.TabIndex = 39
         Me.PictureBox3.TabStop = False
         '
@@ -411,9 +429,10 @@ Partial Class frmMain
         Me.btnStudentSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnStudentSettings.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStudentSettings.ForeColor = System.Drawing.Color.White
-        Me.btnStudentSettings.Location = New System.Drawing.Point(16, 93)
+        Me.btnStudentSettings.Location = New System.Drawing.Point(21, 114)
+        Me.btnStudentSettings.Margin = New System.Windows.Forms.Padding(4)
         Me.btnStudentSettings.Name = "btnStudentSettings"
-        Me.btnStudentSettings.Size = New System.Drawing.Size(192, 44)
+        Me.btnStudentSettings.Size = New System.Drawing.Size(256, 54)
         Me.btnStudentSettings.TabIndex = 37
         Me.btnStudentSettings.Text = "My Account"
         Me.btnStudentSettings.UseVisualStyleBackColor = False
@@ -433,18 +452,20 @@ Partial Class frmMain
         Me.Panel5.BackColor = System.Drawing.Color.Gainsboro
         Me.Panel5.Controls.Add(Me.PictureBox4)
         Me.Panel5.Controls.Add(Me.btnStudentManager)
-        Me.Panel5.Location = New System.Drawing.Point(738, 477)
+        Me.Panel5.Location = New System.Drawing.Point(984, 587)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(227, 151)
+        Me.Panel5.Size = New System.Drawing.Size(303, 186)
         Me.Panel5.TabIndex = 39
         '
         'PictureBox4
         '
         Me.PictureBox4.BackgroundImage = Global.EduTrack.My.Resources.Resources.user
         Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox4.Location = New System.Drawing.Point(74, 24)
+        Me.PictureBox4.Location = New System.Drawing.Point(99, 30)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(94, 63)
+        Me.PictureBox4.Size = New System.Drawing.Size(125, 78)
         Me.PictureBox4.TabIndex = 39
         Me.PictureBox4.TabStop = False
         '
@@ -454,9 +475,10 @@ Partial Class frmMain
         Me.btnStudentManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnStudentManager.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStudentManager.ForeColor = System.Drawing.Color.White
-        Me.btnStudentManager.Location = New System.Drawing.Point(18, 93)
+        Me.btnStudentManager.Location = New System.Drawing.Point(24, 114)
+        Me.btnStudentManager.Margin = New System.Windows.Forms.Padding(4)
         Me.btnStudentManager.Name = "btnStudentManager"
-        Me.btnStudentManager.Size = New System.Drawing.Size(192, 44)
+        Me.btnStudentManager.Size = New System.Drawing.Size(256, 54)
         Me.btnStudentManager.TabIndex = 37
         Me.btnStudentManager.Text = "Student Manager"
         Me.btnStudentManager.UseVisualStyleBackColor = False
@@ -468,10 +490,9 @@ Partial Class frmMain
         Me.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI Black", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblTitle.Location = New System.Drawing.Point(723, 89)
-        Me.lblTitle.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTitle.Location = New System.Drawing.Point(964, 110)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(351, 93)
+        Me.lblTitle.Size = New System.Drawing.Size(468, 114)
         Me.lblTitle.TabIndex = 40
         Me.lblTitle.Text = "EduTrack"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -481,18 +502,20 @@ Partial Class frmMain
         Me.Panel8.BackColor = System.Drawing.Color.Gainsboro
         Me.Panel8.Controls.Add(Me.PictureBox8)
         Me.Panel8.Controls.Add(Me.btnTeacherGrade)
-        Me.Panel8.Location = New System.Drawing.Point(383, 255)
+        Me.Panel8.Location = New System.Drawing.Point(511, 314)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(227, 151)
+        Me.Panel8.Size = New System.Drawing.Size(303, 186)
         Me.Panel8.TabIndex = 42
         '
         'PictureBox8
         '
         Me.PictureBox8.BackgroundImage = Global.EduTrack.My.Resources.Resources.test
         Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox8.Location = New System.Drawing.Point(56, 24)
+        Me.PictureBox8.Location = New System.Drawing.Point(75, 30)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(112, 63)
+        Me.PictureBox8.Size = New System.Drawing.Size(149, 78)
         Me.PictureBox8.TabIndex = 38
         Me.PictureBox8.TabStop = False
         '
@@ -502,9 +525,10 @@ Partial Class frmMain
         Me.btnTeacherGrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTeacherGrade.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTeacherGrade.ForeColor = System.Drawing.Color.White
-        Me.btnTeacherGrade.Location = New System.Drawing.Point(17, 93)
+        Me.btnTeacherGrade.Location = New System.Drawing.Point(23, 114)
+        Me.btnTeacherGrade.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTeacherGrade.Name = "btnTeacherGrade"
-        Me.btnTeacherGrade.Size = New System.Drawing.Size(192, 44)
+        Me.btnTeacherGrade.Size = New System.Drawing.Size(256, 54)
         Me.btnTeacherGrade.TabIndex = 37
         Me.btnTeacherGrade.Text = "Manage Grades"
         Me.btnTeacherGrade.UseVisualStyleBackColor = False
@@ -514,9 +538,10 @@ Partial Class frmMain
         Me.PictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox7.BackgroundImage = Global.EduTrack.My.Resources.Resources.edu
         Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox7.Location = New System.Drawing.Point(600, 70)
+        Me.PictureBox7.Location = New System.Drawing.Point(800, 86)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(139, 127)
+        Me.PictureBox7.Size = New System.Drawing.Size(185, 156)
         Me.PictureBox7.TabIndex = 41
         Me.PictureBox7.TabStop = False
         '
@@ -527,18 +552,19 @@ Partial Class frmMain
         Me.btnAccount.FlatAppearance.BorderSize = 0
         Me.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAccount.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAccount.Location = New System.Drawing.Point(1387, 40)
+        Me.btnAccount.Location = New System.Drawing.Point(1849, 49)
+        Me.btnAccount.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAccount.Name = "btnAccount"
-        Me.btnAccount.Size = New System.Drawing.Size(46, 42)
+        Me.btnAccount.Size = New System.Drawing.Size(61, 52)
         Me.btnAccount.TabIndex = 36
         Me.btnAccount.UseVisualStyleBackColor = True
         '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1445, 771)
+        Me.ClientSize = New System.Drawing.Size(1924, 949)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.lblTitle)
@@ -551,7 +577,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MaximizeBox = False
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin View -Debug"

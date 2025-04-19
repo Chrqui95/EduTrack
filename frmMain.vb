@@ -30,4 +30,5 @@ Public Class frmMain
         Me.Hide()
         frmAttendanceView.Show()
     End Sub
+
 End Class
