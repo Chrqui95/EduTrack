@@ -8,4 +8,10 @@
             btnCourses.Text = "Show Courses"
         End If
     End Sub
+
+    Private Sub frmStudentManager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'EduTrackDBDS.Table' table. You can move, or remove it, as needed.
+        Me.TableTableAdapter.Fill(Me.EduTrackDBDS.Table)
+
+    End Sub
 End Class

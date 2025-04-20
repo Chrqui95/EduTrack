@@ -98,10 +98,20 @@
       <DependentUpon>BaseForm.vb</DependentUpon>
     </Compile>
     <Compile Include="BaseForm.vb" />
-    <Compile Include="frmAttendance.Designer.vb">
-      <DependentUpon>frmAttendance.vb</DependentUpon>
+    <Compile Include="EduTrackDBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EduTrackDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="frmAttendance.vb">
+    <Compile Include="EduTrackSDBDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EduTrackSDBDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmDelete.Designer.vb">
+      <DependentUpon>frmDelete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDelete.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAttendanceView.Designer.vb">
@@ -115,11 +125,6 @@
     </Compile>
     <Compile Include="frmGradeManager.vb">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EduTrackDBDS.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EduTrackDBDS.xsd</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.Designer.vb">
       <DependentUpon>frmLogin.vb</DependentUpon>
@@ -173,6 +178,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Session.vb" />
     <Compile Include="SplashScreen1.Designer.vb">
       <DependentUpon>SplashScreen1.vb</DependentUpon>
     </Compile>
@@ -184,8 +190,8 @@
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAttendance.resx">
-      <DependentUpon>frmAttendance.vb</DependentUpon>
+    <EmbeddedResource Include="frmDelete.resx">
+      <DependentUpon>frmDelete.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAttendanceView.resx">
       <DependentUpon>frmAttendanceView.vb</DependentUpon>
@@ -222,16 +228,27 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="EduTrackDBDS.xsc">
-      <DependentUpon>EduTrackDBDS.xsd</DependentUpon>
+    <None Include="EduTrackDBDataSet.xsc">
+      <DependentUpon>EduTrackDBDataSet.xsd</DependentUpon>
     </None>
-    <None Include="EduTrackDBDS.xsd">
+    <None Include="EduTrackDBDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EduTrackDBDS.Designer.vb</LastGenOutput>
+      <LastGenOutput>EduTrackDBDataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="EduTrackDBDS.xss">
-      <DependentUpon>EduTrackDBDS.xsd</DependentUpon>
+    <None Include="EduTrackDBDataSet.xss">
+      <DependentUpon>EduTrackDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EduTrackSDBDS.xsc">
+      <DependentUpon>EduTrackSDBDS.xsd</DependentUpon>
+    </None>
+    <None Include="EduTrackSDBDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EduTrackSDBDS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EduTrackSDBDS.xss">
+      <DependentUpon>EduTrackSDBDS.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -250,8 +267,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="EduTrackDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>EduTrackDB.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EduTrackStudentRecordDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EduTrackStudentRecordDB_log.ldf">
+      <DependentUpon>EduTrackStudentRecordDB.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\delete.ico" />
     <None Include="Resources\diskette.ico" />

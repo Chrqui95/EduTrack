@@ -30,18 +30,19 @@ Public Class frmLogin
                     If role IsNot Nothing Then
                         Dim userRole As String = role.ToString()
 
-                        ' Load appropriate interface/form based on role
+                        ' Set session variables
+                        Session.CurrentUserID = username
+                        Session.CurrentUserRole = userRole
+
                         MessageBox.Show("Login successful! Role: " & userRole, "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                         Me.Hide()
-
                         Dim mainForm As New frmMain()
-                        mainForm.UserRole = userRole
                         mainForm.Show()
-
                     Else
                         MessageBox.Show("Invalid credentials or account not activated.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                     End If
+
                 End Using
             End Using
         Catch ex As Exception
@@ -59,7 +60,7 @@ Public Class frmLogin
     End Sub
 
     Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
-        Me.Close()
         frmRegister.Show()
+        Me.Hide()
     End Sub
 End Class
