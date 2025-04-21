@@ -33,23 +33,9 @@ Partial Class frmStudentManager
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutUsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.lblEdu = New System.Windows.Forms.Label()
-        Me.btnDelete = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
-        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.btnEdit = New System.Windows.Forms.Button()
         Me.imgEdu = New System.Windows.Forms.PictureBox()
         Me.lblFName = New System.Windows.Forms.Label()
         Me.lblLName = New System.Windows.Forms.Label()
@@ -58,33 +44,33 @@ Partial Class frmStudentManager
         Me.lblDOB = New System.Windows.Forms.Label()
         Me.lblGender = New System.Windows.Forms.Label()
         Me.dtpStudent = New System.Windows.Forms.DateTimePicker()
-        Me.cmbGender = New System.Windows.Forms.ComboBox()
         Me.txtFName = New System.Windows.Forms.TextBox()
         Me.txtLName = New System.Windows.Forms.TextBox()
-        Me.txtPhone = New System.Windows.Forms.TextBox()
         Me.txtAddress = New System.Windows.Forms.TextBox()
         Me.clbCourses = New System.Windows.Forms.CheckedListBox()
         Me.btnCourses = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.EduTrackDBDS = New EduTrack.EduTrackDBDS()
-        Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TableTableAdapter = New EduTrack.EduTrackDBDSTableAdapters.TableTableAdapter()
-        Me.TableAdapterManager = New EduTrack.EduTrackDBDSTableAdapters.TableAdapterManager()
-        Me.UserIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PasswordDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FirstNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LastNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvStudentRecord = New System.Windows.Forms.DataGridView()
+        Me.StudentIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DOBDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GenderDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CountryDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PhoneNumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RoleDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IsActivatedDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.AddressDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StudentEmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CoursesDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StudentRecordsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.EduTrackDBDS = New EduTrack.EduTrackDBDS()
+        Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.lblStudentEmail = New System.Windows.Forms.Label()
+        Me.msktxtStudentEmail = New System.Windows.Forms.MaskedTextBox()
+        Me.lstGender = New System.Windows.Forms.ListBox()
+        Me.StudentRecordsTableAdapter = New EduTrack.EduTrackDBDSTableAdapters.StudentRecordsTableAdapter()
+        Me.msktxtPhone = New System.Windows.Forms.MaskedTextBox()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.BindingNavigator1.SuspendLayout()
         CType(Me.imgEdu, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvStudentRecord, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.StudentRecordsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EduTrackDBDS, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -96,9 +82,10 @@ Partial Class frmStudentManager
         Me.lblStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblStudent.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblStudent.Location = New System.Drawing.Point(101, 57)
+        Me.lblStudent.Location = New System.Drawing.Point(108, 46)
+        Me.lblStudent.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblStudent.Name = "lblStudent"
-        Me.lblStudent.Size = New System.Drawing.Size(364, 49)
+        Me.lblStudent.Size = New System.Drawing.Size(273, 40)
         Me.lblStudent.TabIndex = 43
         Me.lblStudent.Text = "Student Manager"
         Me.lblStudent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -111,7 +98,8 @@ Partial Class frmStudentManager
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.OptionsToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1525, 36)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1209, 29)
         Me.MenuStrip1.TabIndex = 45
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -122,19 +110,19 @@ Partial Class frmStudentManager
         Me.FileToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.FileToolStripMenuItem.Margin = New System.Windows.Forms.Padding(0, 0, 50, 0)
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(50, 32)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(40, 25)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'HomeToolStripMenuItem
         '
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(141, 28)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
         Me.HomeToolStripMenuItem.Text = "Home"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(141, 28)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'OptionsToolStripMenuItem
@@ -143,7 +131,7 @@ Partial Class frmStudentManager
         Me.OptionsToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.OptionsToolStripMenuItem.Margin = New System.Windows.Forms.Padding(0, 0, 50, 0)
         Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(84, 32)
+        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(68, 25)
         Me.OptionsToolStripMenuItem.Text = "Options"
         '
         'AboutToolStripMenuItem
@@ -152,141 +140,20 @@ Partial Class frmStudentManager
         Me.AboutToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AboutToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(71, 32)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(58, 25)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(165, 28)
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.AboutUsToolStripMenuItem.Text = "About Us"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(165, 28)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.HelpToolStripMenuItem.Text = "Help"
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UserIDDataGridViewTextBoxColumn, Me.PasswordDataGridViewTextBoxColumn, Me.FirstNameDataGridViewTextBoxColumn, Me.LastNameDataGridViewTextBoxColumn, Me.DOBDataGridViewTextBoxColumn, Me.GenderDataGridViewTextBoxColumn, Me.CountryDataGridViewTextBoxColumn, Me.PhoneNumberDataGridViewTextBoxColumn, Me.RoleDataGridViewTextBoxColumn, Me.IsActivatedDataGridViewCheckBoxColumn})
-        Me.DataGridView1.DataSource = Me.TableBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(59, 519)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.Size = New System.Drawing.Size(1435, 343)
-        Me.DataGridView1.TabIndex = 46
-        '
-        'BindingNavigator1
-        '
-        Me.BindingNavigator1.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.BindingNavigator1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.BindingNavigator1.AutoSize = False
-        Me.BindingNavigator1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.BindingNavigator1.CountItem = Me.BindingNavigatorCountItem
-        Me.BindingNavigator1.DeleteItem = Me.BindingNavigatorDeleteItem
-        Me.BindingNavigator1.Dock = System.Windows.Forms.DockStyle.None
-        Me.BindingNavigator1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.BindingNavigator1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem})
-        Me.BindingNavigator1.Location = New System.Drawing.Point(87, 473)
-        Me.BindingNavigator1.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
-        Me.BindingNavigator1.MoveLastItem = Me.BindingNavigatorMoveLastItem
-        Me.BindingNavigator1.MoveNextItem = Me.BindingNavigatorMoveNextItem
-        Me.BindingNavigator1.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
-        Me.BindingNavigator1.Name = "BindingNavigator1"
-        Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-        Me.BindingNavigator1.Size = New System.Drawing.Size(361, 43)
-        Me.BindingNavigator1.TabIndex = 47
-        Me.BindingNavigator1.Text = "BindingNavigator1"
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = Global.EduTrack.My.Resources.Resources.plus
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 40)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 40)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = Global.EduTrack.My.Resources.Resources.close
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 40)
-        Me.BindingNavigatorDeleteItem.Text = "Delete"
-        '
-        'BindingNavigatorMoveFirstItem
-        '
-        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveFirstItem.Image = Global.EduTrack.My.Resources.Resources.next_button1
-        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
-        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 40)
-        Me.BindingNavigatorMoveFirstItem.Text = "Move first"
-        '
-        'BindingNavigatorSeparator
-        '
-        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 43)
-        '
-        'BindingNavigatorMovePreviousItem
-        '
-        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMovePreviousItem.Image = Global.EduTrack.My.Resources.Resources.next1
-        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
-        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 40)
-        Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
-        '
-        'BindingNavigatorPositionItem
-        '
-        Me.BindingNavigatorPositionItem.AccessibleName = "Position"
-        Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(65, 27)
-        Me.BindingNavigatorPositionItem.Text = "0"
-        Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
-        '
-        'BindingNavigatorSeparator1
-        '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 43)
-        '
-        'BindingNavigatorMoveNextItem
-        '
-        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveNextItem.Image = Global.EduTrack.My.Resources.Resources._next
-        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
-        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 40)
-        Me.BindingNavigatorMoveNextItem.Text = "Move next"
-        '
-        'BindingNavigatorMoveLastItem
-        '
-        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveLastItem.Image = Global.EduTrack.My.Resources.Resources.next_button
-        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
-        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 40)
-        Me.BindingNavigatorMoveLastItem.Text = "Move last"
-        '
-        'BindingNavigatorSeparator2
-        '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 43)
         '
         'lblEdu
         '
@@ -295,77 +162,55 @@ Partial Class frmStudentManager
         Me.lblEdu.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.lblEdu.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEdu.ForeColor = System.Drawing.Color.White
-        Me.lblEdu.Location = New System.Drawing.Point(1360, 0)
+        Me.lblEdu.Location = New System.Drawing.Point(1052, 0)
+        Me.lblEdu.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblEdu.Name = "lblEdu"
-        Me.lblEdu.Size = New System.Drawing.Size(133, 36)
+        Me.lblEdu.Size = New System.Drawing.Size(100, 29)
         Me.lblEdu.TabIndex = 48
         Me.lblEdu.Text = "EduTrack"
         Me.lblEdu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'btnDelete
-        '
-        Me.btnDelete.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnDelete.BackgroundImage = Global.EduTrack.My.Resources.Resources.settings
-        Me.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDelete.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelete.Image = Global.EduTrack.My.Resources.Resources.delete
-        Me.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDelete.Location = New System.Drawing.Point(59, 338)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(136, 50)
-        Me.btnDelete.TabIndex = 51
-        Me.btnDelete.Text = " Delete"
-        Me.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnDelete.UseVisualStyleBackColor = False
-        '
         'btnSave
         '
         Me.btnSave.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnSave.BackgroundImage = Global.EduTrack.My.Resources.Resources.settings
         Me.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSave.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSave.Image = Global.EduTrack.My.Resources.Resources.diskette
         Me.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSave.Location = New System.Drawing.Point(59, 242)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSave.Location = New System.Drawing.Point(44, 197)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(136, 57)
+        Me.btnSave.Size = New System.Drawing.Size(102, 46)
         Me.btnSave.TabIndex = 50
         Me.btnSave.Text = "  Save"
         Me.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSave.UseVisualStyleBackColor = False
         '
-        'btnAdd
+        'btnEdit
         '
-        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
-        Me.btnAdd.BackgroundImage = Global.EduTrack.My.Resources.Resources.settings
-        Me.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnAdd.FlatAppearance.BorderSize = 0
-        Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAdd.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdd.Image = Global.EduTrack.My.Resources.Resources.check1
-        Me.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAdd.Location = New System.Drawing.Point(59, 153)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(181, 54)
-        Me.btnAdd.TabIndex = 49
-        Me.btnAdd.Text = "Add Student"
-        Me.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnAdd.UseVisualStyleBackColor = False
+        Me.btnEdit.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
+        Me.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnEdit.FlatAppearance.BorderSize = 0
+        Me.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEdit.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEdit.Image = Global.EduTrack.My.Resources.Resources.check1
+        Me.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnEdit.Location = New System.Drawing.Point(10, 118)
+        Me.btnEdit.Name = "btnEdit"
+        Me.btnEdit.Size = New System.Drawing.Size(167, 50)
+        Me.btnEdit.TabIndex = 49
+        Me.btnEdit.Text = "Edit Student Record"
+        Me.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnEdit.UseVisualStyleBackColor = False
         '
         'imgEdu
         '
         Me.imgEdu.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.imgEdu.BackgroundImage = Global.EduTrack.My.Resources.Resources.edu
         Me.imgEdu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.imgEdu.Location = New System.Drawing.Point(15, 41)
-        Me.imgEdu.Margin = New System.Windows.Forms.Padding(4)
+        Me.imgEdu.Location = New System.Drawing.Point(43, 33)
         Me.imgEdu.Name = "imgEdu"
-        Me.imgEdu.Size = New System.Drawing.Size(103, 85)
+        Me.imgEdu.Size = New System.Drawing.Size(77, 69)
         Me.imgEdu.TabIndex = 44
         Me.imgEdu.TabStop = False
         '
@@ -376,9 +221,10 @@ Partial Class frmStudentManager
         Me.lblFName.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblFName.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblFName.Location = New System.Drawing.Point(304, 171)
+        Me.lblFName.Location = New System.Drawing.Point(226, 139)
+        Me.lblFName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblFName.Name = "lblFName"
-        Me.lblFName.Size = New System.Drawing.Size(173, 36)
+        Me.lblFName.Size = New System.Drawing.Size(130, 29)
         Me.lblFName.TabIndex = 52
         Me.lblFName.Text = "First Name:"
         Me.lblFName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -390,9 +236,10 @@ Partial Class frmStudentManager
         Me.lblLName.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblLName.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblLName.Location = New System.Drawing.Point(304, 262)
+        Me.lblLName.Location = New System.Drawing.Point(226, 214)
+        Me.lblLName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblLName.Name = "lblLName"
-        Me.lblLName.Size = New System.Drawing.Size(173, 36)
+        Me.lblLName.Size = New System.Drawing.Size(130, 29)
         Me.lblLName.TabIndex = 53
         Me.lblLName.Text = "Last Name:"
         Me.lblLName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -404,9 +251,10 @@ Partial Class frmStudentManager
         Me.lblPhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPhone.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPhone.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblPhone.Location = New System.Drawing.Point(696, 170)
+        Me.lblPhone.Location = New System.Drawing.Point(554, 138)
+        Me.lblPhone.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPhone.Name = "lblPhone"
-        Me.lblPhone.Size = New System.Drawing.Size(123, 36)
+        Me.lblPhone.Size = New System.Drawing.Size(92, 29)
         Me.lblPhone.TabIndex = 54
         Me.lblPhone.Text = "Phone:"
         Me.lblPhone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -418,9 +266,10 @@ Partial Class frmStudentManager
         Me.lblAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblAddress.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblAddress.Location = New System.Drawing.Point(681, 262)
+        Me.lblAddress.Location = New System.Drawing.Point(543, 213)
+        Me.lblAddress.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblAddress.Name = "lblAddress"
-        Me.lblAddress.Size = New System.Drawing.Size(123, 36)
+        Me.lblAddress.Size = New System.Drawing.Size(92, 29)
         Me.lblAddress.TabIndex = 55
         Me.lblAddress.Text = "Address:"
         Me.lblAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -432,9 +281,10 @@ Partial Class frmStudentManager
         Me.lblDOB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblDOB.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDOB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblDOB.Location = New System.Drawing.Point(1020, 170)
+        Me.lblDOB.Location = New System.Drawing.Point(797, 138)
+        Me.lblDOB.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblDOB.Name = "lblDOB"
-        Me.lblDOB.Size = New System.Drawing.Size(148, 36)
+        Me.lblDOB.Size = New System.Drawing.Size(111, 29)
         Me.lblDOB.TabIndex = 56
         Me.lblDOB.Text = "Date Of Birth:"
         Me.lblDOB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -446,9 +296,10 @@ Partial Class frmStudentManager
         Me.lblGender.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblGender.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblGender.Location = New System.Drawing.Point(1075, 262)
+        Me.lblGender.Location = New System.Drawing.Point(838, 213)
+        Me.lblGender.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblGender.Name = "lblGender"
-        Me.lblGender.Size = New System.Drawing.Size(93, 36)
+        Me.lblGender.Size = New System.Drawing.Size(70, 29)
         Me.lblGender.TabIndex = 57
         Me.lblGender.Text = "Gender:"
         Me.lblGender.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -457,66 +308,42 @@ Partial Class frmStudentManager
         '
         Me.dtpStudent.CustomFormat = "dd-MM-YYYY"
         Me.dtpStudent.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpStudent.Location = New System.Drawing.Point(1175, 170)
-        Me.dtpStudent.Margin = New System.Windows.Forms.Padding(4)
+        Me.dtpStudent.Location = New System.Drawing.Point(902, 139)
         Me.dtpStudent.Name = "dtpStudent"
-        Me.dtpStudent.Size = New System.Drawing.Size(317, 34)
+        Me.dtpStudent.Size = New System.Drawing.Size(250, 29)
         Me.dtpStudent.TabIndex = 58
-        '
-        'cmbGender
-        '
-        Me.cmbGender.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbGender.FormattingEnabled = True
-        Me.cmbGender.Location = New System.Drawing.Point(1175, 263)
-        Me.cmbGender.Margin = New System.Windows.Forms.Padding(4)
-        Me.cmbGender.Name = "cmbGender"
-        Me.cmbGender.Size = New System.Drawing.Size(160, 36)
-        Me.cmbGender.TabIndex = 59
         '
         'txtFName
         '
         Me.txtFName.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFName.Location = New System.Drawing.Point(453, 176)
-        Me.txtFName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtFName.Location = New System.Drawing.Point(340, 143)
         Me.txtFName.Name = "txtFName"
-        Me.txtFName.Size = New System.Drawing.Size(181, 29)
+        Me.txtFName.Size = New System.Drawing.Size(137, 25)
         Me.txtFName.TabIndex = 60
         '
         'txtLName
         '
         Me.txtLName.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLName.Location = New System.Drawing.Point(453, 268)
-        Me.txtLName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtLName.Location = New System.Drawing.Point(340, 218)
         Me.txtLName.Name = "txtLName"
-        Me.txtLName.Size = New System.Drawing.Size(181, 29)
+        Me.txtLName.Size = New System.Drawing.Size(137, 25)
         Me.txtLName.TabIndex = 61
-        '
-        'txtPhone
-        '
-        Me.txtPhone.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPhone.Location = New System.Drawing.Point(799, 174)
-        Me.txtPhone.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(181, 29)
-        Me.txtPhone.TabIndex = 62
         '
         'txtAddress
         '
         Me.txtAddress.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAddress.Location = New System.Drawing.Point(799, 267)
-        Me.txtAddress.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtAddress.Location = New System.Drawing.Point(625, 217)
         Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(181, 29)
+        Me.txtAddress.Size = New System.Drawing.Size(137, 25)
         Me.txtAddress.TabIndex = 63
         '
         'clbCourses
         '
         Me.clbCourses.FormattingEnabled = True
-        Me.clbCourses.Items.AddRange(New Object() {"Computer Science", "Biology", "Bio/Chem", "Accounting", "Math/Physics", "Bio/Math", "Primary Ed."})
-        Me.clbCourses.Location = New System.Drawing.Point(644, 338)
-        Me.clbCourses.Margin = New System.Windows.Forms.Padding(4)
+        Me.clbCourses.Items.AddRange(New Object() {"ComputerScience", "Biology", "Bio/Chem", "Accounting", "Math/Physics", "Bio/Math", "PrimaryEd"})
+        Me.clbCourses.Location = New System.Drawing.Point(483, 275)
         Me.clbCourses.Name = "clbCourses"
-        Me.clbCourses.Size = New System.Drawing.Size(279, 140)
+        Me.clbCourses.Size = New System.Drawing.Size(210, 109)
         Me.clbCourses.TabIndex = 66
         Me.clbCourses.Visible = False
         '
@@ -528,80 +355,49 @@ Partial Class frmStudentManager
         Me.btnCourses.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCourses.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCourses.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCourses.Location = New System.Drawing.Point(453, 332)
-        Me.btnCourses.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCourses.Location = New System.Drawing.Point(340, 270)
         Me.btnCourses.Name = "btnCourses"
-        Me.btnCourses.Size = New System.Drawing.Size(183, 37)
+        Me.btnCourses.Size = New System.Drawing.Size(137, 30)
         Me.btnCourses.TabIndex = 67
         Me.btnCourses.Text = "Show Courses"
         Me.btnCourses.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnCourses.UseVisualStyleBackColor = False
         '
-        'Label1
+        'dgvStudentRecord
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(541, 108)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(600, 36)
-        Me.Label1.TabIndex = 68
-        Me.Label1.Text = "Student ID: (will display student ID from DB)"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.dgvStudentRecord.AutoGenerateColumns = False
+        Me.dgvStudentRecord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvStudentRecord.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.StudentIDDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DOBDataGridViewTextBoxColumn, Me.GenderDataGridViewTextBoxColumn, Me.AddressDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn3, Me.StudentEmailDataGridViewTextBoxColumn, Me.CoursesDataGridViewTextBoxColumn})
+        Me.dgvStudentRecord.DataSource = Me.StudentRecordsBindingSource
+        Me.dgvStudentRecord.Location = New System.Drawing.Point(10, 442)
+        Me.dgvStudentRecord.Name = "dgvStudentRecord"
+        Me.dgvStudentRecord.RowHeadersWidth = 51
+        Me.dgvStudentRecord.Size = New System.Drawing.Size(1174, 279)
+        Me.dgvStudentRecord.TabIndex = 46
         '
-        'EduTrackDBDS
+        'StudentIDDataGridViewTextBoxColumn
         '
-        Me.EduTrackDBDS.DataSetName = "EduTrackDBDS"
-        Me.EduTrackDBDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.StudentIDDataGridViewTextBoxColumn.DataPropertyName = "StudentID"
+        Me.StudentIDDataGridViewTextBoxColumn.HeaderText = "StudentID"
+        Me.StudentIDDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.StudentIDDataGridViewTextBoxColumn.Name = "StudentIDDataGridViewTextBoxColumn"
+        Me.StudentIDDataGridViewTextBoxColumn.Width = 125
         '
-        'TableBindingSource
+        'DataGridViewTextBoxColumn1
         '
-        Me.TableBindingSource.DataMember = "Table"
-        Me.TableBindingSource.DataSource = Me.EduTrackDBDS
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "FirstName"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "FirstName"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.Width = 125
         '
-        'TableTableAdapter
+        'DataGridViewTextBoxColumn2
         '
-        Me.TableTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.TableTableAdapter = Me.TableTableAdapter
-        Me.TableAdapterManager.UpdateOrder = EduTrack.EduTrackDBDSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'UserIDDataGridViewTextBoxColumn
-        '
-        Me.UserIDDataGridViewTextBoxColumn.DataPropertyName = "UserID"
-        Me.UserIDDataGridViewTextBoxColumn.HeaderText = "UserID"
-        Me.UserIDDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.UserIDDataGridViewTextBoxColumn.Name = "UserIDDataGridViewTextBoxColumn"
-        Me.UserIDDataGridViewTextBoxColumn.Width = 125
-        '
-        'PasswordDataGridViewTextBoxColumn
-        '
-        Me.PasswordDataGridViewTextBoxColumn.DataPropertyName = "Password"
-        Me.PasswordDataGridViewTextBoxColumn.HeaderText = "Password"
-        Me.PasswordDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.PasswordDataGridViewTextBoxColumn.Name = "PasswordDataGridViewTextBoxColumn"
-        Me.PasswordDataGridViewTextBoxColumn.Width = 125
-        '
-        'FirstNameDataGridViewTextBoxColumn
-        '
-        Me.FirstNameDataGridViewTextBoxColumn.DataPropertyName = "First Name"
-        Me.FirstNameDataGridViewTextBoxColumn.HeaderText = "First Name"
-        Me.FirstNameDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.FirstNameDataGridViewTextBoxColumn.Name = "FirstNameDataGridViewTextBoxColumn"
-        Me.FirstNameDataGridViewTextBoxColumn.Width = 125
-        '
-        'LastNameDataGridViewTextBoxColumn
-        '
-        Me.LastNameDataGridViewTextBoxColumn.DataPropertyName = "Last Name"
-        Me.LastNameDataGridViewTextBoxColumn.HeaderText = "Last Name"
-        Me.LastNameDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.LastNameDataGridViewTextBoxColumn.Name = "LastNameDataGridViewTextBoxColumn"
-        Me.LastNameDataGridViewTextBoxColumn.Width = 125
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "LastName"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "LastName"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Width = 125
         '
         'DOBDataGridViewTextBoxColumn
         '
@@ -619,52 +415,115 @@ Partial Class frmStudentManager
         Me.GenderDataGridViewTextBoxColumn.Name = "GenderDataGridViewTextBoxColumn"
         Me.GenderDataGridViewTextBoxColumn.Width = 125
         '
-        'CountryDataGridViewTextBoxColumn
+        'AddressDataGridViewTextBoxColumn
         '
-        Me.CountryDataGridViewTextBoxColumn.DataPropertyName = "Country"
-        Me.CountryDataGridViewTextBoxColumn.HeaderText = "Country"
-        Me.CountryDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.CountryDataGridViewTextBoxColumn.Name = "CountryDataGridViewTextBoxColumn"
-        Me.CountryDataGridViewTextBoxColumn.Width = 125
+        Me.AddressDataGridViewTextBoxColumn.DataPropertyName = "Address"
+        Me.AddressDataGridViewTextBoxColumn.HeaderText = "Address"
+        Me.AddressDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.AddressDataGridViewTextBoxColumn.Name = "AddressDataGridViewTextBoxColumn"
+        Me.AddressDataGridViewTextBoxColumn.Width = 125
         '
-        'PhoneNumberDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn3
         '
-        Me.PhoneNumberDataGridViewTextBoxColumn.DataPropertyName = "Phone Number"
-        Me.PhoneNumberDataGridViewTextBoxColumn.HeaderText = "Phone Number"
-        Me.PhoneNumberDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.PhoneNumberDataGridViewTextBoxColumn.Name = "PhoneNumberDataGridViewTextBoxColumn"
-        Me.PhoneNumberDataGridViewTextBoxColumn.Width = 125
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "PhoneNumber"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "PhoneNumber"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.Width = 125
         '
-        'RoleDataGridViewTextBoxColumn
+        'StudentEmailDataGridViewTextBoxColumn
         '
-        Me.RoleDataGridViewTextBoxColumn.DataPropertyName = "Role"
-        Me.RoleDataGridViewTextBoxColumn.HeaderText = "Role"
-        Me.RoleDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.RoleDataGridViewTextBoxColumn.Name = "RoleDataGridViewTextBoxColumn"
-        Me.RoleDataGridViewTextBoxColumn.Width = 125
+        Me.StudentEmailDataGridViewTextBoxColumn.DataPropertyName = "StudentEmail"
+        Me.StudentEmailDataGridViewTextBoxColumn.HeaderText = "StudentEmail"
+        Me.StudentEmailDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.StudentEmailDataGridViewTextBoxColumn.Name = "StudentEmailDataGridViewTextBoxColumn"
+        Me.StudentEmailDataGridViewTextBoxColumn.Width = 125
         '
-        'IsActivatedDataGridViewCheckBoxColumn
+        'CoursesDataGridViewTextBoxColumn
         '
-        Me.IsActivatedDataGridViewCheckBoxColumn.DataPropertyName = "IsActivated"
-        Me.IsActivatedDataGridViewCheckBoxColumn.HeaderText = "IsActivated"
-        Me.IsActivatedDataGridViewCheckBoxColumn.MinimumWidth = 6
-        Me.IsActivatedDataGridViewCheckBoxColumn.Name = "IsActivatedDataGridViewCheckBoxColumn"
-        Me.IsActivatedDataGridViewCheckBoxColumn.Width = 125
+        Me.CoursesDataGridViewTextBoxColumn.DataPropertyName = "Courses"
+        Me.CoursesDataGridViewTextBoxColumn.HeaderText = "Courses"
+        Me.CoursesDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.CoursesDataGridViewTextBoxColumn.Name = "CoursesDataGridViewTextBoxColumn"
+        Me.CoursesDataGridViewTextBoxColumn.Width = 125
+        '
+        'StudentRecordsBindingSource
+        '
+        Me.StudentRecordsBindingSource.DataMember = "StudentRecords"
+        Me.StudentRecordsBindingSource.DataSource = Me.EduTrackDBDS
+        '
+        'EduTrackDBDS
+        '
+        Me.EduTrackDBDS.DataSetName = "EduTrackDBDS"
+        Me.EduTrackDBDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'lblStudentEmail
+        '
+        Me.lblStudentEmail.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblStudentEmail.BackColor = System.Drawing.Color.Transparent
+        Me.lblStudentEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblStudentEmail.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStudentEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.lblStudentEmail.Location = New System.Drawing.Point(752, 275)
+        Me.lblStudentEmail.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblStudentEmail.Name = "lblStudentEmail"
+        Me.lblStudentEmail.Size = New System.Drawing.Size(112, 29)
+        Me.lblStudentEmail.TabIndex = 69
+        Me.lblStudentEmail.Text = "Student Email:"
+        Me.lblStudentEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'msktxtStudentEmail
+        '
+        Me.msktxtStudentEmail.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.msktxtStudentEmail.Location = New System.Drawing.Point(842, 271)
+        Me.msktxtStudentEmail.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.msktxtStudentEmail.Mask = "aaaaaa00@aaa"
+        Me.msktxtStudentEmail.Name = "msktxtStudentEmail"
+        Me.msktxtStudentEmail.Size = New System.Drawing.Size(145, 29)
+        Me.msktxtStudentEmail.TabIndex = 70
+        '
+        'lstGender
+        '
+        Me.lstGender.Cursor = System.Windows.Forms.Cursors.Default
+        Me.lstGender.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.lstGender.FormattingEnabled = True
+        Me.lstGender.ItemHeight = 21
+        Me.lstGender.Items.AddRange(New Object() {"Male", "Female"})
+        Me.lstGender.Location = New System.Drawing.Point(902, 218)
+        Me.lstGender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.lstGender.Name = "lstGender"
+        Me.lstGender.Size = New System.Drawing.Size(190, 25)
+        Me.lstGender.TabIndex = 71
+        '
+        'StudentRecordsTableAdapter
+        '
+        Me.StudentRecordsTableAdapter.ClearBeforeFill = True
+        '
+        'msktxtPhone
+        '
+        Me.msktxtPhone.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.msktxtPhone.Location = New System.Drawing.Point(625, 139)
+        Me.msktxtPhone.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.msktxtPhone.Mask = "000-0000"
+        Me.msktxtPhone.Name = "msktxtPhone"
+        Me.msktxtPhone.Size = New System.Drawing.Size(111, 29)
+        Me.msktxtPhone.TabIndex = 72
         '
         'frmStudentManager
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1525, 900)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(1209, 687)
+        Me.Controls.Add(Me.msktxtPhone)
+        Me.Controls.Add(Me.lstGender)
+        Me.Controls.Add(Me.msktxtStudentEmail)
+        Me.Controls.Add(Me.lblStudentEmail)
         Me.Controls.Add(Me.btnCourses)
         Me.Controls.Add(Me.clbCourses)
         Me.Controls.Add(Me.txtAddress)
-        Me.Controls.Add(Me.txtPhone)
         Me.Controls.Add(Me.txtLName)
         Me.Controls.Add(Me.txtFName)
-        Me.Controls.Add(Me.cmbGender)
         Me.Controls.Add(Me.dtpStudent)
         Me.Controls.Add(Me.lblGender)
         Me.Controls.Add(Me.lblDOB)
@@ -672,27 +531,22 @@ Partial Class frmStudentManager
         Me.Controls.Add(Me.lblPhone)
         Me.Controls.Add(Me.lblLName)
         Me.Controls.Add(Me.lblFName)
-        Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnSave)
-        Me.Controls.Add(Me.btnAdd)
+        Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.lblEdu)
-        Me.Controls.Add(Me.BindingNavigator1)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgvStudentRecord)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.imgEdu)
         Me.Controls.Add(Me.lblStudent)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmStudentManager"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Student Manager"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.BindingNavigator1.ResumeLayout(False)
-        Me.BindingNavigator1.PerformLayout()
         CType(Me.imgEdu, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvStudentRecord, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.StudentRecordsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EduTrackDBDS, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -710,23 +564,9 @@ Partial Class frmStudentManager
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutUsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents BindingNavigator1 As BindingNavigator
-    Friend WithEvents BindingNavigatorAddNewItem As ToolStripButton
-    Friend WithEvents BindingNavigatorCountItem As ToolStripLabel
-    Friend WithEvents BindingNavigatorDeleteItem As ToolStripButton
-    Friend WithEvents BindingNavigatorMoveFirstItem As ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator As ToolStripSeparator
-    Friend WithEvents BindingNavigatorMovePreviousItem As ToolStripButton
-    Friend WithEvents BindingNavigatorPositionItem As ToolStripTextBox
-    Friend WithEvents BindingNavigatorSeparator1 As ToolStripSeparator
-    Friend WithEvents BindingNavigatorMoveNextItem As ToolStripButton
-    Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
     Friend WithEvents lblEdu As Label
-    Friend WithEvents btnAdd As Button
+    Friend WithEvents btnEdit As Button
     Friend WithEvents btnSave As Button
-    Friend WithEvents btnDelete As Button
     Friend WithEvents lblFName As Label
     Friend WithEvents lblLName As Label
     Friend WithEvents lblPhone As Label
@@ -734,26 +574,35 @@ Partial Class frmStudentManager
     Friend WithEvents lblDOB As Label
     Friend WithEvents lblGender As Label
     Friend WithEvents dtpStudent As DateTimePicker
-    Friend WithEvents cmbGender As ComboBox
     Friend WithEvents txtFName As TextBox
     Friend WithEvents txtLName As TextBox
-    Friend WithEvents txtPhone As TextBox
     Friend WithEvents txtAddress As TextBox
     Friend WithEvents clbCourses As CheckedListBox
     Friend WithEvents btnCourses As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents EduTrackDBDS As EduTrackDBDS
-    Friend WithEvents TableBindingSource As BindingSource
-    Friend WithEvents TableTableAdapter As EduTrackDBDSTableAdapters.TableTableAdapter
-    Friend WithEvents TableAdapterManager As EduTrackDBDSTableAdapters.TableAdapterManager
+    Friend WithEvents dgvStudentRecord As DataGridView
     Friend WithEvents UserIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PasswordDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents FirstNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents LastNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DOBDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents GenderDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents CountryDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PhoneNumberDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents RoleDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents IsActivatedDataGridViewCheckBoxColumn As DataGridViewCheckBoxColumn
+    Friend WithEvents TableBindingSource As BindingSource
+    Friend WithEvents CountryDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents lblStudentEmail As Label
+    Friend WithEvents msktxtStudentEmail As MaskedTextBox
+    Friend WithEvents lstGender As ListBox
+    Friend WithEvents EduTrackDBDS As EduTrackDBDS
+    Friend WithEvents StudentRecordsBindingSource As BindingSource
+    Friend WithEvents StudentRecordsTableAdapter As EduTrackDBDSTableAdapters.StudentRecordsTableAdapter
+    Friend WithEvents StudentIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DOBDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents GenderDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents AddressDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents StudentEmailDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents CoursesDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents msktxtPhone As MaskedTextBox
 End Class

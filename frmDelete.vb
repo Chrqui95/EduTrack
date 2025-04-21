@@ -15,6 +15,7 @@ Public Class frmDelete
         End Try
     End Sub
     Private Sub frmDeleteRecords_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Me.StudentRecordsTableAdapter.Fill(Me.EduTrackDBDS.StudentRecords)
         LoadData()
     End Sub
 

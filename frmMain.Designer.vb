@@ -299,9 +299,9 @@ Partial Class frmMain
         'pnlDelete
         '
         Me.pnlDelete.BackColor = System.Drawing.Color.Gainsboro
+        Me.pnlDelete.Controls.Add(Me.pnlViewAttendance)
         Me.pnlDelete.Controls.Add(Me.PictureBox5)
         Me.pnlDelete.Controls.Add(Me.btnDelete)
-        Me.pnlDelete.Controls.Add(Me.pnlViewAttendance)
         Me.pnlDelete.Location = New System.Drawing.Point(29, 187)
         Me.pnlDelete.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlDelete.Name = "pnlDelete"

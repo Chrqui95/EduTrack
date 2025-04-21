@@ -18,7 +18,6 @@ Public Class frmMain
                 pnlMngStudent.Visible = True
 
             Case "Teacher"
-                pnlDelete.Visible = True
                 pnlMngGrades.Visible = True
                 FileToolStripMenuItem.Visible = False
                 DeleteRecordToolStripMenuItem.Visible = False
@@ -36,7 +35,8 @@ Public Class frmMain
     End Sub
 
     ' Method to set the username in the lblWelcome label
-    Public Sub SetUsername(username As String)
+    Public Sub SetUsername()
+        Dim username As String = Session.CurrentUserID
         lblWelcome.Text = "Logged in as: " & username
     End Sub
 

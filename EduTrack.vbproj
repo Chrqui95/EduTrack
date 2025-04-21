@@ -103,11 +103,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EduTrackDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="EduTrackSDBDS.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EduTrackSDBDS.xsd</DependentUpon>
-    </Compile>
     <Compile Include="frmDelete.Designer.vb">
       <DependentUpon>frmDelete.vb</DependentUpon>
     </Compile>
@@ -239,17 +234,6 @@
     <None Include="EduTrackDBDataSet.xss">
       <DependentUpon>EduTrackDBDataSet.xsd</DependentUpon>
     </None>
-    <None Include="EduTrackSDBDS.xsc">
-      <DependentUpon>EduTrackSDBDS.xsd</DependentUpon>
-    </None>
-    <None Include="EduTrackSDBDS.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EduTrackSDBDS.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="EduTrackSDBDS.xss">
-      <DependentUpon>EduTrackSDBDS.xsd</DependentUpon>
-    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -268,13 +252,6 @@
     </Content>
     <Content Include="EduTrackDB_log.ldf">
       <DependentUpon>EduTrackDB.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="EduTrackStudentRecordDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="EduTrackStudentRecordDB_log.ldf">
-      <DependentUpon>EduTrackStudentRecordDB.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\delete.ico" />
