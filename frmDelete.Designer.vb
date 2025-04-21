@@ -28,6 +28,18 @@ Partial Class frmDelete
         Me.lblEdu = New System.Windows.Forms.Label()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.dgvMainRecords = New System.Windows.Forms.DataGridView()
+        Me.UserIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PasswordDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FirstNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LastNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DOBDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GenderDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CountryDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PhoneNumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RoleDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IsActivatedDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.EduTrackDBDS = New EduTrack.EduTrackDBDS()
         Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
@@ -42,36 +54,20 @@ Partial Class frmDelete
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EditRecordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutUsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HowToToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TableTableAdapter = New EduTrack.EduTrackDBDSTableAdapters.TableTableAdapter()
         Me.TableAdapterManager = New EduTrack.EduTrackDBDSTableAdapters.TableAdapterManager()
-        Me.EduTrackDBDS = New EduTrack.EduTrackDBDS()
-        Me.UserIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PasswordDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FirstNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LastNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DOBDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GenderDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CountryDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PhoneNumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RoleDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IsActivatedDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         CType(Me.imgEdu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvMainRecords, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EduTrackDBDS, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BindingNavigator1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EduTrackDBDS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'imgEdu
@@ -126,6 +122,96 @@ Partial Class frmDelete
         Me.dgvMainRecords.RowHeadersWidth = 51
         Me.dgvMainRecords.Size = New System.Drawing.Size(1298, 343)
         Me.dgvMainRecords.TabIndex = 49
+        '
+        'UserIDDataGridViewTextBoxColumn
+        '
+        Me.UserIDDataGridViewTextBoxColumn.DataPropertyName = "UserID"
+        Me.UserIDDataGridViewTextBoxColumn.HeaderText = "UserID"
+        Me.UserIDDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.UserIDDataGridViewTextBoxColumn.Name = "UserIDDataGridViewTextBoxColumn"
+        Me.UserIDDataGridViewTextBoxColumn.Width = 125
+        '
+        'PasswordDataGridViewTextBoxColumn
+        '
+        Me.PasswordDataGridViewTextBoxColumn.DataPropertyName = "Password"
+        Me.PasswordDataGridViewTextBoxColumn.HeaderText = "Password"
+        Me.PasswordDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.PasswordDataGridViewTextBoxColumn.Name = "PasswordDataGridViewTextBoxColumn"
+        Me.PasswordDataGridViewTextBoxColumn.Width = 125
+        '
+        'FirstNameDataGridViewTextBoxColumn
+        '
+        Me.FirstNameDataGridViewTextBoxColumn.DataPropertyName = "First Name"
+        Me.FirstNameDataGridViewTextBoxColumn.HeaderText = "First Name"
+        Me.FirstNameDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.FirstNameDataGridViewTextBoxColumn.Name = "FirstNameDataGridViewTextBoxColumn"
+        Me.FirstNameDataGridViewTextBoxColumn.Width = 125
+        '
+        'LastNameDataGridViewTextBoxColumn
+        '
+        Me.LastNameDataGridViewTextBoxColumn.DataPropertyName = "Last Name"
+        Me.LastNameDataGridViewTextBoxColumn.HeaderText = "Last Name"
+        Me.LastNameDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.LastNameDataGridViewTextBoxColumn.Name = "LastNameDataGridViewTextBoxColumn"
+        Me.LastNameDataGridViewTextBoxColumn.Width = 125
+        '
+        'DOBDataGridViewTextBoxColumn
+        '
+        Me.DOBDataGridViewTextBoxColumn.DataPropertyName = "DOB"
+        Me.DOBDataGridViewTextBoxColumn.HeaderText = "DOB"
+        Me.DOBDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.DOBDataGridViewTextBoxColumn.Name = "DOBDataGridViewTextBoxColumn"
+        Me.DOBDataGridViewTextBoxColumn.Width = 125
+        '
+        'GenderDataGridViewTextBoxColumn
+        '
+        Me.GenderDataGridViewTextBoxColumn.DataPropertyName = "Gender"
+        Me.GenderDataGridViewTextBoxColumn.HeaderText = "Gender"
+        Me.GenderDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.GenderDataGridViewTextBoxColumn.Name = "GenderDataGridViewTextBoxColumn"
+        Me.GenderDataGridViewTextBoxColumn.Width = 125
+        '
+        'CountryDataGridViewTextBoxColumn
+        '
+        Me.CountryDataGridViewTextBoxColumn.DataPropertyName = "Country"
+        Me.CountryDataGridViewTextBoxColumn.HeaderText = "Country"
+        Me.CountryDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.CountryDataGridViewTextBoxColumn.Name = "CountryDataGridViewTextBoxColumn"
+        Me.CountryDataGridViewTextBoxColumn.Width = 125
+        '
+        'PhoneNumberDataGridViewTextBoxColumn
+        '
+        Me.PhoneNumberDataGridViewTextBoxColumn.DataPropertyName = "Phone Number"
+        Me.PhoneNumberDataGridViewTextBoxColumn.HeaderText = "Phone Number"
+        Me.PhoneNumberDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.PhoneNumberDataGridViewTextBoxColumn.Name = "PhoneNumberDataGridViewTextBoxColumn"
+        Me.PhoneNumberDataGridViewTextBoxColumn.Width = 125
+        '
+        'RoleDataGridViewTextBoxColumn
+        '
+        Me.RoleDataGridViewTextBoxColumn.DataPropertyName = "Role"
+        Me.RoleDataGridViewTextBoxColumn.HeaderText = "Role"
+        Me.RoleDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.RoleDataGridViewTextBoxColumn.Name = "RoleDataGridViewTextBoxColumn"
+        Me.RoleDataGridViewTextBoxColumn.Width = 125
+        '
+        'IsActivatedDataGridViewCheckBoxColumn
+        '
+        Me.IsActivatedDataGridViewCheckBoxColumn.DataPropertyName = "IsActivated"
+        Me.IsActivatedDataGridViewCheckBoxColumn.HeaderText = "IsActivated"
+        Me.IsActivatedDataGridViewCheckBoxColumn.MinimumWidth = 6
+        Me.IsActivatedDataGridViewCheckBoxColumn.Name = "IsActivatedDataGridViewCheckBoxColumn"
+        Me.IsActivatedDataGridViewCheckBoxColumn.Width = 125
+        '
+        'TableBindingSource
+        '
+        Me.TableBindingSource.DataMember = "Table"
+        Me.TableBindingSource.DataSource = Me.EduTrackDBDS
+        '
+        'EduTrackDBDS
+        '
+        Me.EduTrackDBDS.DataSetName = "EduTrackDBDS"
+        Me.EduTrackDBDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'BindingNavigator1
         '
@@ -240,7 +326,7 @@ Partial Class frmDelete
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.Color.Teal
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.OptionsToolStripMenuItem, Me.AboutToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1387, 36)
@@ -249,7 +335,7 @@ Partial Class frmDelete
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HomeToolStripMenuItem, Me.ExitToolStripMenuItem, Me.ExitToolStripMenuItem1})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FileToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.FileToolStripMenuItem.Margin = New System.Windows.Forms.Padding(0, 0, 50, 0)
@@ -257,39 +343,11 @@ Partial Class frmDelete
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(50, 32)
         Me.FileToolStripMenuItem.Text = "File"
         '
-        'HomeToolStripMenuItem
-        '
-        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(197, 28)
-        Me.HomeToolStripMenuItem.Text = "New Record"
-        '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(197, 28)
-        Me.ExitToolStripMenuItem.Text = "View Records"
-        '
-        'ExitToolStripMenuItem1
-        '
-        Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(197, 28)
-        Me.ExitToolStripMenuItem1.Text = "Exit"
-        '
-        'OptionsToolStripMenuItem
-        '
-        Me.OptionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditRecordToolStripMenuItem})
-        Me.OptionsToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OptionsToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.OptionsToolStripMenuItem.Margin = New System.Windows.Forms.Padding(0, 0, 50, 0)
-        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(53, 32)
-        Me.OptionsToolStripMenuItem.Text = "Edit"
-        '
-        'EditRecordToolStripMenuItem
-        '
-        Me.EditRecordToolStripMenuItem.Name = "EditRecordToolStripMenuItem"
-        Me.EditRecordToolStripMenuItem.Size = New System.Drawing.Size(182, 28)
-        Me.EditRecordToolStripMenuItem.Text = "Edit Record"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(224, 28)
+        Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'AboutToolStripMenuItem
         '
@@ -303,25 +361,20 @@ Partial Class frmDelete
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(165, 28)
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(224, 28)
         Me.AboutUsToolStripMenuItem.Text = "About Us"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(165, 28)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(224, 28)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'HowToToolStripMenuItem
         '
         Me.HowToToolStripMenuItem.Name = "HowToToolStripMenuItem"
-        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(165, 28)
+        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(224, 28)
         Me.HowToToolStripMenuItem.Text = "How To"
-        '
-        'TableBindingSource
-        '
-        Me.TableBindingSource.DataMember = "Table"
-        Me.TableBindingSource.DataSource = Me.EduTrackDBDS
         '
         'TableTableAdapter
         '
@@ -330,93 +383,9 @@ Partial Class frmDelete
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.StudentRecordsTableAdapter = Nothing
         Me.TableAdapterManager.TableTableAdapter = Me.TableTableAdapter
         Me.TableAdapterManager.UpdateOrder = EduTrack.EduTrackDBDSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'EduTrackDBDS
-        '
-        Me.EduTrackDBDS.DataSetName = "EduTrackDBDS"
-        Me.EduTrackDBDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'UserIDDataGridViewTextBoxColumn
-        '
-        Me.UserIDDataGridViewTextBoxColumn.DataPropertyName = "UserID"
-        Me.UserIDDataGridViewTextBoxColumn.HeaderText = "UserID"
-        Me.UserIDDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.UserIDDataGridViewTextBoxColumn.Name = "UserIDDataGridViewTextBoxColumn"
-        Me.UserIDDataGridViewTextBoxColumn.Width = 125
-        '
-        'PasswordDataGridViewTextBoxColumn
-        '
-        Me.PasswordDataGridViewTextBoxColumn.DataPropertyName = "Password"
-        Me.PasswordDataGridViewTextBoxColumn.HeaderText = "Password"
-        Me.PasswordDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.PasswordDataGridViewTextBoxColumn.Name = "PasswordDataGridViewTextBoxColumn"
-        Me.PasswordDataGridViewTextBoxColumn.Width = 125
-        '
-        'FirstNameDataGridViewTextBoxColumn
-        '
-        Me.FirstNameDataGridViewTextBoxColumn.DataPropertyName = "First Name"
-        Me.FirstNameDataGridViewTextBoxColumn.HeaderText = "First Name"
-        Me.FirstNameDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.FirstNameDataGridViewTextBoxColumn.Name = "FirstNameDataGridViewTextBoxColumn"
-        Me.FirstNameDataGridViewTextBoxColumn.Width = 125
-        '
-        'LastNameDataGridViewTextBoxColumn
-        '
-        Me.LastNameDataGridViewTextBoxColumn.DataPropertyName = "Last Name"
-        Me.LastNameDataGridViewTextBoxColumn.HeaderText = "Last Name"
-        Me.LastNameDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.LastNameDataGridViewTextBoxColumn.Name = "LastNameDataGridViewTextBoxColumn"
-        Me.LastNameDataGridViewTextBoxColumn.Width = 125
-        '
-        'DOBDataGridViewTextBoxColumn
-        '
-        Me.DOBDataGridViewTextBoxColumn.DataPropertyName = "DOB"
-        Me.DOBDataGridViewTextBoxColumn.HeaderText = "DOB"
-        Me.DOBDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.DOBDataGridViewTextBoxColumn.Name = "DOBDataGridViewTextBoxColumn"
-        Me.DOBDataGridViewTextBoxColumn.Width = 125
-        '
-        'GenderDataGridViewTextBoxColumn
-        '
-        Me.GenderDataGridViewTextBoxColumn.DataPropertyName = "Gender"
-        Me.GenderDataGridViewTextBoxColumn.HeaderText = "Gender"
-        Me.GenderDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.GenderDataGridViewTextBoxColumn.Name = "GenderDataGridViewTextBoxColumn"
-        Me.GenderDataGridViewTextBoxColumn.Width = 125
-        '
-        'CountryDataGridViewTextBoxColumn
-        '
-        Me.CountryDataGridViewTextBoxColumn.DataPropertyName = "Country"
-        Me.CountryDataGridViewTextBoxColumn.HeaderText = "Country"
-        Me.CountryDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.CountryDataGridViewTextBoxColumn.Name = "CountryDataGridViewTextBoxColumn"
-        Me.CountryDataGridViewTextBoxColumn.Width = 125
-        '
-        'PhoneNumberDataGridViewTextBoxColumn
-        '
-        Me.PhoneNumberDataGridViewTextBoxColumn.DataPropertyName = "Phone Number"
-        Me.PhoneNumberDataGridViewTextBoxColumn.HeaderText = "Phone Number"
-        Me.PhoneNumberDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.PhoneNumberDataGridViewTextBoxColumn.Name = "PhoneNumberDataGridViewTextBoxColumn"
-        Me.PhoneNumberDataGridViewTextBoxColumn.Width = 125
-        '
-        'RoleDataGridViewTextBoxColumn
-        '
-        Me.RoleDataGridViewTextBoxColumn.DataPropertyName = "Role"
-        Me.RoleDataGridViewTextBoxColumn.HeaderText = "Role"
-        Me.RoleDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.RoleDataGridViewTextBoxColumn.Name = "RoleDataGridViewTextBoxColumn"
-        Me.RoleDataGridViewTextBoxColumn.Width = 125
-        '
-        'IsActivatedDataGridViewCheckBoxColumn
-        '
-        Me.IsActivatedDataGridViewCheckBoxColumn.DataPropertyName = "IsActivated"
-        Me.IsActivatedDataGridViewCheckBoxColumn.HeaderText = "IsActivated"
-        Me.IsActivatedDataGridViewCheckBoxColumn.MinimumWidth = 6
-        Me.IsActivatedDataGridViewCheckBoxColumn.Name = "IsActivatedDataGridViewCheckBoxColumn"
-        Me.IsActivatedDataGridViewCheckBoxColumn.Width = 125
         '
         'frmDelete
         '
@@ -436,13 +405,13 @@ Partial Class frmDelete
         Me.Text = "Delete Records"
         CType(Me.imgEdu, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvMainRecords, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EduTrackDBDS, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BindingNavigator1.ResumeLayout(False)
         Me.BindingNavigator1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EduTrackDBDS, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -468,11 +437,7 @@ Partial Class frmDelete
     Friend WithEvents ToolStripButton1 As ToolStripButton
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EditRecordToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutUsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem

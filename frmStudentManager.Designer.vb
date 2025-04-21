@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmStudentManager
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,16 +20,14 @@ Partial Class frmStudentManager
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmStudentManager))
         Me.lblStudent = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutUsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -82,10 +80,9 @@ Partial Class frmStudentManager
         Me.lblStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblStudent.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblStudent.Location = New System.Drawing.Point(108, 46)
-        Me.lblStudent.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblStudent.Location = New System.Drawing.Point(144, 57)
         Me.lblStudent.Name = "lblStudent"
-        Me.lblStudent.Size = New System.Drawing.Size(273, 40)
+        Me.lblStudent.Size = New System.Drawing.Size(364, 49)
         Me.lblStudent.TabIndex = 43
         Me.lblStudent.Text = "Student Manager"
         Me.lblStudent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -95,44 +92,29 @@ Partial Class frmStudentManager
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.Color.Teal
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.OptionsToolStripMenuItem, Me.AboutToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1209, 29)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1612, 36)
         Me.MenuStrip1.TabIndex = 45
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HomeToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FileToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.FileToolStripMenuItem.Margin = New System.Windows.Forms.Padding(0, 0, 50, 0)
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(40, 25)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(50, 32)
         Me.FileToolStripMenuItem.Text = "File"
-        '
-        'HomeToolStripMenuItem
-        '
-        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
-        Me.HomeToolStripMenuItem.Text = "Home"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(224, 28)
         Me.ExitToolStripMenuItem.Text = "Exit"
-        '
-        'OptionsToolStripMenuItem
-        '
-        Me.OptionsToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OptionsToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.OptionsToolStripMenuItem.Margin = New System.Windows.Forms.Padding(0, 0, 50, 0)
-        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(68, 25)
-        Me.OptionsToolStripMenuItem.Text = "Options"
         '
         'AboutToolStripMenuItem
         '
@@ -140,19 +122,19 @@ Partial Class frmStudentManager
         Me.AboutToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AboutToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(58, 25)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(71, 32)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(224, 28)
         Me.AboutUsToolStripMenuItem.Text = "About Us"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(224, 28)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'lblEdu
@@ -162,10 +144,9 @@ Partial Class frmStudentManager
         Me.lblEdu.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.lblEdu.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEdu.ForeColor = System.Drawing.Color.White
-        Me.lblEdu.Location = New System.Drawing.Point(1052, 0)
-        Me.lblEdu.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblEdu.Location = New System.Drawing.Point(1403, 0)
         Me.lblEdu.Name = "lblEdu"
-        Me.lblEdu.Size = New System.Drawing.Size(100, 29)
+        Me.lblEdu.Size = New System.Drawing.Size(133, 36)
         Me.lblEdu.TabIndex = 48
         Me.lblEdu.Text = "EduTrack"
         Me.lblEdu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -178,9 +159,10 @@ Partial Class frmStudentManager
         Me.btnSave.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSave.Image = Global.EduTrack.My.Resources.Resources.diskette
         Me.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSave.Location = New System.Drawing.Point(44, 197)
+        Me.btnSave.Location = New System.Drawing.Point(59, 242)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(102, 46)
+        Me.btnSave.Size = New System.Drawing.Size(136, 57)
         Me.btnSave.TabIndex = 50
         Me.btnSave.Text = "  Save"
         Me.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -195,9 +177,10 @@ Partial Class frmStudentManager
         Me.btnEdit.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEdit.Image = Global.EduTrack.My.Resources.Resources.check1
         Me.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEdit.Location = New System.Drawing.Point(10, 118)
+        Me.btnEdit.Location = New System.Drawing.Point(13, 145)
+        Me.btnEdit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Size = New System.Drawing.Size(167, 50)
+        Me.btnEdit.Size = New System.Drawing.Size(223, 62)
         Me.btnEdit.TabIndex = 49
         Me.btnEdit.Text = "Edit Student Record"
         Me.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -208,9 +191,10 @@ Partial Class frmStudentManager
         Me.imgEdu.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.imgEdu.BackgroundImage = Global.EduTrack.My.Resources.Resources.edu
         Me.imgEdu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.imgEdu.Location = New System.Drawing.Point(43, 33)
+        Me.imgEdu.Location = New System.Drawing.Point(57, 41)
+        Me.imgEdu.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.imgEdu.Name = "imgEdu"
-        Me.imgEdu.Size = New System.Drawing.Size(77, 69)
+        Me.imgEdu.Size = New System.Drawing.Size(103, 85)
         Me.imgEdu.TabIndex = 44
         Me.imgEdu.TabStop = False
         '
@@ -221,10 +205,9 @@ Partial Class frmStudentManager
         Me.lblFName.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblFName.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblFName.Location = New System.Drawing.Point(226, 139)
-        Me.lblFName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblFName.Location = New System.Drawing.Point(301, 171)
         Me.lblFName.Name = "lblFName"
-        Me.lblFName.Size = New System.Drawing.Size(130, 29)
+        Me.lblFName.Size = New System.Drawing.Size(173, 36)
         Me.lblFName.TabIndex = 52
         Me.lblFName.Text = "First Name:"
         Me.lblFName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -236,10 +219,9 @@ Partial Class frmStudentManager
         Me.lblLName.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblLName.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblLName.Location = New System.Drawing.Point(226, 214)
-        Me.lblLName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLName.Location = New System.Drawing.Point(301, 263)
         Me.lblLName.Name = "lblLName"
-        Me.lblLName.Size = New System.Drawing.Size(130, 29)
+        Me.lblLName.Size = New System.Drawing.Size(173, 36)
         Me.lblLName.TabIndex = 53
         Me.lblLName.Text = "Last Name:"
         Me.lblLName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -251,10 +233,9 @@ Partial Class frmStudentManager
         Me.lblPhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPhone.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPhone.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblPhone.Location = New System.Drawing.Point(554, 138)
-        Me.lblPhone.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblPhone.Location = New System.Drawing.Point(739, 170)
         Me.lblPhone.Name = "lblPhone"
-        Me.lblPhone.Size = New System.Drawing.Size(92, 29)
+        Me.lblPhone.Size = New System.Drawing.Size(123, 36)
         Me.lblPhone.TabIndex = 54
         Me.lblPhone.Text = "Phone:"
         Me.lblPhone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -266,10 +247,9 @@ Partial Class frmStudentManager
         Me.lblAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblAddress.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblAddress.Location = New System.Drawing.Point(543, 213)
-        Me.lblAddress.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblAddress.Location = New System.Drawing.Point(724, 262)
         Me.lblAddress.Name = "lblAddress"
-        Me.lblAddress.Size = New System.Drawing.Size(92, 29)
+        Me.lblAddress.Size = New System.Drawing.Size(123, 36)
         Me.lblAddress.TabIndex = 55
         Me.lblAddress.Text = "Address:"
         Me.lblAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -281,10 +261,9 @@ Partial Class frmStudentManager
         Me.lblDOB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblDOB.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDOB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblDOB.Location = New System.Drawing.Point(797, 138)
-        Me.lblDOB.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblDOB.Location = New System.Drawing.Point(1063, 170)
         Me.lblDOB.Name = "lblDOB"
-        Me.lblDOB.Size = New System.Drawing.Size(111, 29)
+        Me.lblDOB.Size = New System.Drawing.Size(148, 36)
         Me.lblDOB.TabIndex = 56
         Me.lblDOB.Text = "Date Of Birth:"
         Me.lblDOB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -296,10 +275,9 @@ Partial Class frmStudentManager
         Me.lblGender.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblGender.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblGender.Location = New System.Drawing.Point(838, 213)
-        Me.lblGender.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblGender.Location = New System.Drawing.Point(1117, 262)
         Me.lblGender.Name = "lblGender"
-        Me.lblGender.Size = New System.Drawing.Size(70, 29)
+        Me.lblGender.Size = New System.Drawing.Size(93, 36)
         Me.lblGender.TabIndex = 57
         Me.lblGender.Text = "Gender:"
         Me.lblGender.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -308,42 +286,47 @@ Partial Class frmStudentManager
         '
         Me.dtpStudent.CustomFormat = "dd-MM-YYYY"
         Me.dtpStudent.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpStudent.Location = New System.Drawing.Point(902, 139)
+        Me.dtpStudent.Location = New System.Drawing.Point(1203, 171)
+        Me.dtpStudent.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpStudent.Name = "dtpStudent"
-        Me.dtpStudent.Size = New System.Drawing.Size(250, 29)
+        Me.dtpStudent.Size = New System.Drawing.Size(332, 34)
         Me.dtpStudent.TabIndex = 58
         '
         'txtFName
         '
         Me.txtFName.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFName.Location = New System.Drawing.Point(340, 143)
+        Me.txtFName.Location = New System.Drawing.Point(453, 176)
+        Me.txtFName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtFName.Name = "txtFName"
-        Me.txtFName.Size = New System.Drawing.Size(137, 25)
+        Me.txtFName.Size = New System.Drawing.Size(181, 29)
         Me.txtFName.TabIndex = 60
         '
         'txtLName
         '
         Me.txtLName.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLName.Location = New System.Drawing.Point(340, 218)
+        Me.txtLName.Location = New System.Drawing.Point(453, 268)
+        Me.txtLName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtLName.Name = "txtLName"
-        Me.txtLName.Size = New System.Drawing.Size(137, 25)
+        Me.txtLName.Size = New System.Drawing.Size(181, 29)
         Me.txtLName.TabIndex = 61
         '
         'txtAddress
         '
         Me.txtAddress.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAddress.Location = New System.Drawing.Point(625, 217)
+        Me.txtAddress.Location = New System.Drawing.Point(833, 267)
+        Me.txtAddress.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(137, 25)
+        Me.txtAddress.Size = New System.Drawing.Size(181, 29)
         Me.txtAddress.TabIndex = 63
         '
         'clbCourses
         '
         Me.clbCourses.FormattingEnabled = True
         Me.clbCourses.Items.AddRange(New Object() {"ComputerScience", "Biology", "Bio/Chem", "Accounting", "Math/Physics", "Bio/Math", "PrimaryEd"})
-        Me.clbCourses.Location = New System.Drawing.Point(483, 275)
+        Me.clbCourses.Location = New System.Drawing.Point(644, 338)
+        Me.clbCourses.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.clbCourses.Name = "clbCourses"
-        Me.clbCourses.Size = New System.Drawing.Size(210, 109)
+        Me.clbCourses.Size = New System.Drawing.Size(279, 123)
         Me.clbCourses.TabIndex = 66
         Me.clbCourses.Visible = False
         '
@@ -355,9 +338,10 @@ Partial Class frmStudentManager
         Me.btnCourses.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCourses.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCourses.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCourses.Location = New System.Drawing.Point(340, 270)
+        Me.btnCourses.Location = New System.Drawing.Point(453, 332)
+        Me.btnCourses.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCourses.Name = "btnCourses"
-        Me.btnCourses.Size = New System.Drawing.Size(137, 30)
+        Me.btnCourses.Size = New System.Drawing.Size(183, 37)
         Me.btnCourses.TabIndex = 67
         Me.btnCourses.Text = "Show Courses"
         Me.btnCourses.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -369,10 +353,11 @@ Partial Class frmStudentManager
         Me.dgvStudentRecord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvStudentRecord.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.StudentIDDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DOBDataGridViewTextBoxColumn, Me.GenderDataGridViewTextBoxColumn, Me.AddressDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn3, Me.StudentEmailDataGridViewTextBoxColumn, Me.CoursesDataGridViewTextBoxColumn})
         Me.dgvStudentRecord.DataSource = Me.StudentRecordsBindingSource
-        Me.dgvStudentRecord.Location = New System.Drawing.Point(10, 442)
+        Me.dgvStudentRecord.Location = New System.Drawing.Point(13, 544)
+        Me.dgvStudentRecord.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvStudentRecord.Name = "dgvStudentRecord"
         Me.dgvStudentRecord.RowHeadersWidth = 51
-        Me.dgvStudentRecord.Size = New System.Drawing.Size(1174, 279)
+        Me.dgvStudentRecord.Size = New System.Drawing.Size(1565, 343)
         Me.dgvStudentRecord.TabIndex = 46
         '
         'StudentIDDataGridViewTextBoxColumn
@@ -464,10 +449,9 @@ Partial Class frmStudentManager
         Me.lblStudentEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblStudentEmail.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblStudentEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblStudentEmail.Location = New System.Drawing.Point(752, 275)
-        Me.lblStudentEmail.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblStudentEmail.Location = New System.Drawing.Point(1003, 338)
         Me.lblStudentEmail.Name = "lblStudentEmail"
-        Me.lblStudentEmail.Size = New System.Drawing.Size(112, 29)
+        Me.lblStudentEmail.Size = New System.Drawing.Size(149, 36)
         Me.lblStudentEmail.TabIndex = 69
         Me.lblStudentEmail.Text = "Student Email:"
         Me.lblStudentEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -475,11 +459,11 @@ Partial Class frmStudentManager
         'msktxtStudentEmail
         '
         Me.msktxtStudentEmail.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.msktxtStudentEmail.Location = New System.Drawing.Point(842, 271)
-        Me.msktxtStudentEmail.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.msktxtStudentEmail.Location = New System.Drawing.Point(1123, 334)
+        Me.msktxtStudentEmail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.msktxtStudentEmail.Mask = "aaaaaa00@aaa"
         Me.msktxtStudentEmail.Name = "msktxtStudentEmail"
-        Me.msktxtStudentEmail.Size = New System.Drawing.Size(145, 29)
+        Me.msktxtStudentEmail.Size = New System.Drawing.Size(192, 34)
         Me.msktxtStudentEmail.TabIndex = 70
         '
         'lstGender
@@ -487,12 +471,12 @@ Partial Class frmStudentManager
         Me.lstGender.Cursor = System.Windows.Forms.Cursors.Default
         Me.lstGender.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.lstGender.FormattingEnabled = True
-        Me.lstGender.ItemHeight = 21
+        Me.lstGender.ItemHeight = 28
         Me.lstGender.Items.AddRange(New Object() {"Male", "Female"})
-        Me.lstGender.Location = New System.Drawing.Point(902, 218)
-        Me.lstGender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.lstGender.Location = New System.Drawing.Point(1203, 268)
+        Me.lstGender.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.lstGender.Name = "lstGender"
-        Me.lstGender.Size = New System.Drawing.Size(190, 25)
+        Me.lstGender.Size = New System.Drawing.Size(252, 32)
         Me.lstGender.TabIndex = 71
         '
         'StudentRecordsTableAdapter
@@ -502,19 +486,19 @@ Partial Class frmStudentManager
         'msktxtPhone
         '
         Me.msktxtPhone.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.msktxtPhone.Location = New System.Drawing.Point(625, 139)
-        Me.msktxtPhone.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.msktxtPhone.Location = New System.Drawing.Point(833, 171)
+        Me.msktxtPhone.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.msktxtPhone.Mask = "000-0000"
         Me.msktxtPhone.Name = "msktxtPhone"
-        Me.msktxtPhone.Size = New System.Drawing.Size(111, 29)
+        Me.msktxtPhone.Size = New System.Drawing.Size(147, 34)
         Me.msktxtPhone.TabIndex = 72
         '
         'frmStudentManager
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1209, 687)
+        Me.ClientSize = New System.Drawing.Size(1612, 846)
         Me.Controls.Add(Me.msktxtPhone)
         Me.Controls.Add(Me.lstGender)
         Me.Controls.Add(Me.msktxtStudentEmail)
@@ -539,6 +523,7 @@ Partial Class frmStudentManager
         Me.Controls.Add(Me.imgEdu)
         Me.Controls.Add(Me.lblStudent)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmStudentManager"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Student Manager"
@@ -558,9 +543,7 @@ Partial Class frmStudentManager
     Friend WithEvents lblStudent As Label
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutUsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
