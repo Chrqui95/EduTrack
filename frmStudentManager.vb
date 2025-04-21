@@ -15,10 +15,15 @@ Public Class frmStudentManager
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         ' Ensure a row is selected
+
         If dgvStudentRecord.SelectedRows.Count > 0 Then
             ' Get the selected row
             Dim row As DataGridViewRow = dgvStudentRecord.SelectedRows(0)
-
+            ' Skip the row if it's a new row (usually the last empty one)
+            If row.IsNewRow Then
+                MessageBox.Show("Selected row is empty. Please select a valid record.", "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return
+            End If
             Try
                 selectedUserID = row.Cells(0).Value.ToString()
                 txtFName.Text = row.Cells(1).Value.ToString()
@@ -66,7 +71,7 @@ Public Class frmStudentManager
         Dim courses As String = String.Join(", ", clbCourses.CheckedItems.Cast(Of String)())
 
         ' Establish connection string
-        Dim connStr As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackStudentRecordDB.mdf;Integrated Security=True"
+        Dim connStr As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
 
         Try
             ' Open connection to the database
