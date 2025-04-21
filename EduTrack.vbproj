@@ -109,16 +109,16 @@
     <Compile Include="frmDelete.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAttendanceView.Designer.vb">
-      <DependentUpon>frmAttendanceView.vb</DependentUpon>
+    <Compile Include="frmMainRecordView.Designer.vb">
+      <DependentUpon>frmMainRecordView.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmAttendanceView.vb">
+    <Compile Include="frmMainRecordView.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGradeManager.Designer.vb">
-      <DependentUpon>frmGradeManager.vb</DependentUpon>
+    <Compile Include="frmCreateMain.Designer.vb">
+      <DependentUpon>frmCreateMain.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmGradeManager.vb">
+    <Compile Include="frmCreateMain.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.Designer.vb">
@@ -188,11 +188,11 @@
     <EmbeddedResource Include="frmDelete.resx">
       <DependentUpon>frmDelete.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAttendanceView.resx">
-      <DependentUpon>frmAttendanceView.vb</DependentUpon>
+    <EmbeddedResource Include="frmMainRecordView.resx">
+      <DependentUpon>frmMainRecordView.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGradeManager.resx">
-      <DependentUpon>frmGradeManager.vb</DependentUpon>
+    <EmbeddedResource Include="frmCreateMain.resx">
+      <DependentUpon>frmCreateMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>

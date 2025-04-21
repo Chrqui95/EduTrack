@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmMain
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
@@ -37,36 +37,36 @@ Partial Class frmMain
         Me.AboutUsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HowToToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.pnlViewGrades = New System.Windows.Forms.Panel()
+        Me.pnlViewAllRecords = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnStudentGrades = New System.Windows.Forms.Button()
-        Me.pnlViewAttendance = New System.Windows.Forms.Panel()
+        Me.btnViewAllRecords = New System.Windows.Forms.Button()
+        Me.pnlEditMainRecords = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.btnTeacherGrades = New System.Windows.Forms.Button()
-        Me.btnStudentAttendance = New System.Windows.Forms.Button()
+        Me.btnEditMainRecords = New System.Windows.Forms.Button()
         Me.pnlDelete = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.pnlAccount = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.btnStudentSettings = New System.Windows.Forms.Button()
+        Me.btnMyAccount = New System.Windows.Forms.Button()
         Me.EduTrackDBDS = New EduTrack.EduTrackDBDS()
         Me.EduTrackDBDSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.pnlMngStudent = New System.Windows.Forms.Panel()
+        Me.pnlEditStudentRecords = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.btnStudentManager = New System.Windows.Forms.Button()
+        Me.btnEditStudentRecords = New System.Windows.Forms.Button()
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.pnlMngGrades = New System.Windows.Forms.Panel()
+        Me.pnlCreateNewRecords = New System.Windows.Forms.Panel()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.btnTeacherGrade = New System.Windows.Forms.Button()
+        Me.btnCreateNewRecords = New System.Windows.Forms.Button()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.btnAccount = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
-        Me.pnlViewGrades.SuspendLayout()
+        Me.pnlViewAllRecords.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlViewAttendance.SuspendLayout()
+        Me.pnlEditMainRecords.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,9 +76,9 @@ Partial Class frmMain
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EduTrackDBDS, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EduTrackDBDSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlMngStudent.SuspendLayout()
+        Me.pnlEditStudentRecords.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlMngGrades.SuspendLayout()
+        Me.pnlCreateNewRecords.SuspendLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -90,7 +90,7 @@ Partial Class frmMain
         Me.lblWelcome.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.lblWelcome.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblWelcome.Location = New System.Drawing.Point(484, 398)
+        Me.lblWelcome.Location = New System.Drawing.Point(532, 187)
         Me.lblWelcome.Name = "lblWelcome"
         Me.lblWelcome.Size = New System.Drawing.Size(263, 28)
         Me.lblWelcome.TabIndex = 30
@@ -187,16 +187,16 @@ Partial Class frmMain
         Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(165, 28)
         Me.HowToToolStripMenuItem.Text = "How To"
         '
-        'pnlViewGrades
+        'pnlViewAllRecords
         '
-        Me.pnlViewGrades.BackColor = System.Drawing.Color.Gainsboro
-        Me.pnlViewGrades.Controls.Add(Me.PictureBox1)
-        Me.pnlViewGrades.Controls.Add(Me.btnStudentGrades)
-        Me.pnlViewGrades.Location = New System.Drawing.Point(29, 460)
-        Me.pnlViewGrades.Margin = New System.Windows.Forms.Padding(4)
-        Me.pnlViewGrades.Name = "pnlViewGrades"
-        Me.pnlViewGrades.Size = New System.Drawing.Size(303, 186)
-        Me.pnlViewGrades.TabIndex = 31
+        Me.pnlViewAllRecords.BackColor = System.Drawing.Color.Gainsboro
+        Me.pnlViewAllRecords.Controls.Add(Me.PictureBox1)
+        Me.pnlViewAllRecords.Controls.Add(Me.btnViewAllRecords)
+        Me.pnlViewAllRecords.Location = New System.Drawing.Point(29, 460)
+        Me.pnlViewAllRecords.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlViewAllRecords.Name = "pnlViewAllRecords"
+        Me.pnlViewAllRecords.Size = New System.Drawing.Size(303, 186)
+        Me.pnlViewAllRecords.TabIndex = 31
         '
         'PictureBox1
         '
@@ -209,31 +209,31 @@ Partial Class frmMain
         Me.PictureBox1.TabIndex = 38
         Me.PictureBox1.TabStop = False
         '
-        'btnStudentGrades
+        'btnViewAllRecords
         '
-        Me.btnStudentGrades.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
-        Me.btnStudentGrades.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnStudentGrades.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStudentGrades.ForeColor = System.Drawing.Color.White
-        Me.btnStudentGrades.Location = New System.Drawing.Point(23, 114)
-        Me.btnStudentGrades.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnStudentGrades.Name = "btnStudentGrades"
-        Me.btnStudentGrades.Size = New System.Drawing.Size(256, 54)
-        Me.btnStudentGrades.TabIndex = 37
-        Me.btnStudentGrades.Text = "View Grades"
-        Me.btnStudentGrades.UseVisualStyleBackColor = False
+        Me.btnViewAllRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
+        Me.btnViewAllRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnViewAllRecords.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnViewAllRecords.ForeColor = System.Drawing.Color.White
+        Me.btnViewAllRecords.Location = New System.Drawing.Point(23, 114)
+        Me.btnViewAllRecords.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnViewAllRecords.Name = "btnViewAllRecords"
+        Me.btnViewAllRecords.Size = New System.Drawing.Size(256, 54)
+        Me.btnViewAllRecords.TabIndex = 37
+        Me.btnViewAllRecords.Text = "View All Records"
+        Me.btnViewAllRecords.UseVisualStyleBackColor = False
         '
-        'pnlViewAttendance
+        'pnlEditMainRecords
         '
-        Me.pnlViewAttendance.BackColor = System.Drawing.Color.Gainsboro
-        Me.pnlViewAttendance.Controls.Add(Me.PictureBox2)
-        Me.pnlViewAttendance.Controls.Add(Me.Panel7)
-        Me.pnlViewAttendance.Controls.Add(Me.btnStudentAttendance)
-        Me.pnlViewAttendance.Location = New System.Drawing.Point(0, 0)
-        Me.pnlViewAttendance.Margin = New System.Windows.Forms.Padding(4)
-        Me.pnlViewAttendance.Name = "pnlViewAttendance"
-        Me.pnlViewAttendance.Size = New System.Drawing.Size(303, 186)
-        Me.pnlViewAttendance.TabIndex = 32
+        Me.pnlEditMainRecords.BackColor = System.Drawing.Color.Gainsboro
+        Me.pnlEditMainRecords.Controls.Add(Me.PictureBox2)
+        Me.pnlEditMainRecords.Controls.Add(Me.Panel7)
+        Me.pnlEditMainRecords.Controls.Add(Me.btnEditMainRecords)
+        Me.pnlEditMainRecords.Location = New System.Drawing.Point(938, 187)
+        Me.pnlEditMainRecords.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlEditMainRecords.Name = "pnlEditMainRecords"
+        Me.pnlEditMainRecords.Size = New System.Drawing.Size(303, 186)
+        Me.pnlEditMainRecords.TabIndex = 32
         '
         'PictureBox2
         '
@@ -282,24 +282,23 @@ Partial Class frmMain
         Me.btnTeacherGrades.Text = "Manage Grades"
         Me.btnTeacherGrades.UseVisualStyleBackColor = False
         '
-        'btnStudentAttendance
+        'btnEditMainRecords
         '
-        Me.btnStudentAttendance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
-        Me.btnStudentAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnStudentAttendance.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStudentAttendance.ForeColor = System.Drawing.Color.White
-        Me.btnStudentAttendance.Location = New System.Drawing.Point(24, 114)
-        Me.btnStudentAttendance.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnStudentAttendance.Name = "btnStudentAttendance"
-        Me.btnStudentAttendance.Size = New System.Drawing.Size(256, 54)
-        Me.btnStudentAttendance.TabIndex = 37
-        Me.btnStudentAttendance.Text = "View Attendance"
-        Me.btnStudentAttendance.UseVisualStyleBackColor = False
+        Me.btnEditMainRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
+        Me.btnEditMainRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEditMainRecords.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEditMainRecords.ForeColor = System.Drawing.Color.White
+        Me.btnEditMainRecords.Location = New System.Drawing.Point(24, 114)
+        Me.btnEditMainRecords.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnEditMainRecords.Name = "btnEditMainRecords"
+        Me.btnEditMainRecords.Size = New System.Drawing.Size(256, 54)
+        Me.btnEditMainRecords.TabIndex = 37
+        Me.btnEditMainRecords.Text = "Edit Main Records"
+        Me.btnEditMainRecords.UseVisualStyleBackColor = False
         '
         'pnlDelete
         '
         Me.pnlDelete.BackColor = System.Drawing.Color.Gainsboro
-        Me.pnlDelete.Controls.Add(Me.pnlViewAttendance)
         Me.pnlDelete.Controls.Add(Me.PictureBox5)
         Me.pnlDelete.Controls.Add(Me.btnDelete)
         Me.pnlDelete.Location = New System.Drawing.Point(29, 187)
@@ -337,8 +336,8 @@ Partial Class frmMain
         '
         Me.pnlAccount.BackColor = System.Drawing.Color.Gainsboro
         Me.pnlAccount.Controls.Add(Me.PictureBox3)
-        Me.pnlAccount.Controls.Add(Me.btnStudentSettings)
-        Me.pnlAccount.Location = New System.Drawing.Point(938, 187)
+        Me.pnlAccount.Controls.Add(Me.btnMyAccount)
+        Me.pnlAccount.Location = New System.Drawing.Point(492, 285)
         Me.pnlAccount.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlAccount.Name = "pnlAccount"
         Me.pnlAccount.Size = New System.Drawing.Size(303, 186)
@@ -355,19 +354,19 @@ Partial Class frmMain
         Me.PictureBox3.TabIndex = 39
         Me.PictureBox3.TabStop = False
         '
-        'btnStudentSettings
+        'btnMyAccount
         '
-        Me.btnStudentSettings.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
-        Me.btnStudentSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnStudentSettings.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStudentSettings.ForeColor = System.Drawing.Color.White
-        Me.btnStudentSettings.Location = New System.Drawing.Point(21, 114)
-        Me.btnStudentSettings.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnStudentSettings.Name = "btnStudentSettings"
-        Me.btnStudentSettings.Size = New System.Drawing.Size(256, 54)
-        Me.btnStudentSettings.TabIndex = 37
-        Me.btnStudentSettings.Text = "My Account"
-        Me.btnStudentSettings.UseVisualStyleBackColor = False
+        Me.btnMyAccount.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
+        Me.btnMyAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMyAccount.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMyAccount.ForeColor = System.Drawing.Color.White
+        Me.btnMyAccount.Location = New System.Drawing.Point(21, 114)
+        Me.btnMyAccount.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMyAccount.Name = "btnMyAccount"
+        Me.btnMyAccount.Size = New System.Drawing.Size(256, 54)
+        Me.btnMyAccount.TabIndex = 37
+        Me.btnMyAccount.Text = "My Account"
+        Me.btnMyAccount.UseVisualStyleBackColor = False
         '
         'EduTrackDBDS
         '
@@ -379,16 +378,16 @@ Partial Class frmMain
         Me.EduTrackDBDSBindingSource.DataSource = Me.EduTrackDBDS
         Me.EduTrackDBDSBindingSource.Position = 0
         '
-        'pnlMngStudent
+        'pnlEditStudentRecords
         '
-        Me.pnlMngStudent.BackColor = System.Drawing.Color.Gainsboro
-        Me.pnlMngStudent.Controls.Add(Me.PictureBox4)
-        Me.pnlMngStudent.Controls.Add(Me.btnStudentManager)
-        Me.pnlMngStudent.Location = New System.Drawing.Point(938, 460)
-        Me.pnlMngStudent.Margin = New System.Windows.Forms.Padding(4)
-        Me.pnlMngStudent.Name = "pnlMngStudent"
-        Me.pnlMngStudent.Size = New System.Drawing.Size(303, 186)
-        Me.pnlMngStudent.TabIndex = 39
+        Me.pnlEditStudentRecords.BackColor = System.Drawing.Color.Gainsboro
+        Me.pnlEditStudentRecords.Controls.Add(Me.PictureBox4)
+        Me.pnlEditStudentRecords.Controls.Add(Me.btnEditStudentRecords)
+        Me.pnlEditStudentRecords.Location = New System.Drawing.Point(938, 460)
+        Me.pnlEditStudentRecords.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlEditStudentRecords.Name = "pnlEditStudentRecords"
+        Me.pnlEditStudentRecords.Size = New System.Drawing.Size(303, 186)
+        Me.pnlEditStudentRecords.TabIndex = 39
         '
         'PictureBox4
         '
@@ -401,19 +400,19 @@ Partial Class frmMain
         Me.PictureBox4.TabIndex = 39
         Me.PictureBox4.TabStop = False
         '
-        'btnStudentManager
+        'btnEditStudentRecords
         '
-        Me.btnStudentManager.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
-        Me.btnStudentManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnStudentManager.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStudentManager.ForeColor = System.Drawing.Color.White
-        Me.btnStudentManager.Location = New System.Drawing.Point(24, 114)
-        Me.btnStudentManager.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnStudentManager.Name = "btnStudentManager"
-        Me.btnStudentManager.Size = New System.Drawing.Size(256, 54)
-        Me.btnStudentManager.TabIndex = 37
-        Me.btnStudentManager.Text = "Student Manager"
-        Me.btnStudentManager.UseVisualStyleBackColor = False
+        Me.btnEditStudentRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
+        Me.btnEditStudentRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEditStudentRecords.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEditStudentRecords.ForeColor = System.Drawing.Color.White
+        Me.btnEditStudentRecords.Location = New System.Drawing.Point(24, 114)
+        Me.btnEditStudentRecords.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnEditStudentRecords.Name = "btnEditStudentRecords"
+        Me.btnEditStudentRecords.Size = New System.Drawing.Size(256, 54)
+        Me.btnEditStudentRecords.TabIndex = 37
+        Me.btnEditStudentRecords.Text = "Edit Student Records"
+        Me.btnEditStudentRecords.UseVisualStyleBackColor = False
         '
         'lblTitle
         '
@@ -429,16 +428,16 @@ Partial Class frmMain
         Me.lblTitle.Text = "EduTrack"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'pnlMngGrades
+        'pnlCreateNewRecords
         '
-        Me.pnlMngGrades.BackColor = System.Drawing.Color.Gainsboro
-        Me.pnlMngGrades.Controls.Add(Me.PictureBox8)
-        Me.pnlMngGrades.Controls.Add(Me.btnTeacherGrade)
-        Me.pnlMngGrades.Location = New System.Drawing.Point(29, 460)
-        Me.pnlMngGrades.Margin = New System.Windows.Forms.Padding(4)
-        Me.pnlMngGrades.Name = "pnlMngGrades"
-        Me.pnlMngGrades.Size = New System.Drawing.Size(303, 186)
-        Me.pnlMngGrades.TabIndex = 42
+        Me.pnlCreateNewRecords.BackColor = System.Drawing.Color.Gainsboro
+        Me.pnlCreateNewRecords.Controls.Add(Me.PictureBox8)
+        Me.pnlCreateNewRecords.Controls.Add(Me.btnCreateNewRecords)
+        Me.pnlCreateNewRecords.Location = New System.Drawing.Point(492, 510)
+        Me.pnlCreateNewRecords.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlCreateNewRecords.Name = "pnlCreateNewRecords"
+        Me.pnlCreateNewRecords.Size = New System.Drawing.Size(303, 186)
+        Me.pnlCreateNewRecords.TabIndex = 42
         '
         'PictureBox8
         '
@@ -451,19 +450,19 @@ Partial Class frmMain
         Me.PictureBox8.TabIndex = 38
         Me.PictureBox8.TabStop = False
         '
-        'btnTeacherGrade
+        'btnCreateNewRecords
         '
-        Me.btnTeacherGrade.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
-        Me.btnTeacherGrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTeacherGrade.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTeacherGrade.ForeColor = System.Drawing.Color.White
-        Me.btnTeacherGrade.Location = New System.Drawing.Point(23, 114)
-        Me.btnTeacherGrade.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnTeacherGrade.Name = "btnTeacherGrade"
-        Me.btnTeacherGrade.Size = New System.Drawing.Size(256, 54)
-        Me.btnTeacherGrade.TabIndex = 37
-        Me.btnTeacherGrade.Text = "Manage Grades"
-        Me.btnTeacherGrade.UseVisualStyleBackColor = False
+        Me.btnCreateNewRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(111, Byte), Integer), CType(CType(97, Byte), Integer))
+        Me.btnCreateNewRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCreateNewRecords.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCreateNewRecords.ForeColor = System.Drawing.Color.White
+        Me.btnCreateNewRecords.Location = New System.Drawing.Point(23, 114)
+        Me.btnCreateNewRecords.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCreateNewRecords.Name = "btnCreateNewRecords"
+        Me.btnCreateNewRecords.Size = New System.Drawing.Size(256, 54)
+        Me.btnCreateNewRecords.TabIndex = 37
+        Me.btnCreateNewRecords.Text = "Create New Records"
+        Me.btnCreateNewRecords.UseVisualStyleBackColor = False
         '
         'PictureBox7
         '
@@ -497,13 +496,14 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1272, 808)
-        Me.Controls.Add(Me.pnlMngGrades)
+        Me.Controls.Add(Me.pnlEditMainRecords)
+        Me.Controls.Add(Me.pnlCreateNewRecords)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.lblTitle)
-        Me.Controls.Add(Me.pnlMngStudent)
+        Me.Controls.Add(Me.pnlEditStudentRecords)
         Me.Controls.Add(Me.btnAccount)
         Me.Controls.Add(Me.pnlAccount)
-        Me.Controls.Add(Me.pnlViewGrades)
+        Me.Controls.Add(Me.pnlViewAllRecords)
         Me.Controls.Add(Me.lblWelcome)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlDelete)
@@ -514,9 +514,9 @@ Partial Class frmMain
         Me.Text = "Admin View -Debug"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.pnlViewGrades.ResumeLayout(False)
+        Me.pnlViewAllRecords.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlViewAttendance.ResumeLayout(False)
+        Me.pnlEditMainRecords.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -526,9 +526,9 @@ Partial Class frmMain
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EduTrackDBDS, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EduTrackDBDSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlMngStudent.ResumeLayout(False)
+        Me.pnlEditStudentRecords.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlMngGrades.ResumeLayout(False)
+        Me.pnlCreateNewRecords.ResumeLayout(False)
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -536,16 +536,16 @@ Partial Class frmMain
     End Sub
     Friend WithEvents lblWelcome As Label
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents pnlViewGrades As Panel
-    Friend WithEvents pnlViewAttendance As Panel
+    Friend WithEvents pnlViewAllRecords As Panel
+    Friend WithEvents pnlEditMainRecords As Panel
     Friend WithEvents pnlAccount As Panel
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents btnAccount As Button
-    Friend WithEvents btnStudentGrades As Button
-    Friend WithEvents btnStudentAttendance As Button
-    Friend WithEvents btnStudentSettings As Button
+    Friend WithEvents btnViewAllRecords As Button
+    Friend WithEvents btnEditMainRecords As Button
+    Friend WithEvents btnMyAccount As Button
     Friend WithEvents EduTrackDBDS As EduTrackDBDS
     Friend WithEvents EduTrackDBDSBindingSource As BindingSource
     Friend WithEvents PictureBox1 As PictureBox
@@ -559,14 +559,14 @@ Partial Class frmMain
     Friend WithEvents btnTeacherGrades As Button
     Friend WithEvents AboutUsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents pnlMngStudent As Panel
+    Friend WithEvents pnlEditStudentRecords As Panel
     Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents btnStudentManager As Button
+    Friend WithEvents btnEditStudentRecords As Button
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents lblTitle As Label
-    Friend WithEvents pnlMngGrades As Panel
+    Friend WithEvents pnlCreateNewRecords As Panel
     Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents btnTeacherGrade As Button
+    Friend WithEvents btnCreateNewRecords As Button
     Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem1 As ToolStripMenuItem
