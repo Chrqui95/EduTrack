@@ -130,10 +130,10 @@
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGradeViewer.Designer.vb">
-      <DependentUpon>frmGradeViewer.vb</DependentUpon>
+    <Compile Include="frmRecordsViewer.Designer.vb">
+      <DependentUpon>frmRecordsViewer.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmGradeViewer.vb">
+    <Compile Include="frmRecordsViewer.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRegistration.Designer.vb">
@@ -148,10 +148,10 @@
     <Compile Include="frmStudentManager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUserManager.Designer.vb">
-      <DependentUpon>frmUserManager.vb</DependentUpon>
+    <Compile Include="frmMyAccount.Designer.vb">
+      <DependentUpon>frmMyAccount.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmUserManager.vb">
+    <Compile Include="frmMyAccount.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.vb">
@@ -200,8 +200,8 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGradeViewer.resx">
-      <DependentUpon>frmGradeViewer.vb</DependentUpon>
+    <EmbeddedResource Include="frmRecordsViewer.resx">
+      <DependentUpon>frmRecordsViewer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistration.resx">
       <DependentUpon>frmRegistration.vb</DependentUpon>
@@ -209,8 +209,8 @@
     <EmbeddedResource Include="frmStudentManager.resx">
       <DependentUpon>frmStudentManager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUserManager.resx">
-      <DependentUpon>frmUserManager.vb</DependentUpon>
+    <EmbeddedResource Include="frmMyAccount.resx">
+      <DependentUpon>frmMyAccount.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

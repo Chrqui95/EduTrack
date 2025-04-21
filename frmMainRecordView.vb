@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
-Public Class frmMainRecordView
+Public Class frmMainRecordEdit
 
     Dim selectedUserID As String = ""
 

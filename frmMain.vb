@@ -126,12 +126,12 @@ Public Class frmMain
 
     Private Sub btnDashGrades_Click(sender As Object, e As EventArgs)
         Me.Hide()
-        frmGradeViewer.Show()
+        frmRecordsViewer.Show()
     End Sub
 
     Private Sub btnDashAttendance_Click(sender As Object, e As EventArgs)
         Me.Hide()
-        frmMainRecordView.Show()
+        frmMainRecordEdit.Show()
     End Sub
 
 
@@ -147,6 +147,11 @@ Public Class frmMain
 
     Private Sub btnEditMainRecords_Click(sender As Object, e As EventArgs) Handles btnEditMainRecords.Click
         Me.Hide()
-        frmMainRecordView.Show()
+        frmMainRecordEdit.Show()
+    End Sub
+
+    Private Sub btnViewAllRecords_Click(sender As Object, e As EventArgs) Handles btnViewAllRecords.Click
+        Me.Hide()
+        frmRecordsViewer.Show()
     End Sub
 End Class
