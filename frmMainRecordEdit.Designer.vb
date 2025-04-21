@@ -619,7 +619,7 @@ Partial Class frmMainRecordEdit
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmMainRecordEdit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "My Attendance"
+        Me.Text = "Edit Records"
         CType(Me.imgEdu, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvMainRecords, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

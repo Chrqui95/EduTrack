@@ -383,7 +383,7 @@ Partial Class frmMain
         Me.pnlEditStudentRecords.BackColor = System.Drawing.Color.Gainsboro
         Me.pnlEditStudentRecords.Controls.Add(Me.PictureBox4)
         Me.pnlEditStudentRecords.Controls.Add(Me.btnEditStudentRecords)
-        Me.pnlEditStudentRecords.Location = New System.Drawing.Point(938, 460)
+        Me.pnlEditStudentRecords.Location = New System.Drawing.Point(492, 574)
         Me.pnlEditStudentRecords.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlEditStudentRecords.Name = "pnlEditStudentRecords"
         Me.pnlEditStudentRecords.Size = New System.Drawing.Size(303, 186)
@@ -433,7 +433,7 @@ Partial Class frmMain
         Me.pnlCreateNewRecords.BackColor = System.Drawing.Color.Gainsboro
         Me.pnlCreateNewRecords.Controls.Add(Me.PictureBox8)
         Me.pnlCreateNewRecords.Controls.Add(Me.btnCreateNewRecords)
-        Me.pnlCreateNewRecords.Location = New System.Drawing.Point(492, 510)
+        Me.pnlCreateNewRecords.Location = New System.Drawing.Point(938, 490)
         Me.pnlCreateNewRecords.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlCreateNewRecords.Name = "pnlCreateNewRecords"
         Me.pnlCreateNewRecords.Size = New System.Drawing.Size(303, 186)
@@ -498,9 +498,9 @@ Partial Class frmMain
         Me.ClientSize = New System.Drawing.Size(1272, 808)
         Me.Controls.Add(Me.pnlEditMainRecords)
         Me.Controls.Add(Me.pnlCreateNewRecords)
+        Me.Controls.Add(Me.pnlEditStudentRecords)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.lblTitle)
-        Me.Controls.Add(Me.pnlEditStudentRecords)
         Me.Controls.Add(Me.btnAccount)
         Me.Controls.Add(Me.pnlAccount)
         Me.Controls.Add(Me.pnlViewAllRecords)

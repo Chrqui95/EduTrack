@@ -109,10 +109,10 @@
     <Compile Include="frmDelete.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMainRecordView.Designer.vb">
-      <DependentUpon>frmMainRecordView.vb</DependentUpon>
+    <Compile Include="frmMainRecordEdit.Designer.vb">
+      <DependentUpon>frmMainRecordEdit.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmMainRecordView.vb">
+    <Compile Include="frmMainRecordEdit.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCreateMain.Designer.vb">
@@ -188,8 +188,8 @@
     <EmbeddedResource Include="frmDelete.resx">
       <DependentUpon>frmDelete.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMainRecordView.resx">
-      <DependentUpon>frmMainRecordView.vb</DependentUpon>
+    <EmbeddedResource Include="frmMainRecordEdit.resx">
+      <DependentUpon>frmMainRecordEdit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCreateMain.resx">
       <DependentUpon>frmCreateMain.vb</DependentUpon>

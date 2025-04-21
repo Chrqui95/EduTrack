@@ -25,8 +25,6 @@ Public Class frmMain
                 DeleteRecordToolStripMenuItem.Visible = False
 
             Case "Student/Parent"
-                pnlEditMainRecords.Visible = True
-                pnlViewAllRecords.Visible = True
                 FileToolStripMenuItem.Visible = False
                 EditRecordToolStripMenuItem.Visible = False
 
@@ -153,5 +151,10 @@ Public Class frmMain
     Private Sub btnViewAllRecords_Click(sender As Object, e As EventArgs) Handles btnViewAllRecords.Click
         Me.Hide()
         frmRecordsViewer.Show()
+    End Sub
+
+    Private Sub btnMyAccount_Click(sender As Object, e As EventArgs) Handles btnMyAccount.Click
+        Me.Hide()
+        frmMyAccount.Show()
     End Sub
 End Class
