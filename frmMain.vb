@@ -4,7 +4,6 @@ Public Class frmMain
     Public UserRole As String = CurrentUserID
 
     Public Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        UserRole = Session.CurrentUserRole
         ' Hide all panels initially
         pnlDelete.Visible = False
         pnlCreateNewRecords.Visible = False
@@ -39,18 +38,15 @@ Public Class frmMain
                 Me.Close()
                 frmLogin.Show() ' Redirect to login if the role is invalid, just to allow absolute 0 access
         End Select
+
+        UserRole = Session.CurrentUserRole ' Fetches the current user role to prevent errors
+        Dim username As String = Session.CurrentUserID
+        lblWelcome.Text = "Logged in as: " & username
     End Sub
 
     ' Refresh the student record sync when form regains focus
     Private Sub frmMain_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         SyncStudentRecords()
-    End Sub
-
-    ' Method to set the username in the lblWelcome label 
-    ' This needs to be fixed idk why it doesnt work.
-    Public Sub SetUsername()
-        Dim username As String = Session.CurrentUserID
-        lblWelcome.Text = "Logged in as: " & username
     End Sub
 
     Private Sub SyncStudentRecords()
@@ -140,8 +136,6 @@ Public Class frmMain
         Me.Hide()
         frmMainRecordEdit.Show()
     End Sub
-
-
 
     Private Sub DeleteRecordToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteRecordToolStripMenuItem.Click
         If UserRole = "Admin" Then
