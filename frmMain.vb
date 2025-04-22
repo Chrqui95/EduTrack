@@ -34,7 +34,9 @@ Public Class frmMain
                 HomeToolStripMenuItem.Visible = False
                 ExitToolStripMenuItem.Visible = False
             Case Else
-                MessageBox.Show("Unknown role. Limited access.")
+                MessageBox.Show("No role assigned or unknown role. Please contact the administrator.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Me.Close()
+                frmLogin.Show() ' Redirect to login if the role is invalid, just to allow absolute 0 access
         End Select
     End Sub
 

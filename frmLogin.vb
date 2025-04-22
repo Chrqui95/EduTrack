@@ -38,6 +38,7 @@ Public Class frmLogin
 
                         Me.Hide()
                         Dim mainForm As New frmMain()
+                        mainForm.UserRole = Session.CurrentUserRole ' Pass the role to frmMain
                         mainForm.Show()
                     Else
                         MessageBox.Show("Invalid credentials or account not activated.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning)

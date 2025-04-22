@@ -77,11 +77,11 @@ Partial Class SplashScreen1
         Me.Version.AutoSize = True
         Me.Version.Font = New System.Drawing.Font("Cascadia Mono Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Version.ForeColor = System.Drawing.Color.Teal
-        Me.Version.Location = New System.Drawing.Point(503, 248)
+        Me.Version.Location = New System.Drawing.Point(407, 248)
         Me.Version.Name = "Version"
-        Me.Version.Size = New System.Drawing.Size(48, 17)
+        Me.Version.Size = New System.Drawing.Size(144, 17)
         Me.Version.TabIndex = 9
-        Me.Version.Text = "V.1.0"
+        Me.Version.Text = "Pre-Release 1.0.0"
         '
         'frmMind
         '
