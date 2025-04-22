@@ -105,7 +105,7 @@ Public Class frmMyAccount
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
-        Me.Close()
+        Me.Hide()
         frmMain.Show()
     End Sub
 End Class

@@ -3,7 +3,8 @@
 Public Class frmMain
     Public UserRole As String = CurrentUserID
 
-    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UserRole = Session.CurrentUserRole
         ' Hide all panels initially
         pnlDelete.Visible = False
         pnlCreateNewRecords.Visible = False
