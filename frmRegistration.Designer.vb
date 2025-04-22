@@ -75,10 +75,9 @@ Partial Class frmRegister
         Me.pnlLogin.Controls.Add(Me.PictureBox1)
         Me.pnlLogin.Controls.Add(Me.txtFName)
         Me.pnlLogin.Controls.Add(Me.btnRegister)
-        Me.pnlLogin.Location = New System.Drawing.Point(13, 160)
-        Me.pnlLogin.Margin = New System.Windows.Forms.Padding(4)
+        Me.pnlLogin.Location = New System.Drawing.Point(10, 130)
         Me.pnlLogin.Name = "pnlLogin"
-        Me.pnlLogin.Size = New System.Drawing.Size(786, 438)
+        Me.pnlLogin.Size = New System.Drawing.Size(590, 356)
         Me.pnlLogin.TabIndex = 22
         '
         'lstGender
@@ -87,11 +86,12 @@ Partial Class frmRegister
         Me.lstGender.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold)
         Me.lstGender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.lstGender.FormattingEnabled = True
-        Me.lstGender.ItemHeight = 21
+        Me.lstGender.ItemHeight = 17
         Me.lstGender.Items.AddRange(New Object() {"Male", "Female"})
-        Me.lstGender.Location = New System.Drawing.Point(422, 189)
+        Me.lstGender.Location = New System.Drawing.Point(316, 154)
+        Me.lstGender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lstGender.Name = "lstGender"
-        Me.lstGender.Size = New System.Drawing.Size(286, 23)
+        Me.lstGender.Size = New System.Drawing.Size(215, 19)
         Me.lstGender.TabIndex = 46
         '
         'msktxtPhone
@@ -101,20 +101,20 @@ Partial Class frmRegister
         Me.msktxtPhone.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold)
         Me.msktxtPhone.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.msktxtPhone.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert
-        Me.msktxtPhone.Location = New System.Drawing.Point(422, 60)
+        Me.msktxtPhone.Location = New System.Drawing.Point(316, 49)
+        Me.msktxtPhone.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.msktxtPhone.Mask = "000-0000"
         Me.msktxtPhone.Name = "msktxtPhone"
-        Me.msktxtPhone.Size = New System.Drawing.Size(286, 29)
+        Me.msktxtPhone.Size = New System.Drawing.Size(215, 25)
         Me.msktxtPhone.TabIndex = 45
         '
         'lblGender
         '
         Me.lblGender.AutoSize = True
         Me.lblGender.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGender.Location = New System.Drawing.Point(429, 160)
-        Me.lblGender.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblGender.Location = New System.Drawing.Point(322, 130)
         Me.lblGender.Name = "lblGender"
-        Me.lblGender.Size = New System.Drawing.Size(66, 23)
+        Me.lblGender.Size = New System.Drawing.Size(51, 17)
         Me.lblGender.TabIndex = 42
         Me.lblGender.Text = "Gender"
         '
@@ -122,10 +122,9 @@ Partial Class frmRegister
         '
         Me.lblCountry.AutoSize = True
         Me.lblCountry.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCountry.Location = New System.Drawing.Point(431, 100)
-        Me.lblCountry.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCountry.Location = New System.Drawing.Point(323, 81)
         Me.lblCountry.Name = "lblCountry"
-        Me.lblCountry.Size = New System.Drawing.Size(71, 23)
+        Me.lblCountry.Size = New System.Drawing.Size(53, 17)
         Me.lblCountry.TabIndex = 38
         Me.lblCountry.Text = "Country"
         '
@@ -133,10 +132,9 @@ Partial Class frmRegister
         '
         Me.lblPhone.AutoSize = True
         Me.lblPhone.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPhone.Location = New System.Drawing.Point(426, 37)
-        Me.lblPhone.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblPhone.Location = New System.Drawing.Point(320, 30)
         Me.lblPhone.Name = "lblPhone"
-        Me.lblPhone.Size = New System.Drawing.Size(127, 23)
+        Me.lblPhone.Size = New System.Drawing.Size(96, 17)
         Me.lblPhone.TabIndex = 37
         Me.lblPhone.Text = "Phone Number"
         '
@@ -146,29 +144,26 @@ Partial Class frmRegister
         Me.txtCountry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtCountry.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCountry.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.txtCountry.Location = New System.Drawing.Point(423, 125)
-        Me.txtCountry.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtCountry.Location = New System.Drawing.Point(317, 102)
         Me.txtCountry.MaxLength = 20
         Me.txtCountry.Name = "txtCountry"
-        Me.txtCountry.Size = New System.Drawing.Size(286, 29)
+        Me.txtCountry.Size = New System.Drawing.Size(215, 25)
         Me.txtCountry.TabIndex = 36
         '
         'dtpDOB
         '
-        Me.dtpDOB.Location = New System.Drawing.Point(58, 189)
-        Me.dtpDOB.Margin = New System.Windows.Forms.Padding(4)
+        Me.dtpDOB.Location = New System.Drawing.Point(44, 154)
         Me.dtpDOB.Name = "dtpDOB"
-        Me.dtpDOB.Size = New System.Drawing.Size(285, 22)
+        Me.dtpDOB.Size = New System.Drawing.Size(215, 20)
         Me.dtpDOB.TabIndex = 34
         '
         'lblDOB
         '
         Me.lblDOB.AutoSize = True
         Me.lblDOB.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDOB.Location = New System.Drawing.Point(66, 164)
-        Me.lblDOB.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDOB.Location = New System.Drawing.Point(50, 133)
         Me.lblDOB.Name = "lblDOB"
-        Me.lblDOB.Size = New System.Drawing.Size(107, 23)
+        Me.lblDOB.Size = New System.Drawing.Size(81, 17)
         Me.lblDOB.TabIndex = 32
         Me.lblDOB.Text = "Date of Birth"
         '
@@ -176,10 +171,9 @@ Partial Class frmRegister
         '
         Me.lblPassword.AutoSize = True
         Me.lblPassword.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPassword.Location = New System.Drawing.Point(430, 223)
-        Me.lblPassword.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblPassword.Location = New System.Drawing.Point(322, 181)
         Me.lblPassword.Name = "lblPassword"
-        Me.lblPassword.Size = New System.Drawing.Size(80, 23)
+        Me.lblPassword.Size = New System.Drawing.Size(64, 17)
         Me.lblPassword.TabIndex = 30
         Me.lblPassword.Text = "Password"
         '
@@ -187,10 +181,9 @@ Partial Class frmRegister
         '
         Me.lblUsername.AutoSize = True
         Me.lblUsername.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUsername.Location = New System.Drawing.Point(61, 223)
-        Me.lblUsername.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblUsername.Location = New System.Drawing.Point(46, 181)
         Me.lblUsername.Name = "lblUsername"
-        Me.lblUsername.Size = New System.Drawing.Size(87, 23)
+        Me.lblUsername.Size = New System.Drawing.Size(67, 17)
         Me.lblUsername.TabIndex = 29
         Me.lblUsername.Text = "Username"
         '
@@ -200,12 +193,11 @@ Partial Class frmRegister
         Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtPassword.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.txtPassword.Location = New System.Drawing.Point(422, 248)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPassword.Location = New System.Drawing.Point(316, 202)
         Me.txtPassword.MaxLength = 30
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(286, 29)
+        Me.txtPassword.Size = New System.Drawing.Size(215, 25)
         Me.txtPassword.TabIndex = 28
         '
         'txtUsername
@@ -214,21 +206,19 @@ Partial Class frmRegister
         Me.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtUsername.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.txtUsername.Location = New System.Drawing.Point(58, 248)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtUsername.Location = New System.Drawing.Point(44, 202)
         Me.txtUsername.MaxLength = 20
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(286, 29)
+        Me.txtUsername.Size = New System.Drawing.Size(215, 25)
         Me.txtUsername.TabIndex = 27
         '
         'lblLName
         '
         Me.lblLName.AutoSize = True
         Me.lblLName.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLName.Location = New System.Drawing.Point(66, 98)
-        Me.lblLName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblLName.Location = New System.Drawing.Point(50, 80)
         Me.lblLName.Name = "lblLName"
-        Me.lblLName.Size = New System.Drawing.Size(91, 23)
+        Me.lblLName.Size = New System.Drawing.Size(70, 17)
         Me.lblLName.TabIndex = 26
         Me.lblLName.Text = "Last Name"
         '
@@ -236,10 +226,9 @@ Partial Class frmRegister
         '
         Me.lblFName.AutoSize = True
         Me.lblFName.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFName.Location = New System.Drawing.Point(61, 35)
-        Me.lblFName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblFName.Location = New System.Drawing.Point(46, 28)
         Me.lblFName.Name = "lblFName"
-        Me.lblFName.Size = New System.Drawing.Size(92, 23)
+        Me.lblFName.Size = New System.Drawing.Size(71, 17)
         Me.lblFName.TabIndex = 21
         Me.lblFName.Text = "First Name"
         '
@@ -248,10 +237,9 @@ Partial Class frmRegister
         Me.PictureBox2.BackgroundImage = Global.EduTrack.My.Resources.Resources.lock
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PictureBox2.Image = Global.EduTrack.My.Resources.Resources.user1
-        Me.PictureBox2.Location = New System.Drawing.Point(384, 248)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox2.Location = New System.Drawing.Point(288, 202)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(31, 31)
+        Me.PictureBox2.Size = New System.Drawing.Size(23, 25)
         Me.PictureBox2.TabIndex = 24
         Me.PictureBox2.TabStop = False
         '
@@ -261,11 +249,10 @@ Partial Class frmRegister
         Me.txtLName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtLName.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtLName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.txtLName.Location = New System.Drawing.Point(58, 123)
-        Me.txtLName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtLName.Location = New System.Drawing.Point(44, 100)
         Me.txtLName.MaxLength = 20
         Me.txtLName.Name = "txtLName"
-        Me.txtLName.Size = New System.Drawing.Size(286, 29)
+        Me.txtLName.Size = New System.Drawing.Size(215, 25)
         Me.txtLName.TabIndex = 1
         '
         'PictureBox1
@@ -273,10 +260,9 @@ Partial Class frmRegister
         Me.PictureBox1.BackgroundImage = Global.EduTrack.My.Resources.Resources.user1
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PictureBox1.Image = Global.EduTrack.My.Resources.Resources.user1
-        Me.PictureBox1.Location = New System.Drawing.Point(20, 60)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox1.Location = New System.Drawing.Point(15, 49)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(31, 31)
+        Me.PictureBox1.Size = New System.Drawing.Size(23, 25)
         Me.PictureBox1.TabIndex = 22
         Me.PictureBox1.TabStop = False
         '
@@ -286,11 +272,10 @@ Partial Class frmRegister
         Me.txtFName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtFName.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.txtFName.Location = New System.Drawing.Point(58, 60)
-        Me.txtFName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtFName.Location = New System.Drawing.Point(44, 49)
         Me.txtFName.MaxLength = 20
         Me.txtFName.Name = "txtFName"
-        Me.txtFName.Size = New System.Drawing.Size(286, 29)
+        Me.txtFName.Size = New System.Drawing.Size(215, 25)
         Me.txtFName.TabIndex = 0
         '
         'btnRegister
@@ -300,10 +285,10 @@ Partial Class frmRegister
         Me.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRegister.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegister.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.btnRegister.Location = New System.Drawing.Point(235, 337)
-        Me.btnRegister.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnRegister.Location = New System.Drawing.Point(176, 274)
+        Me.btnRegister.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnRegister.Name = "btnRegister"
-        Me.btnRegister.Size = New System.Drawing.Size(325, 44)
+        Me.btnRegister.Size = New System.Drawing.Size(244, 36)
         Me.btnRegister.TabIndex = 2
         Me.btnRegister.Text = "REGISTER"
         Me.btnRegister.UseVisualStyleBackColor = False
@@ -313,10 +298,11 @@ Partial Class frmRegister
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(235, 50)
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(176, 41)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(461, 74)
+        Me.Label6.Size = New System.Drawing.Size(346, 60)
         Me.Label6.TabIndex = 21
         Me.Label6.Text = "EduTrack"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -326,18 +312,17 @@ Partial Class frmRegister
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.BackgroundImage = Global.EduTrack.My.Resources.Resources.edu
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox3.Location = New System.Drawing.Point(107, 7)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox3.Location = New System.Drawing.Point(80, 6)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(217, 144)
+        Me.PictureBox3.Size = New System.Drawing.Size(163, 117)
         Me.PictureBox3.TabIndex = 23
         Me.PictureBox3.TabStop = False
         '
         'btnPlaceholderExit
         '
         Me.btnPlaceholderExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnPlaceholderExit.Location = New System.Drawing.Point(607, 12)
-        Me.btnPlaceholderExit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnPlaceholderExit.Location = New System.Drawing.Point(455, 10)
+        Me.btnPlaceholderExit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnPlaceholderExit.Name = "btnPlaceholderExit"
         Me.btnPlaceholderExit.Size = New System.Drawing.Size(1, 1)
         Me.btnPlaceholderExit.TabIndex = 24
@@ -348,18 +333,19 @@ Partial Class frmRegister
         'frmRegister
         '
         Me.AcceptButton = Me.btnRegister
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Teal
         Me.BackgroundImage = Global.EduTrack.My.Resources.Resources.back
         Me.CancelButton = Me.btnPlaceholderExit
-        Me.ClientSize = New System.Drawing.Size(812, 677)
+        Me.ClientSize = New System.Drawing.Size(609, 550)
         Me.Controls.Add(Me.btnPlaceholderExit)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.pnlLogin)
         Me.Controls.Add(Me.Label6)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MaximizeBox = False
         Me.Name = "frmRegister"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Register"

@@ -27,6 +27,7 @@ Partial Class SplashScreen1
         Me.ApplicationTitle = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Version = New System.Windows.Forms.Label()
+        Me.frmMind = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -82,12 +83,23 @@ Partial Class SplashScreen1
         Me.Version.TabIndex = 9
         Me.Version.Text = "V.1.0"
         '
+        'frmMind
+        '
+        Me.frmMind.AutoSize = True
+        Me.frmMind.Font = New System.Drawing.Font("Cascadia Mono SemiLight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.frmMind.Location = New System.Drawing.Point(206, 130)
+        Me.frmMind.Name = "frmMind"
+        Me.frmMind.Size = New System.Drawing.Size(168, 17)
+        Me.frmMind.TabIndex = 10
+        Me.frmMind.Text = "By MindFrame Studios"
+        '
         'SplashScreen1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(563, 274)
         Me.ControlBox = False
+        Me.Controls.Add(Me.frmMind)
         Me.Controls.Add(Me.Version)
         Me.Controls.Add(Me.prgSplash)
         Me.Controls.Add(Me.Copyright)
@@ -109,4 +121,5 @@ Partial Class SplashScreen1
     Friend WithEvents ApplicationTitle As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Version As Label
+    Friend WithEvents frmMind As Label
 End Class

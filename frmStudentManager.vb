@@ -57,7 +57,7 @@ Public Class frmStudentManager
            String.IsNullOrWhiteSpace(msktxtStudentEmail.Text) OrElse
            lstGender.SelectedIndex = -1 Then
 
-            MessageBox.Show("All fields must be filled out.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show("All fields must be filled out." & Environment.NewLine & "Please remember to select gender and role before saving records! ", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
 

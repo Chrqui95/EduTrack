@@ -75,10 +75,9 @@ Partial Class frmDelete
         Me.imgEdu.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.imgEdu.BackgroundImage = Global.EduTrack.My.Resources.Resources.edu
         Me.imgEdu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.imgEdu.Location = New System.Drawing.Point(96, 66)
-        Me.imgEdu.Margin = New System.Windows.Forms.Padding(4)
+        Me.imgEdu.Location = New System.Drawing.Point(72, 54)
         Me.imgEdu.Name = "imgEdu"
-        Me.imgEdu.Size = New System.Drawing.Size(103, 85)
+        Me.imgEdu.Size = New System.Drawing.Size(77, 69)
         Me.imgEdu.TabIndex = 44
         Me.imgEdu.TabStop = False
         '
@@ -89,9 +88,10 @@ Partial Class frmDelete
         Me.lblEdu.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.lblEdu.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEdu.ForeColor = System.Drawing.Color.White
-        Me.lblEdu.Location = New System.Drawing.Point(1141, -118)
+        Me.lblEdu.Location = New System.Drawing.Point(856, -96)
+        Me.lblEdu.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblEdu.Name = "lblEdu"
-        Me.lblEdu.Size = New System.Drawing.Size(133, 36)
+        Me.lblEdu.Size = New System.Drawing.Size(100, 29)
         Me.lblEdu.TabIndex = 46
         Me.lblEdu.Text = "EduTrack"
         Me.lblEdu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -102,10 +102,9 @@ Partial Class frmDelete
         Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnDelete.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.ForeColor = System.Drawing.Color.White
-        Me.btnDelete.Location = New System.Drawing.Point(230, 82)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnDelete.Location = New System.Drawing.Point(172, 67)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(256, 54)
+        Me.btnDelete.Size = New System.Drawing.Size(192, 44)
         Me.btnDelete.TabIndex = 50
         Me.btnDelete.Text = "Delete Record"
         Me.btnDelete.UseVisualStyleBackColor = False
@@ -116,11 +115,10 @@ Partial Class frmDelete
         Me.dgvMainRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvMainRecords.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UserIDDataGridViewTextBoxColumn, Me.PasswordDataGridViewTextBoxColumn, Me.FirstNameDataGridViewTextBoxColumn, Me.LastNameDataGridViewTextBoxColumn, Me.DOBDataGridViewTextBoxColumn, Me.GenderDataGridViewTextBoxColumn, Me.CountryDataGridViewTextBoxColumn, Me.PhoneNumberDataGridViewTextBoxColumn, Me.RoleDataGridViewTextBoxColumn, Me.IsActivatedDataGridViewCheckBoxColumn})
         Me.dgvMainRecords.DataSource = Me.TableBindingSource
-        Me.dgvMainRecords.Location = New System.Drawing.Point(23, 165)
-        Me.dgvMainRecords.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvMainRecords.Location = New System.Drawing.Point(17, 134)
         Me.dgvMainRecords.Name = "dgvMainRecords"
         Me.dgvMainRecords.RowHeadersWidth = 51
-        Me.dgvMainRecords.Size = New System.Drawing.Size(1298, 343)
+        Me.dgvMainRecords.Size = New System.Drawing.Size(974, 279)
         Me.dgvMainRecords.TabIndex = 49
         '
         'UserIDDataGridViewTextBoxColumn
@@ -224,21 +222,21 @@ Partial Class frmDelete
         Me.BindingNavigator1.Dock = System.Windows.Forms.DockStyle.None
         Me.BindingNavigator1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.BindingNavigator1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorDeleteItem, Me.ToolStripButton1})
-        Me.BindingNavigator1.Location = New System.Drawing.Point(882, 63)
+        Me.BindingNavigator1.Location = New System.Drawing.Point(662, 51)
         Me.BindingNavigator1.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
         Me.BindingNavigator1.MoveLastItem = Me.BindingNavigatorMoveLastItem
         Me.BindingNavigator1.MoveNextItem = Me.BindingNavigatorMoveNextItem
         Me.BindingNavigator1.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.BindingNavigator1.Name = "BindingNavigator1"
         Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-        Me.BindingNavigator1.Size = New System.Drawing.Size(361, 43)
+        Me.BindingNavigator1.Size = New System.Drawing.Size(271, 35)
         Me.BindingNavigator1.TabIndex = 47
         Me.BindingNavigator1.Text = "BindingNavigator1"
         '
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 40)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 32)
         Me.BindingNavigatorCountItem.Text = "of {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
@@ -248,7 +246,7 @@ Partial Class frmDelete
         Me.BindingNavigatorDeleteItem.Image = Global.EduTrack.My.Resources.Resources.close
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 40)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 32)
         Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'BindingNavigatorMoveFirstItem
@@ -257,13 +255,13 @@ Partial Class frmDelete
         Me.BindingNavigatorMoveFirstItem.Image = Global.EduTrack.My.Resources.Resources.next_button1
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 40)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 32)
         Me.BindingNavigatorMoveFirstItem.Text = "Move first"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 43)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 35)
         '
         'BindingNavigatorMovePreviousItem
         '
@@ -271,7 +269,7 @@ Partial Class frmDelete
         Me.BindingNavigatorMovePreviousItem.Image = Global.EduTrack.My.Resources.Resources.next1
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 40)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 32)
         Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
         '
         'BindingNavigatorPositionItem
@@ -280,14 +278,14 @@ Partial Class frmDelete
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(65, 27)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 43)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 35)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -295,7 +293,7 @@ Partial Class frmDelete
         Me.BindingNavigatorMoveNextItem.Image = Global.EduTrack.My.Resources.Resources._next
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 40)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 32)
         Me.BindingNavigatorMoveNextItem.Text = "Move next"
         '
         'BindingNavigatorMoveLastItem
@@ -304,13 +302,13 @@ Partial Class frmDelete
         Me.BindingNavigatorMoveLastItem.Image = Global.EduTrack.My.Resources.Resources.next_button
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 40)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 32)
         Me.BindingNavigatorMoveLastItem.Text = "Move last"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 43)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 35)
         '
         'ToolStripButton1
         '
@@ -318,7 +316,7 @@ Partial Class frmDelete
         Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
         Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(29, 40)
+        Me.ToolStripButton1.Size = New System.Drawing.Size(24, 32)
         Me.ToolStripButton1.Text = "ToolStripButton1"
         '
         'MenuStrip1
@@ -329,7 +327,8 @@ Partial Class frmDelete
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1387, 36)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1040, 29)
         Me.MenuStrip1.TabIndex = 51
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -340,13 +339,13 @@ Partial Class frmDelete
         Me.FileToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.FileToolStripMenuItem.Margin = New System.Windows.Forms.Padding(0, 0, 50, 0)
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(50, 32)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(40, 25)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(224, 28)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'AboutToolStripMenuItem
@@ -355,25 +354,25 @@ Partial Class frmDelete
         Me.AboutToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AboutToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(71, 32)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(58, 25)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(224, 28)
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.AboutUsToolStripMenuItem.Text = "About Us"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(224, 28)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'HowToToolStripMenuItem
         '
         Me.HowToToolStripMenuItem.Name = "HowToToolStripMenuItem"
-        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(224, 28)
+        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.HowToToolStripMenuItem.Text = "How To"
         '
         'TableTableAdapter
@@ -389,9 +388,9 @@ Partial Class frmDelete
         '
         'frmDelete
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1387, 561)
+        Me.ClientSize = New System.Drawing.Size(1040, 456)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.dgvMainRecords)
@@ -399,7 +398,7 @@ Partial Class frmDelete
         Me.Controls.Add(Me.lblEdu)
         Me.Controls.Add(Me.imgEdu)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximizeBox = False
         Me.Name = "frmDelete"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Delete Records"

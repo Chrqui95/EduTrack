@@ -21,13 +21,18 @@ Public Class frmMain
 
             Case "Teacher"
                 pnlEditStudentRecords.Visible = True
-                FileToolStripMenuItem.Visible = False
+                FileToolStripMenuItem.Visible = True
                 DeleteRecordToolStripMenuItem.Visible = False
-
+                OptionsToolStripMenuItem.Visible = False
+                HomeToolStripMenuItem.Visible = False
+                ExitToolStripMenuItem.Visible = False
+                ' Works ig
             Case "Student/Parent"
-                FileToolStripMenuItem.Visible = False
+                FileToolStripMenuItem.Visible = True
+                DeleteRecordToolStripMenuItem.Visible = False
                 EditRecordToolStripMenuItem.Visible = False
-
+                HomeToolStripMenuItem.Visible = False
+                ExitToolStripMenuItem.Visible = False
             Case Else
                 MessageBox.Show("Unknown role. Limited access.")
         End Select
@@ -38,7 +43,8 @@ Public Class frmMain
         SyncStudentRecords()
     End Sub
 
-    ' Method to set the username in the lblWelcome label
+    ' Method to set the username in the lblWelcome label 
+    ' This needs to be fixed idk why it doesnt work.
     Public Sub SetUsername()
         Dim username As String = Session.CurrentUserID
         lblWelcome.Text = "Logged in as: " & username
@@ -156,5 +162,16 @@ Public Class frmMain
     Private Sub btnMyAccount_Click(sender As Object, e As EventArgs) Handles btnMyAccount.Click
         Me.Hide()
         frmMyAccount.Show()
+    End Sub
+
+    Private Sub ExitToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem1.Click
+        Application.Exit()
+    End Sub
+
+    Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem.Click
+        frmLogin.txtPassword.Text = ""
+        frmLogin.txtUsername.Text = ""
+        Me.Close()
+        frmLogin.Show()
     End Sub
 End Class

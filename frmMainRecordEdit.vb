@@ -55,10 +55,10 @@ Public Class frmMainRecordEdit
            String.IsNullOrWhiteSpace(txtLName.Text) OrElse
            String.IsNullOrWhiteSpace(txtAddress.Text) OrElse
            String.IsNullOrWhiteSpace(msktxtPhone.Text) OrElse
-           lstGender.SelectedIndex = -1 OrElse
-           lstRole.SelectedIndex = -1 Then
+            lstGender.SelectedIndex = -1 OrElse
+            lstRole.SelectedIndex = -1 Then
 
-            MessageBox.Show("All fields must be filled out.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show("All fields must be filled out." & Environment.NewLine & "Please remember to select gender and role before saving records! ", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
 
@@ -147,7 +147,7 @@ Public Class frmMainRecordEdit
                         End If
                     End Using
                 Else
-                    ' If either not a student or not active → delete
+                    ' If either not a student or not active > delete
                     Dim delStu = "DELETE FROM StudentRecords WHERE StudentID=@UserID"
                     Using dCmd As New SqlCommand(delStu, conn)
                         dCmd.Parameters.AddWithValue("@UserID", selectedUserID)

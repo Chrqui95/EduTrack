@@ -46,7 +46,6 @@ Partial Class frmRecordsViewer
         Me.imgEdu = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -98,9 +97,10 @@ Partial Class frmRecordsViewer
         Me.lblRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblRole.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRole.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblRole.Location = New System.Drawing.Point(667, 345)
+        Me.lblRole.Location = New System.Drawing.Point(500, 280)
+        Me.lblRole.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblRole.Name = "lblRole"
-        Me.lblRole.Size = New System.Drawing.Size(82, 36)
+        Me.lblRole.Size = New System.Drawing.Size(62, 29)
         Me.lblRole.TabIndex = 126
         Me.lblRole.Text = "Role: "
         Me.lblRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -108,23 +108,21 @@ Partial Class frmRecordsViewer
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(426, 438)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPassword.Location = New System.Drawing.Point(320, 356)
         Me.txtPassword.MaxLength = 50
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.ReadOnly = True
-        Me.txtPassword.Size = New System.Drawing.Size(181, 29)
+        Me.txtPassword.Size = New System.Drawing.Size(137, 25)
         Me.txtPassword.TabIndex = 125
         '
         'txtUserID
         '
         Me.txtUserID.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUserID.Location = New System.Drawing.Point(426, 361)
-        Me.txtUserID.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtUserID.Location = New System.Drawing.Point(320, 293)
         Me.txtUserID.MaxLength = 30
         Me.txtUserID.Name = "txtUserID"
         Me.txtUserID.ReadOnly = True
-        Me.txtUserID.Size = New System.Drawing.Size(181, 29)
+        Me.txtUserID.Size = New System.Drawing.Size(137, 25)
         Me.txtUserID.TabIndex = 124
         '
         'lblPassword
@@ -134,9 +132,10 @@ Partial Class frmRecordsViewer
         Me.lblPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPassword.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblPassword.Location = New System.Drawing.Point(255, 431)
+        Me.lblPassword.Location = New System.Drawing.Point(191, 350)
+        Me.lblPassword.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPassword.Name = "lblPassword"
-        Me.lblPassword.Size = New System.Drawing.Size(173, 36)
+        Me.lblPassword.Size = New System.Drawing.Size(130, 29)
         Me.lblPassword.TabIndex = 123
         Me.lblPassword.Text = "Password:"
         Me.lblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -148,9 +147,10 @@ Partial Class frmRecordsViewer
         Me.lblUsername.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblUsername.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblUsername.Location = New System.Drawing.Point(255, 354)
+        Me.lblUsername.Location = New System.Drawing.Point(191, 288)
+        Me.lblUsername.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblUsername.Name = "lblUsername"
-        Me.lblUsername.Size = New System.Drawing.Size(173, 36)
+        Me.lblUsername.Size = New System.Drawing.Size(130, 29)
         Me.lblUsername.TabIndex = 122
         Me.lblUsername.Text = "Username: "
         Me.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -162,9 +162,10 @@ Partial Class frmRecordsViewer
         Me.lblActiveStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblActiveStatus.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblActiveStatus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblActiveStatus.Location = New System.Drawing.Point(1063, 345)
+        Me.lblActiveStatus.Location = New System.Drawing.Point(797, 280)
+        Me.lblActiveStatus.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblActiveStatus.Name = "lblActiveStatus"
-        Me.lblActiveStatus.Size = New System.Drawing.Size(123, 63)
+        Me.lblActiveStatus.Size = New System.Drawing.Size(92, 51)
         Me.lblActiveStatus.TabIndex = 121
         Me.lblActiveStatus.Text = "Activation Status:"
         Me.lblActiveStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -172,42 +173,39 @@ Partial Class frmRecordsViewer
         'msktxtPhone
         '
         Me.msktxtPhone.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.msktxtPhone.Location = New System.Drawing.Point(776, 169)
-        Me.msktxtPhone.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.msktxtPhone.Location = New System.Drawing.Point(582, 137)
+        Me.msktxtPhone.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.msktxtPhone.Mask = "000-0000"
         Me.msktxtPhone.Name = "msktxtPhone"
         Me.msktxtPhone.ReadOnly = True
-        Me.msktxtPhone.Size = New System.Drawing.Size(147, 34)
+        Me.msktxtPhone.Size = New System.Drawing.Size(111, 29)
         Me.msktxtPhone.TabIndex = 119
         '
         'txtAddress
         '
         Me.txtAddress.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAddress.Location = New System.Drawing.Point(776, 265)
-        Me.txtAddress.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtAddress.Location = New System.Drawing.Point(582, 215)
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.ReadOnly = True
-        Me.txtAddress.Size = New System.Drawing.Size(181, 29)
+        Me.txtAddress.Size = New System.Drawing.Size(137, 25)
         Me.txtAddress.TabIndex = 117
         '
         'txtLName
         '
         Me.txtLName.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLName.Location = New System.Drawing.Point(425, 265)
-        Me.txtLName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtLName.Location = New System.Drawing.Point(319, 215)
         Me.txtLName.Name = "txtLName"
         Me.txtLName.ReadOnly = True
-        Me.txtLName.Size = New System.Drawing.Size(181, 29)
+        Me.txtLName.Size = New System.Drawing.Size(137, 25)
         Me.txtLName.TabIndex = 116
         '
         'txtFName
         '
         Me.txtFName.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFName.Location = New System.Drawing.Point(425, 173)
-        Me.txtFName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtFName.Location = New System.Drawing.Point(319, 141)
         Me.txtFName.Name = "txtFName"
         Me.txtFName.ReadOnly = True
-        Me.txtFName.Size = New System.Drawing.Size(181, 29)
+        Me.txtFName.Size = New System.Drawing.Size(137, 25)
         Me.txtFName.TabIndex = 115
         '
         'lblGender
@@ -217,9 +215,10 @@ Partial Class frmRecordsViewer
         Me.lblGender.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblGender.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblGender.Location = New System.Drawing.Point(1116, 265)
+        Me.lblGender.Location = New System.Drawing.Point(837, 215)
+        Me.lblGender.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblGender.Name = "lblGender"
-        Me.lblGender.Size = New System.Drawing.Size(93, 36)
+        Me.lblGender.Size = New System.Drawing.Size(70, 29)
         Me.lblGender.TabIndex = 113
         Me.lblGender.Text = "Gender:"
         Me.lblGender.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -231,9 +230,10 @@ Partial Class frmRecordsViewer
         Me.lblDOB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblDOB.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDOB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblDOB.Location = New System.Drawing.Point(1062, 173)
+        Me.lblDOB.Location = New System.Drawing.Point(796, 141)
+        Me.lblDOB.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblDOB.Name = "lblDOB"
-        Me.lblDOB.Size = New System.Drawing.Size(148, 36)
+        Me.lblDOB.Size = New System.Drawing.Size(111, 29)
         Me.lblDOB.TabIndex = 112
         Me.lblDOB.Text = "Date Of Birth:"
         Me.lblDOB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -245,9 +245,10 @@ Partial Class frmRecordsViewer
         Me.lblAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblAddress.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblAddress.Location = New System.Drawing.Point(667, 260)
+        Me.lblAddress.Location = New System.Drawing.Point(500, 211)
+        Me.lblAddress.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblAddress.Name = "lblAddress"
-        Me.lblAddress.Size = New System.Drawing.Size(123, 36)
+        Me.lblAddress.Size = New System.Drawing.Size(92, 29)
         Me.lblAddress.TabIndex = 111
         Me.lblAddress.Text = "Address:"
         Me.lblAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -259,9 +260,10 @@ Partial Class frmRecordsViewer
         Me.lblPhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPhone.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPhone.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblPhone.Location = New System.Drawing.Point(682, 168)
+        Me.lblPhone.Location = New System.Drawing.Point(512, 136)
+        Me.lblPhone.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPhone.Name = "lblPhone"
-        Me.lblPhone.Size = New System.Drawing.Size(123, 36)
+        Me.lblPhone.Size = New System.Drawing.Size(92, 29)
         Me.lblPhone.TabIndex = 110
         Me.lblPhone.Text = "Phone:"
         Me.lblPhone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -273,9 +275,10 @@ Partial Class frmRecordsViewer
         Me.lblLName.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblLName.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblLName.Location = New System.Drawing.Point(273, 260)
+        Me.lblLName.Location = New System.Drawing.Point(205, 211)
+        Me.lblLName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblLName.Name = "lblLName"
-        Me.lblLName.Size = New System.Drawing.Size(173, 36)
+        Me.lblLName.Size = New System.Drawing.Size(130, 29)
         Me.lblLName.TabIndex = 109
         Me.lblLName.Text = "Last Name:"
         Me.lblLName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -287,9 +290,10 @@ Partial Class frmRecordsViewer
         Me.lblFName.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblFName.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblFName.Location = New System.Drawing.Point(273, 168)
+        Me.lblFName.Location = New System.Drawing.Point(205, 136)
+        Me.lblFName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblFName.Name = "lblFName"
-        Me.lblFName.Size = New System.Drawing.Size(173, 36)
+        Me.lblFName.Size = New System.Drawing.Size(130, 29)
         Me.lblFName.TabIndex = 108
         Me.lblFName.Text = "First Name:"
         Me.lblFName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -303,10 +307,9 @@ Partial Class frmRecordsViewer
         Me.btnView.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnView.Image = Global.EduTrack.My.Resources.Resources.check1
         Me.btnView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnView.Location = New System.Drawing.Point(34, 288)
-        Me.btnView.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnView.Location = New System.Drawing.Point(26, 234)
         Me.btnView.Name = "btnView"
-        Me.btnView.Size = New System.Drawing.Size(223, 62)
+        Me.btnView.Size = New System.Drawing.Size(167, 50)
         Me.btnView.TabIndex = 106
         Me.btnView.Text = "View Record"
         Me.btnView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -317,10 +320,9 @@ Partial Class frmRecordsViewer
         Me.imgEdu.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.imgEdu.BackgroundImage = Global.EduTrack.My.Resources.Resources.edu
         Me.imgEdu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.imgEdu.Location = New System.Drawing.Point(13, 47)
-        Me.imgEdu.Margin = New System.Windows.Forms.Padding(4)
+        Me.imgEdu.Location = New System.Drawing.Point(10, 38)
         Me.imgEdu.Name = "imgEdu"
-        Me.imgEdu.Size = New System.Drawing.Size(103, 85)
+        Me.imgEdu.Size = New System.Drawing.Size(77, 69)
         Me.imgEdu.TabIndex = 105
         Me.imgEdu.TabStop = False
         '
@@ -332,30 +334,25 @@ Partial Class frmRecordsViewer
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.OptionsToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1612, 36)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1209, 29)
         Me.MenuStrip1.TabIndex = 101
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HomeToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FileToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.FileToolStripMenuItem.Margin = New System.Windows.Forms.Padding(0, 0, 50, 0)
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(50, 32)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(40, 25)
         Me.FileToolStripMenuItem.Text = "File"
-        '
-        'HomeToolStripMenuItem
-        '
-        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(141, 28)
-        Me.HomeToolStripMenuItem.Text = "Home"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(141, 28)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'OptionsToolStripMenuItem
@@ -364,7 +361,7 @@ Partial Class frmRecordsViewer
         Me.OptionsToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.OptionsToolStripMenuItem.Margin = New System.Windows.Forms.Padding(0, 0, 50, 0)
         Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(84, 32)
+        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(68, 25)
         Me.OptionsToolStripMenuItem.Text = "Options"
         '
         'AboutToolStripMenuItem
@@ -373,19 +370,19 @@ Partial Class frmRecordsViewer
         Me.AboutToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AboutToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(71, 32)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(58, 25)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(165, 28)
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.AboutUsToolStripMenuItem.Text = "About Us"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(165, 28)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'dgvMainRecords
@@ -394,11 +391,10 @@ Partial Class frmRecordsViewer
         Me.dgvMainRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvMainRecords.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UserIDDataGridViewTextBoxColumn, Me.PasswordDataGridViewTextBoxColumn, Me.FirstNameDataGridViewTextBoxColumn, Me.LastNameDataGridViewTextBoxColumn, Me.DOBDataGridViewTextBoxColumn, Me.GenderDataGridViewTextBoxColumn, Me.CountryDataGridViewTextBoxColumn, Me.PhoneNumberDataGridViewTextBoxColumn, Me.RoleDataGridViewTextBoxColumn, Me.IsActivatedDataGridViewCheckBoxColumn})
         Me.dgvMainRecords.DataSource = Me.TableBindingSource
-        Me.dgvMainRecords.Location = New System.Drawing.Point(13, 497)
-        Me.dgvMainRecords.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvMainRecords.Location = New System.Drawing.Point(10, 404)
         Me.dgvMainRecords.Name = "dgvMainRecords"
         Me.dgvMainRecords.RowHeadersWidth = 51
-        Me.dgvMainRecords.Size = New System.Drawing.Size(1574, 343)
+        Me.dgvMainRecords.Size = New System.Drawing.Size(1180, 279)
         Me.dgvMainRecords.TabIndex = 103
         '
         'UserIDDataGridViewTextBoxColumn
@@ -503,9 +499,10 @@ Partial Class frmRecordsViewer
         Me.lblEdu.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.lblEdu.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEdu.ForeColor = System.Drawing.Color.White
-        Me.lblEdu.Location = New System.Drawing.Point(1183, 0)
+        Me.lblEdu.Location = New System.Drawing.Point(887, 0)
+        Me.lblEdu.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblEdu.Name = "lblEdu"
-        Me.lblEdu.Size = New System.Drawing.Size(133, 36)
+        Me.lblEdu.Size = New System.Drawing.Size(100, 29)
         Me.lblEdu.TabIndex = 102
         Me.lblEdu.Text = "EduTrack"
         Me.lblEdu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -517,9 +514,10 @@ Partial Class frmRecordsViewer
         Me.lblAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblAttendance.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAttendance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblAttendance.Location = New System.Drawing.Point(135, 65)
+        Me.lblAttendance.Location = New System.Drawing.Point(101, 53)
+        Me.lblAttendance.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblAttendance.Name = "lblAttendance"
-        Me.lblAttendance.Size = New System.Drawing.Size(364, 49)
+        Me.lblAttendance.Size = New System.Drawing.Size(273, 40)
         Me.lblAttendance.TabIndex = 104
         Me.lblAttendance.Text = "View Records"
         Me.lblAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -527,48 +525,44 @@ Partial Class frmRecordsViewer
         'txtRole
         '
         Me.txtRole.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRole.Location = New System.Drawing.Point(733, 352)
-        Me.txtRole.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtRole.Location = New System.Drawing.Point(550, 286)
         Me.txtRole.Name = "txtRole"
         Me.txtRole.ReadOnly = True
-        Me.txtRole.Size = New System.Drawing.Size(277, 29)
+        Me.txtRole.Size = New System.Drawing.Size(209, 25)
         Me.txtRole.TabIndex = 127
         '
         'txtActivationStatus
         '
         Me.txtActivationStatus.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtActivationStatus.Location = New System.Drawing.Point(1193, 365)
-        Me.txtActivationStatus.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtActivationStatus.Location = New System.Drawing.Point(895, 297)
         Me.txtActivationStatus.Name = "txtActivationStatus"
         Me.txtActivationStatus.ReadOnly = True
-        Me.txtActivationStatus.Size = New System.Drawing.Size(314, 29)
+        Me.txtActivationStatus.Size = New System.Drawing.Size(236, 25)
         Me.txtActivationStatus.TabIndex = 128
         '
         'txtGender
         '
         Me.txtGender.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtGender.Location = New System.Drawing.Point(1216, 272)
-        Me.txtGender.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtGender.Location = New System.Drawing.Point(912, 221)
         Me.txtGender.Name = "txtGender"
         Me.txtGender.ReadOnly = True
-        Me.txtGender.Size = New System.Drawing.Size(291, 29)
+        Me.txtGender.Size = New System.Drawing.Size(219, 25)
         Me.txtGender.TabIndex = 129
         '
         'txtDOB
         '
         Me.txtDOB.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDOB.Location = New System.Drawing.Point(1216, 180)
-        Me.txtDOB.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDOB.Location = New System.Drawing.Point(912, 146)
         Me.txtDOB.Name = "txtDOB"
         Me.txtDOB.ReadOnly = True
-        Me.txtDOB.Size = New System.Drawing.Size(291, 29)
+        Me.txtDOB.Size = New System.Drawing.Size(219, 25)
         Me.txtDOB.TabIndex = 130
         '
         'frmRecordsViewer
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1612, 846)
+        Me.ClientSize = New System.Drawing.Size(1209, 687)
         Me.Controls.Add(Me.txtDOB)
         Me.Controls.Add(Me.txtGender)
         Me.Controls.Add(Me.txtActivationStatus)
@@ -596,7 +590,6 @@ Partial Class frmRecordsViewer
         Me.Controls.Add(Me.dgvMainRecords)
         Me.Controls.Add(Me.lblAttendance)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "frmRecordsViewer"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -635,7 +628,6 @@ Partial Class frmRecordsViewer
     Friend WithEvents imgEdu As PictureBox
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
