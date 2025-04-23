@@ -37,6 +37,7 @@ Partial Class frmAboutApp
         Me.lblDate = New System.Windows.Forms.Label()
         Me.lblVersion = New System.Windows.Forms.Label()
         Me.frmMind = New System.Windows.Forms.Label()
+        Me.lnkDownload = New System.Windows.Forms.LinkLabel()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -94,7 +95,7 @@ Partial Class frmAboutApp
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HelpToolStripMenuItem.Text = "About Company"
         '
         'HowToToolStripMenuItem
@@ -184,11 +185,26 @@ Partial Class frmAboutApp
         Me.frmMind.TabIndex = 47
         Me.frmMind.Text = "By MindFrame Studios"
         '
+        'lnkDownload
+        '
+        Me.lnkDownload.AutoSize = True
+        Me.lnkDownload.Font = New System.Drawing.Font("Segoe UI Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lnkDownload.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.lnkDownload.LinkColor = System.Drawing.Color.Teal
+        Me.lnkDownload.Location = New System.Drawing.Point(477, 486)
+        Me.lnkDownload.Name = "lnkDownload"
+        Me.lnkDownload.Size = New System.Drawing.Size(169, 17)
+        Me.lnkDownload.TabIndex = 49
+        Me.lnkDownload.TabStop = True
+        Me.lnkDownload.Text = "EduTrack Download Page"
+        Me.lnkDownload.VisitedLinkColor = System.Drawing.Color.Teal
+        '
         'frmAboutApp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1075, 669)
+        Me.Controls.Add(Me.lnkDownload)
         Me.Controls.Add(Me.frmMind)
         Me.Controls.Add(Me.lblVersion)
         Me.Controls.Add(Me.lblDate)
@@ -224,4 +240,5 @@ Partial Class frmAboutApp
     Friend WithEvents lblDate As Label
     Friend WithEvents lblVersion As Label
     Friend WithEvents frmMind As Label
+    Friend WithEvents lnkDownload As LinkLabel
 End Class

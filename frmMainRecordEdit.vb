@@ -191,4 +191,9 @@ Public Class frmMainRecordEdit
             frmMain.Show()
         End If
     End Sub
+
+    Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click
+        Me.Hide()
+        frmAboutCompany.Show()
+    End Sub
 End Class

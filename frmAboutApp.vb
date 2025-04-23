@@ -17,4 +17,17 @@
             frmMain.Show()
         End If
     End Sub
+
+    Private Sub frmAboutApp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lnkDownload.Links.Add(0, lnkDownload.Text.Length, "https://edutrackbeta.netlify.app/")
+    End Sub
+
+    Private Sub lnkDownload_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkDownload.LinkClicked
+        Process.Start(e.Link.LinkData.ToString())
+    End Sub
+
+    Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click
+        Me.Hide()
+        frmAboutCompany.Show()
+    End Sub
 End Class

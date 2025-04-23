@@ -2,10 +2,11 @@
 
 Public Class frmStudentManager
     Dim selectedUserID As String = ""
-    Dim connectionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
+    'Dim connectionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
+    Dim connStr As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
     Private Sub LoadData()
         Try
-            Using conn As New SqlConnection(connectionString)
+            Using conn As New SqlConnection(connStr)
                 Dim adapter As New SqlDataAdapter("SELECT * FROM [Table]", conn)
                 Dim dt As New DataTable()
                 adapter.Fill(dt)
@@ -137,5 +138,10 @@ Public Class frmStudentManager
             Me.Hide()
             frmMain.Show()
         End If
+    End Sub
+
+    Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click
+        Me.Hide()
+        frmAboutCompany.Show()
     End Sub
 End Class

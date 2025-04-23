@@ -62,6 +62,7 @@ Partial Class frmMyAccount
         Me.lblPhone = New System.Windows.Forms.Label()
         Me.clbCourses = New System.Windows.Forms.CheckedListBox()
         Me.lblCourses = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.imgEdu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,7 +88,8 @@ Partial Class frmMyAccount
         Me.txtPassword.MaxLength = 50
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(137, 25)
-        Me.txtPassword.TabIndex = 125
+        Me.txtPassword.TabIndex = 1
+        Me.ToolTip1.SetToolTip(Me.txtPassword, "Enter new password here!")
         '
         'txtUserID
         '
@@ -188,7 +190,7 @@ Partial Class frmMyAccount
         Me.btnSave.Location = New System.Drawing.Point(32, 162)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(102, 46)
-        Me.btnSave.TabIndex = 107
+        Me.btnSave.TabIndex = 0
         Me.btnSave.Text = "  Save"
         Me.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSave.UseVisualStyleBackColor = False
@@ -245,19 +247,19 @@ Partial Class frmMyAccount
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AboutUsToolStripMenuItem.Text = "About Program"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HelpToolStripMenuItem.Text = "About Company"
         '
         'HowToToolStripMenuItem
         '
         Me.HowToToolStripMenuItem.Name = "HowToToolStripMenuItem"
-        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HowToToolStripMenuItem.Text = "How To"
         '
         'TableBindingSource
@@ -563,4 +565,5 @@ Partial Class frmMyAccount
     Friend WithEvents clbCourses As CheckedListBox
     Friend WithEvents lblCourses As Label
     Friend WithEvents HowToToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

@@ -71,6 +71,7 @@ Partial Class frmCreateMain
         Me.txtUserID = New System.Windows.Forms.TextBox()
         Me.lblPassword = New System.Windows.Forms.Label()
         Me.lblUsername = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -107,6 +108,7 @@ Partial Class frmCreateMain
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
+        Me.ExitToolStripMenuItem.ToolTipText = "Go back to the main form."
         '
         'AboutToolStripMenuItem
         '
@@ -120,19 +122,19 @@ Partial Class frmCreateMain
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AboutUsToolStripMenuItem.Text = "About Program"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HelpToolStripMenuItem.Text = "About Company"
         '
         'HowToToolStripMenuItem
         '
         Me.HowToToolStripMenuItem.Name = "HowToToolStripMenuItem"
-        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HowToToolStripMenuItem.Text = "How To"
         '
         'lblEdu
@@ -142,7 +144,7 @@ Partial Class frmCreateMain
         Me.lblEdu.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.lblEdu.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEdu.ForeColor = System.Drawing.Color.White
-        Me.lblEdu.Location = New System.Drawing.Point(836, 0)
+        Me.lblEdu.Location = New System.Drawing.Point(901, 0)
         Me.lblEdu.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblEdu.Name = "lblEdu"
         Me.lblEdu.Size = New System.Drawing.Size(100, 29)
@@ -266,8 +268,9 @@ Partial Class frmCreateMain
         Me.btnAddRecord.Location = New System.Drawing.Point(754, 50)
         Me.btnAddRecord.Name = "btnAddRecord"
         Me.btnAddRecord.Size = New System.Drawing.Size(192, 44)
-        Me.btnAddRecord.TabIndex = 38
+        Me.btnAddRecord.TabIndex = 10
         Me.btnAddRecord.Text = "Add Record"
+        Me.ToolTip1.SetToolTip(Me.btnAddRecord, "Click to add new record." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Remember to fill all fields!")
         Me.btnAddRecord.UseVisualStyleBackColor = False
         '
         'lblGrade
@@ -304,7 +307,7 @@ Partial Class frmCreateMain
         Me.msktxtPhone.Mask = "000-0000"
         Me.msktxtPhone.Name = "msktxtPhone"
         Me.msktxtPhone.Size = New System.Drawing.Size(137, 29)
-        Me.msktxtPhone.TabIndex = 88
+        Me.msktxtPhone.TabIndex = 4
         '
         'lstGender
         '
@@ -317,7 +320,7 @@ Partial Class frmCreateMain
         Me.lstGender.Margin = New System.Windows.Forms.Padding(2)
         Me.lstGender.Name = "lstGender"
         Me.lstGender.Size = New System.Drawing.Size(250, 25)
-        Me.lstGender.TabIndex = 87
+        Me.lstGender.TabIndex = 8
         '
         'lblRole
         '
@@ -342,7 +345,7 @@ Partial Class frmCreateMain
         Me.clbActiveStatus.Location = New System.Drawing.Point(468, 254)
         Me.clbActiveStatus.Name = "clbActiveStatus"
         Me.clbActiveStatus.Size = New System.Drawing.Size(156, 28)
-        Me.clbActiveStatus.TabIndex = 83
+        Me.clbActiveStatus.TabIndex = 6
         '
         'txtAddress
         '
@@ -351,7 +354,7 @@ Partial Class frmCreateMain
         Me.txtAddress.MaxLength = 30
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(137, 25)
-        Me.txtAddress.TabIndex = 82
+        Me.txtAddress.TabIndex = 5
         '
         'txtLName
         '
@@ -360,7 +363,7 @@ Partial Class frmCreateMain
         Me.txtLName.MaxLength = 30
         Me.txtLName.Name = "txtLName"
         Me.txtLName.Size = New System.Drawing.Size(137, 25)
-        Me.txtLName.TabIndex = 81
+        Me.txtLName.TabIndex = 3
         '
         'txtFName
         '
@@ -369,7 +372,7 @@ Partial Class frmCreateMain
         Me.txtFName.MaxLength = 30
         Me.txtFName.Name = "txtFName"
         Me.txtFName.Size = New System.Drawing.Size(137, 25)
-        Me.txtFName.TabIndex = 80
+        Me.txtFName.TabIndex = 2
         '
         'dtpDOB
         '
@@ -378,7 +381,7 @@ Partial Class frmCreateMain
         Me.dtpDOB.Location = New System.Drawing.Point(730, 122)
         Me.dtpDOB.Name = "dtpDOB"
         Me.dtpDOB.Size = New System.Drawing.Size(250, 29)
-        Me.dtpDOB.TabIndex = 79
+        Me.dtpDOB.TabIndex = 7
         '
         'lblGender
         '
@@ -507,7 +510,7 @@ Partial Class frmCreateMain
         Me.lstRole.Margin = New System.Windows.Forms.Padding(2)
         Me.lstRole.Name = "lstRole"
         Me.lstRole.Size = New System.Drawing.Size(250, 25)
-        Me.lstRole.TabIndex = 90
+        Me.lstRole.TabIndex = 909
         '
         'txtPassword
         '
@@ -516,7 +519,7 @@ Partial Class frmCreateMain
         Me.txtPassword.MaxLength = 50
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(137, 25)
-        Me.txtPassword.TabIndex = 94
+        Me.txtPassword.TabIndex = 1
         '
         'txtUserID
         '
@@ -525,7 +528,7 @@ Partial Class frmCreateMain
         Me.txtUserID.MaxLength = 30
         Me.txtUserID.Name = "txtUserID"
         Me.txtUserID.Size = New System.Drawing.Size(137, 25)
-        Me.txtUserID.TabIndex = 93
+        Me.txtUserID.TabIndex = 0
         '
         'lblPassword
         '
@@ -653,4 +656,5 @@ Partial Class frmCreateMain
     Friend WithEvents lblUsername As Label
     Friend WithEvents HowToToolStripMenuItem As ToolStripMenuItem
     Public WithEvents DataGridView1 As DataGridView
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

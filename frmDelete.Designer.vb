@@ -360,19 +360,19 @@ Partial Class frmDelete
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AboutUsToolStripMenuItem.Text = "About Program"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HelpToolStripMenuItem.Text = "About Company"
         '
         'HowToToolStripMenuItem
         '
         Me.HowToToolStripMenuItem.Name = "HowToToolStripMenuItem"
-        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HowToToolStripMenuItem.Text = "How To"
         '
         'TableTableAdapter

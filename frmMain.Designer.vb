@@ -65,6 +65,7 @@ Partial Class frmMain
         Me.btnAccount = New System.Windows.Forms.Button()
         Me.Version = New System.Windows.Forms.Label()
         Me.frmMind = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.MenuStrip1.SuspendLayout()
         Me.pnlViewAllRecords.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,26 +113,32 @@ Partial Class frmMain
         '
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
         Me.HomeToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
         Me.HomeToolStripMenuItem.Text = "&New Record"
+        Me.HomeToolStripMenuItem.ToolTipText = "Create a new user record."
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
         Me.ExitToolStripMenuItem.Text = "View Records"
+        Me.ExitToolStripMenuItem.ToolTipText = "View all user records."
         '
         'LogoutToolStripMenuItem
         '
         Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.LogoutToolStripMenuItem.Text = "Logout"
+        Me.LogoutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.L), System.Windows.Forms.Keys)
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
+        Me.LogoutToolStripMenuItem.Text = "Log Out"
+        Me.LogoutToolStripMenuItem.ToolTipText = "Log out of your account."
         '
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(197, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(202, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
+        Me.ExitToolStripMenuItem1.ToolTipText = "Exit the application."
         '
         'OptionsToolStripMenuItem
         '
@@ -149,6 +156,7 @@ Partial Class frmMain
         Me.EditRecordToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
         Me.EditRecordToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.EditRecordToolStripMenuItem.Text = "Edit Record"
+        Me.EditRecordToolStripMenuItem.ToolTipText = "Edit the main user records."
         '
         'DeleteRecordToolStripMenuItem
         '
@@ -156,6 +164,7 @@ Partial Class frmMain
         Me.DeleteRecordToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D), System.Windows.Forms.Keys)
         Me.DeleteRecordToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.DeleteRecordToolStripMenuItem.Text = "Delete Record"
+        Me.DeleteRecordToolStripMenuItem.ToolTipText = "Delete records from the users."
         '
         'AboutToolStripMenuItem
         '
@@ -184,6 +193,7 @@ Partial Class frmMain
         Me.HowToToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1
         Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HowToToolStripMenuItem.Text = "How To"
+        Me.HowToToolStripMenuItem.ToolTipText = "Guide on how to use the program."
         '
         'pnlViewAllRecords
         '
@@ -349,6 +359,7 @@ Partial Class frmMain
         Me.btnMyAccount.Size = New System.Drawing.Size(192, 44)
         Me.btnMyAccount.TabIndex = 1
         Me.btnMyAccount.Text = "My Account"
+        Me.ToolTip1.SetToolTip(Me.btnMyAccount, "Edit account settings and password")
         Me.btnMyAccount.UseVisualStyleBackColor = False
         '
         'EduTrackDBDS
@@ -575,4 +586,5 @@ Partial Class frmMain
     Friend WithEvents LogoutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Version As Label
     Friend WithEvents frmMind As Label
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

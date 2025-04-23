@@ -72,6 +72,7 @@ Partial Class frmMainRecordEdit
         Me.lblUsername = New System.Windows.Forms.Label()
         Me.lstRole = New System.Windows.Forms.ListBox()
         Me.lblRole = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.imgEdu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvMainRecords, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -109,19 +110,19 @@ Partial Class frmMainRecordEdit
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AboutUsToolStripMenuItem.Text = "About Program"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HelpToolStripMenuItem.Text = "About Company"
         '
         'HowToToolStripMenuItem
         '
         Me.HowToToolStripMenuItem.Name = "HowToToolStripMenuItem"
-        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HowToToolStripMenuItem.Text = "How To"
         '
         'dgvMainRecords
@@ -292,7 +293,7 @@ Partial Class frmMainRecordEdit
         Me.msktxtPhone.Mask = "000-0000"
         Me.msktxtPhone.Name = "msktxtPhone"
         Me.msktxtPhone.Size = New System.Drawing.Size(111, 29)
-        Me.msktxtPhone.TabIndex = 91
+        Me.msktxtPhone.TabIndex = 4
         '
         'lstGender
         '
@@ -305,7 +306,7 @@ Partial Class frmMainRecordEdit
         Me.lstGender.Margin = New System.Windows.Forms.Padding(2)
         Me.lstGender.Name = "lstGender"
         Me.lstGender.Size = New System.Drawing.Size(190, 25)
-        Me.lstGender.TabIndex = 90
+        Me.lstGender.TabIndex = 8
         '
         'txtAddress
         '
@@ -313,7 +314,7 @@ Partial Class frmMainRecordEdit
         Me.txtAddress.Location = New System.Drawing.Point(582, 210)
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(137, 25)
-        Me.txtAddress.TabIndex = 85
+        Me.txtAddress.TabIndex = 5
         '
         'txtLName
         '
@@ -321,7 +322,7 @@ Partial Class frmMainRecordEdit
         Me.txtLName.Location = New System.Drawing.Point(319, 210)
         Me.txtLName.Name = "txtLName"
         Me.txtLName.Size = New System.Drawing.Size(137, 25)
-        Me.txtLName.TabIndex = 84
+        Me.txtLName.TabIndex = 1
         '
         'txtFName
         '
@@ -329,7 +330,7 @@ Partial Class frmMainRecordEdit
         Me.txtFName.Location = New System.Drawing.Point(319, 135)
         Me.txtFName.Name = "txtFName"
         Me.txtFName.Size = New System.Drawing.Size(137, 25)
-        Me.txtFName.TabIndex = 83
+        Me.txtFName.TabIndex = 0
         '
         'dtpDOB
         '
@@ -338,7 +339,7 @@ Partial Class frmMainRecordEdit
         Me.dtpDOB.Location = New System.Drawing.Point(902, 136)
         Me.dtpDOB.Name = "dtpDOB"
         Me.dtpDOB.Size = New System.Drawing.Size(250, 29)
-        Me.dtpDOB.TabIndex = 82
+        Me.dtpDOB.TabIndex = 7
         '
         'lblGender
         '
@@ -441,9 +442,10 @@ Partial Class frmMainRecordEdit
         Me.btnSave.Location = New System.Drawing.Point(26, 210)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(102, 46)
-        Me.btnSave.TabIndex = 75
+        Me.btnSave.TabIndex = 10
         Me.btnSave.Text = "  Save"
         Me.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.ToolTip1.SetToolTip(Me.btnSave, "Click to save changes to user data." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "REMEMBER TO SELECT GENDER AND USER ROLE!")
         Me.btnSave.UseVisualStyleBackColor = False
         '
         'btnEdit
@@ -458,9 +460,10 @@ Partial Class frmMainRecordEdit
         Me.btnEdit.Location = New System.Drawing.Point(26, 131)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(167, 50)
-        Me.btnEdit.TabIndex = 74
+        Me.btnEdit.TabIndex = 11
         Me.btnEdit.Text = "Edit Main Record"
         Me.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.ToolTip1.SetToolTip(Me.btnEdit, "Click to edit selected user.")
         Me.btnEdit.UseVisualStyleBackColor = False
         '
         'lblActiveStatus
@@ -486,7 +489,7 @@ Partial Class frmMainRecordEdit
         Me.clbActiveStatus.Location = New System.Drawing.Point(902, 288)
         Me.clbActiveStatus.Name = "clbActiveStatus"
         Me.clbActiveStatus.Size = New System.Drawing.Size(156, 28)
-        Me.clbActiveStatus.TabIndex = 92
+        Me.clbActiveStatus.TabIndex = 9
         '
         'TableTableAdapter
         '
@@ -506,7 +509,7 @@ Partial Class frmMainRecordEdit
         Me.txtPassword.MaxLength = 50
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(137, 25)
-        Me.txtPassword.TabIndex = 98
+        Me.txtPassword.TabIndex = 3
         '
         'txtUserID
         '
@@ -515,7 +518,7 @@ Partial Class frmMainRecordEdit
         Me.txtUserID.MaxLength = 30
         Me.txtUserID.Name = "txtUserID"
         Me.txtUserID.Size = New System.Drawing.Size(137, 25)
-        Me.txtUserID.TabIndex = 97
+        Me.txtUserID.TabIndex = 2
         '
         'lblPassword
         '
@@ -558,7 +561,7 @@ Partial Class frmMainRecordEdit
         Me.lstRole.Margin = New System.Windows.Forms.Padding(2)
         Me.lstRole.Name = "lstRole"
         Me.lstRole.Size = New System.Drawing.Size(250, 25)
-        Me.lstRole.TabIndex = 100
+        Me.lstRole.TabIndex = 6
         '
         'lblRole
         '
@@ -672,4 +675,5 @@ Partial Class frmMainRecordEdit
     Friend WithEvents lstRole As ListBox
     Friend WithEvents lblRole As Label
     Friend WithEvents HowToToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

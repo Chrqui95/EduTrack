@@ -260,7 +260,7 @@ Partial Class frmRegister
         Me.PictureBox1.BackgroundImage = Global.EduTrack.My.Resources.Resources.user1
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PictureBox1.Image = Global.EduTrack.My.Resources.Resources.user1
-        Me.PictureBox1.Location = New System.Drawing.Point(15, 49)
+        Me.PictureBox1.Location = New System.Drawing.Point(15, 202)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(23, 25)
         Me.PictureBox1.TabIndex = 22

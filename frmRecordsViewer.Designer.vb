@@ -311,7 +311,7 @@ Partial Class frmRecordsViewer
         Me.btnView.Location = New System.Drawing.Point(26, 234)
         Me.btnView.Name = "btnView"
         Me.btnView.Size = New System.Drawing.Size(167, 50)
-        Me.btnView.TabIndex = 106
+        Me.btnView.TabIndex = 0
         Me.btnView.Text = "View Record"
         Me.btnView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnView.UseVisualStyleBackColor = False
@@ -377,19 +377,19 @@ Partial Class frmRecordsViewer
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AboutUsToolStripMenuItem.Text = "About Program"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HelpToolStripMenuItem.Text = "About Company"
         '
         'HowToToolStripMenuItem
         '
         Me.HowToToolStripMenuItem.Name = "HowToToolStripMenuItem"
-        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HowToToolStripMenuItem.Text = "How To"
         '
         'dgvMainRecords

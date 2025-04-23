@@ -123,6 +123,12 @@
     <Compile Include="frmAboutApp.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmAboutCompany.Designer.vb">
+      <DependentUpon>frmAboutCompany.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutCompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDelete.Designer.vb">
       <DependentUpon>frmDelete.vb</DependentUpon>
     </Compile>
@@ -208,6 +214,9 @@
     <EmbeddedResource Include="frmAboutApp.resx">
       <DependentUpon>frmAboutApp.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAboutCompany.resx">
+      <DependentUpon>frmAboutCompany.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDelete.resx">
       <DependentUpon>frmDelete.vb</DependentUpon>
     </EmbeddedResource>
@@ -278,6 +287,8 @@
       <DependentUpon>EduTrackDB.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\mind1.png" />
+    <None Include="Resources\mind.png" />
     <None Include="Resources\delete.ico" />
     <None Include="Resources\diskette.ico" />
     <None Include="Resources\check.ico" />

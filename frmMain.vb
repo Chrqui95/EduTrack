@@ -36,6 +36,8 @@ Public Class frmMain
                 ExitToolStripMenuItem.Visible = False
             Case Else
                 MessageBox.Show("No role assigned or unknown role. Please contact the administrator.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                frmLogin.txtPassword.Text = ""
+                frmLogin.txtUsername.Text = ""
                 Me.Close()
                 frmLogin.Show() ' Redirect to login if the role is invalid, just to allow absolute 0 access
         End Select
@@ -193,5 +195,28 @@ Public Class frmMain
         If e.KeyCode = Keys.Escape Then
             Application.Exit()
         End If
+    End Sub
+
+    Private Sub frmMain_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Application.Exit()
+    End Sub
+
+    Private Sub HowToToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HowToToolStripMenuItem.Click
+        ' Path to the PDF file
+        Dim pdfPath As String = "C:\path\to\your\file.pdf"
+
+        ' Check if the file exists
+        If System.IO.File.Exists(pdfPath) Then
+            ' Open the PDF file using the default viewer
+            Process.Start(pdfPath)
+        Else
+            ' Show an error message if the file doesn't exist
+            MessageBox.Show("The file does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+
+    Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click
+        Me.Hide()
+        frmAboutCompany.Show()
     End Sub
 End Class

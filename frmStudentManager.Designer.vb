@@ -130,19 +130,19 @@ Partial Class frmStudentManager
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AboutUsToolStripMenuItem.Text = "About Program"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HelpToolStripMenuItem.Text = "About Company"
         '
         'HowToToolStripMenuItem
         '
         Me.HowToToolStripMenuItem.Name = "HowToToolStripMenuItem"
-        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HowToToolStripMenuItem.Text = "How To"
         '
         'lblEdu
@@ -171,7 +171,7 @@ Partial Class frmStudentManager
         Me.btnSave.Location = New System.Drawing.Point(44, 197)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(102, 46)
-        Me.btnSave.TabIndex = 50
+        Me.btnSave.TabIndex = 90
         Me.btnSave.Text = "  Save"
         Me.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSave.UseVisualStyleBackColor = False
@@ -188,7 +188,7 @@ Partial Class frmStudentManager
         Me.btnEdit.Location = New System.Drawing.Point(10, 118)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(167, 50)
-        Me.btnEdit.TabIndex = 49
+        Me.btnEdit.TabIndex = 0
         Me.btnEdit.Text = "Edit Student Record"
         Me.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnEdit.UseVisualStyleBackColor = False
@@ -301,7 +301,7 @@ Partial Class frmStudentManager
         Me.dtpStudent.Location = New System.Drawing.Point(902, 139)
         Me.dtpStudent.Name = "dtpStudent"
         Me.dtpStudent.Size = New System.Drawing.Size(250, 29)
-        Me.dtpStudent.TabIndex = 58
+        Me.dtpStudent.TabIndex = 5
         '
         'txtFName
         '
@@ -309,7 +309,7 @@ Partial Class frmStudentManager
         Me.txtFName.Location = New System.Drawing.Point(340, 143)
         Me.txtFName.Name = "txtFName"
         Me.txtFName.Size = New System.Drawing.Size(137, 25)
-        Me.txtFName.TabIndex = 60
+        Me.txtFName.TabIndex = 1
         '
         'txtLName
         '
@@ -317,7 +317,7 @@ Partial Class frmStudentManager
         Me.txtLName.Location = New System.Drawing.Point(340, 218)
         Me.txtLName.Name = "txtLName"
         Me.txtLName.Size = New System.Drawing.Size(137, 25)
-        Me.txtLName.TabIndex = 61
+        Me.txtLName.TabIndex = 2
         '
         'txtAddress
         '
@@ -325,7 +325,7 @@ Partial Class frmStudentManager
         Me.txtAddress.Location = New System.Drawing.Point(625, 217)
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(137, 25)
-        Me.txtAddress.TabIndex = 63
+        Me.txtAddress.TabIndex = 4
         '
         'clbCourses
         '
@@ -348,7 +348,7 @@ Partial Class frmStudentManager
         Me.btnCourses.Location = New System.Drawing.Point(340, 270)
         Me.btnCourses.Name = "btnCourses"
         Me.btnCourses.Size = New System.Drawing.Size(137, 30)
-        Me.btnCourses.TabIndex = 67
+        Me.btnCourses.TabIndex = 8
         Me.btnCourses.Text = "Show Courses"
         Me.btnCourses.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnCourses.UseVisualStyleBackColor = False
@@ -470,7 +470,7 @@ Partial Class frmStudentManager
         Me.msktxtStudentEmail.Mask = "aaaaaa00@aaa"
         Me.msktxtStudentEmail.Name = "msktxtStudentEmail"
         Me.msktxtStudentEmail.Size = New System.Drawing.Size(145, 29)
-        Me.msktxtStudentEmail.TabIndex = 70
+        Me.msktxtStudentEmail.TabIndex = 7
         '
         'lstGender
         '
@@ -483,7 +483,7 @@ Partial Class frmStudentManager
         Me.lstGender.Margin = New System.Windows.Forms.Padding(2)
         Me.lstGender.Name = "lstGender"
         Me.lstGender.Size = New System.Drawing.Size(190, 25)
-        Me.lstGender.TabIndex = 71
+        Me.lstGender.TabIndex = 6
         '
         'StudentRecordsTableAdapter
         '
@@ -497,7 +497,7 @@ Partial Class frmStudentManager
         Me.msktxtPhone.Mask = "000-0000"
         Me.msktxtPhone.Name = "msktxtPhone"
         Me.msktxtPhone.Size = New System.Drawing.Size(111, 29)
-        Me.msktxtPhone.TabIndex = 72
+        Me.msktxtPhone.TabIndex = 3
         '
         'frmStudentManager
         '
