@@ -40,8 +40,6 @@ Public Class frmMain
         End Select
 
         UserRole = Session.CurrentUserRole ' Fetches the current user role to prevent errors
-        Dim username As String = Session.CurrentUserID
-        lblWelcome.Text = "Logged in as: " & username
     End Sub
 
     ' Refresh the student record sync when form regains focus

@@ -24,7 +24,6 @@ Partial Class frmMain
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
-        Me.lblWelcome = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -83,21 +82,6 @@ Partial Class frmMain
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'lblWelcome
-        '
-        Me.lblWelcome.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblWelcome.BackColor = System.Drawing.Color.Transparent
-        Me.lblWelcome.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.lblWelcome.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.lblWelcome.Location = New System.Drawing.Point(399, 152)
-        Me.lblWelcome.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblWelcome.Name = "lblWelcome"
-        Me.lblWelcome.Size = New System.Drawing.Size(197, 23)
-        Me.lblWelcome.TabIndex = 30
-        Me.lblWelcome.Text = "Welcome: Username"
-        Me.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'MenuStrip1
         '
@@ -491,7 +475,6 @@ Partial Class frmMain
         Me.Controls.Add(Me.btnAccount)
         Me.Controls.Add(Me.pnlAccount)
         Me.Controls.Add(Me.pnlViewAllRecords)
-        Me.Controls.Add(Me.lblWelcome)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlDelete)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -521,7 +504,6 @@ Partial Class frmMain
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents lblWelcome As Label
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents pnlViewAllRecords As Panel
     Friend WithEvents pnlEditMainRecords As Panel
