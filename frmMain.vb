@@ -4,6 +4,7 @@ Public Class frmMain
     Public UserRole As String = CurrentUserID
 
     Public Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        UserRole = Session.CurrentUserRole ' Fetches the current user role to prevent errors
         ' Hide all panels initially
         pnlDelete.Visible = False
         pnlCreateNewRecords.Visible = False
@@ -38,8 +39,6 @@ Public Class frmMain
                 Me.Close()
                 frmLogin.Show() ' Redirect to login if the role is invalid, just to allow absolute 0 access
         End Select
-
-        UserRole = Session.CurrentUserRole ' Fetches the current user role to prevent errors
     End Sub
 
     ' Refresh the student record sync when form regains focus
@@ -168,5 +167,31 @@ Public Class frmMain
         frmLogin.txtUsername.Text = ""
         Me.Close()
         frmLogin.Show()
+    End Sub
+
+    Private Sub AboutUsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutUsToolStripMenuItem.Click
+        frmAboutApp.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+        Me.Hide()
+        frmCreateMain.Show()
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.Hide()
+        frmRecordsViewer.Show()
+    End Sub
+
+    Private Sub EditRecordToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditRecordToolStripMenuItem.Click
+        Me.Hide()
+        frmMainRecordEdit.Show()
+    End Sub
+
+    Private Sub frmMain_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Escape Then
+            Application.Exit()
+        End If
     End Sub
 End Class

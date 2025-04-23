@@ -89,7 +89,7 @@ Partial Class frmRegister
         Me.lstGender.ItemHeight = 17
         Me.lstGender.Items.AddRange(New Object() {"Male", "Female"})
         Me.lstGender.Location = New System.Drawing.Point(316, 154)
-        Me.lstGender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.lstGender.Margin = New System.Windows.Forms.Padding(2)
         Me.lstGender.Name = "lstGender"
         Me.lstGender.Size = New System.Drawing.Size(215, 19)
         Me.lstGender.TabIndex = 46
@@ -102,7 +102,7 @@ Partial Class frmRegister
         Me.msktxtPhone.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.msktxtPhone.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert
         Me.msktxtPhone.Location = New System.Drawing.Point(316, 49)
-        Me.msktxtPhone.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.msktxtPhone.Margin = New System.Windows.Forms.Padding(2)
         Me.msktxtPhone.Mask = "000-0000"
         Me.msktxtPhone.Name = "msktxtPhone"
         Me.msktxtPhone.Size = New System.Drawing.Size(215, 25)
@@ -286,7 +286,7 @@ Partial Class frmRegister
         Me.btnRegister.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegister.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.btnRegister.Location = New System.Drawing.Point(176, 274)
-        Me.btnRegister.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRegister.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRegister.Name = "btnRegister"
         Me.btnRegister.Size = New System.Drawing.Size(244, 36)
         Me.btnRegister.TabIndex = 2
@@ -322,7 +322,7 @@ Partial Class frmRegister
         '
         Me.btnPlaceholderExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnPlaceholderExit.Location = New System.Drawing.Point(455, 10)
-        Me.btnPlaceholderExit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnPlaceholderExit.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPlaceholderExit.Name = "btnPlaceholderExit"
         Me.btnPlaceholderExit.Size = New System.Drawing.Size(1, 1)
         Me.btnPlaceholderExit.TabIndex = 24
@@ -344,7 +344,7 @@ Partial Class frmRegister
         Me.Controls.Add(Me.pnlLogin)
         Me.Controls.Add(Me.Label6)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.Name = "frmRegister"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

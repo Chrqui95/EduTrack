@@ -117,6 +117,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EduTrackDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmAboutApp.Designer.vb">
+      <DependentUpon>frmAboutApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutApp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDelete.Designer.vb">
       <DependentUpon>frmDelete.vb</DependentUpon>
     </Compile>
@@ -198,6 +204,9 @@
   <ItemGroup>
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAboutApp.resx">
+      <DependentUpon>frmAboutApp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDelete.resx">
       <DependentUpon>frmDelete.vb</DependentUpon>

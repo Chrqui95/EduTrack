@@ -108,4 +108,16 @@ Public Class frmMyAccount
         Me.Hide()
         frmMain.Show()
     End Sub
+
+    Private Sub AboutUsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutUsToolStripMenuItem.Click
+        frmAboutApp.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub frmMyAccount_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Escape Then
+            Me.Hide()
+            frmMain.Show()
+        End If
+    End Sub
 End Class

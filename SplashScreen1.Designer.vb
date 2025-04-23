@@ -27,7 +27,7 @@ Partial Class SplashScreen1
         Me.ApplicationTitle = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Version = New System.Windows.Forms.Label()
-        Me.frmMind = New System.Windows.Forms.Label()
+        Me.lblMind = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -83,15 +83,15 @@ Partial Class SplashScreen1
         Me.Version.TabIndex = 9
         Me.Version.Text = "Pre-Release 1.0.0"
         '
-        'frmMind
+        'lblMind
         '
-        Me.frmMind.AutoSize = True
-        Me.frmMind.Font = New System.Drawing.Font("Cascadia Mono SemiLight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.frmMind.Location = New System.Drawing.Point(206, 130)
-        Me.frmMind.Name = "frmMind"
-        Me.frmMind.Size = New System.Drawing.Size(168, 17)
-        Me.frmMind.TabIndex = 10
-        Me.frmMind.Text = "By MindFrame Studios"
+        Me.lblMind.AutoSize = True
+        Me.lblMind.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMind.Location = New System.Drawing.Point(207, 129)
+        Me.lblMind.Name = "lblMind"
+        Me.lblMind.Size = New System.Drawing.Size(148, 16)
+        Me.lblMind.TabIndex = 48
+        Me.lblMind.Text = "By MindFrame Studios"
         '
         'SplashScreen1
         '
@@ -99,7 +99,7 @@ Partial Class SplashScreen1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(563, 274)
         Me.ControlBox = False
-        Me.Controls.Add(Me.frmMind)
+        Me.Controls.Add(Me.lblMind)
         Me.Controls.Add(Me.Version)
         Me.Controls.Add(Me.prgSplash)
         Me.Controls.Add(Me.Copyright)
@@ -121,5 +121,5 @@ Partial Class SplashScreen1
     Friend WithEvents ApplicationTitle As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Version As Label
-    Friend WithEvents frmMind As Label
+    Friend WithEvents lblMind As Label
 End Class

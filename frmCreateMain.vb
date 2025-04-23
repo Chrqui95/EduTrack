@@ -1,7 +1,19 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class frmCreateMain
-
+    Dim connectionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
+    Private Sub LoadData()
+        Try
+            Using conn As New SqlConnection(connectionString)
+                Dim adapter As New SqlDataAdapter("SELECT * FROM [Table]", conn)
+                Dim dt As New DataTable()
+                adapter.Fill(dt)
+                DataGridView1.DataSource = dt
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error loading records: " & ex.Message)
+        End Try
+    End Sub
     Private Sub btnAddRecord_Click(sender As Object, e As EventArgs) Handles btnAddRecord.Click
         ' Basic validation
         If String.IsNullOrWhiteSpace(txtUserID.Text) OrElse
@@ -72,5 +84,17 @@ Public Class frmCreateMain
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
         frmMain.Show()
+    End Sub
+
+    Private Sub AboutUsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutUsToolStripMenuItem.Click
+        frmAboutApp.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub frmCreateMain_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Escape Then
+            Me.Hide()
+            frmMain.Show()
+        End If
     End Sub
 End Class

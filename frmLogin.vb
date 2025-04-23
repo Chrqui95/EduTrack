@@ -64,4 +64,10 @@ Public Class frmLogin
         frmRegister.Show()
         Me.Hide()
     End Sub
+
+    Private Sub frmLogin_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Escape Then
+            Application.Exit()
+        End If
+    End Sub
 End Class

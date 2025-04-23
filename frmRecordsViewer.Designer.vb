@@ -51,6 +51,7 @@ Partial Class frmRecordsViewer
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutUsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HowToToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.dgvMainRecords = New System.Windows.Forms.DataGridView()
         Me.UserIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PasswordDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -174,7 +175,7 @@ Partial Class frmRecordsViewer
         '
         Me.msktxtPhone.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.msktxtPhone.Location = New System.Drawing.Point(582, 137)
-        Me.msktxtPhone.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.msktxtPhone.Margin = New System.Windows.Forms.Padding(2)
         Me.msktxtPhone.Mask = "000-0000"
         Me.msktxtPhone.Name = "msktxtPhone"
         Me.msktxtPhone.ReadOnly = True
@@ -352,7 +353,7 @@ Partial Class frmRecordsViewer
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'OptionsToolStripMenuItem
@@ -366,7 +367,7 @@ Partial Class frmRecordsViewer
         '
         'AboutToolStripMenuItem
         '
-        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutUsToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutUsToolStripMenuItem, Me.HelpToolStripMenuItem, Me.HowToToolStripMenuItem})
         Me.AboutToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AboutToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
@@ -376,14 +377,20 @@ Partial Class frmRecordsViewer
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.AboutUsToolStripMenuItem.Text = "About Us"
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.AboutUsToolStripMenuItem.Text = "About Program"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.HelpToolStripMenuItem.Text = "Help"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HelpToolStripMenuItem.Text = "About Company"
+        '
+        'HowToToolStripMenuItem
+        '
+        Me.HowToToolStripMenuItem.Name = "HowToToolStripMenuItem"
+        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HowToToolStripMenuItem.Text = "How To"
         '
         'dgvMainRecords
         '
@@ -590,6 +597,7 @@ Partial Class frmRecordsViewer
         Me.Controls.Add(Me.dgvMainRecords)
         Me.Controls.Add(Me.lblAttendance)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.Name = "frmRecordsViewer"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -653,4 +661,5 @@ Partial Class frmRecordsViewer
     Friend WithEvents txtActivationStatus As TextBox
     Friend WithEvents txtGender As TextBox
     Friend WithEvents txtDOB As TextBox
+    Friend WithEvents HowToToolStripMenuItem As ToolStripMenuItem
 End Class

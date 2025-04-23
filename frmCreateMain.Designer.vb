@@ -30,6 +30,7 @@ Partial Class frmCreateMain
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutUsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HowToToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblEdu = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.UserIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -109,7 +110,7 @@ Partial Class frmCreateMain
         '
         'AboutToolStripMenuItem
         '
-        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutUsToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutUsToolStripMenuItem, Me.HelpToolStripMenuItem, Me.HowToToolStripMenuItem})
         Me.AboutToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AboutToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
@@ -119,14 +120,20 @@ Partial Class frmCreateMain
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.AboutUsToolStripMenuItem.Text = "About Us"
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.AboutUsToolStripMenuItem.Text = "About Program"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.HelpToolStripMenuItem.Text = "Help"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HelpToolStripMenuItem.Text = "About Company"
+        '
+        'HowToToolStripMenuItem
+        '
+        Me.HowToToolStripMenuItem.Name = "HowToToolStripMenuItem"
+        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HowToToolStripMenuItem.Text = "How To"
         '
         'lblEdu
         '
@@ -293,7 +300,7 @@ Partial Class frmCreateMain
         '
         Me.msktxtPhone.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.msktxtPhone.Location = New System.Drawing.Point(461, 122)
-        Me.msktxtPhone.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.msktxtPhone.Margin = New System.Windows.Forms.Padding(2)
         Me.msktxtPhone.Mask = "000-0000"
         Me.msktxtPhone.Name = "msktxtPhone"
         Me.msktxtPhone.Size = New System.Drawing.Size(137, 29)
@@ -307,7 +314,7 @@ Partial Class frmCreateMain
         Me.lstGender.ItemHeight = 21
         Me.lstGender.Items.AddRange(New Object() {"Male", "Female"})
         Me.lstGender.Location = New System.Drawing.Point(729, 193)
-        Me.lstGender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.lstGender.Margin = New System.Windows.Forms.Padding(2)
         Me.lstGender.Name = "lstGender"
         Me.lstGender.Size = New System.Drawing.Size(250, 25)
         Me.lstGender.TabIndex = 87
@@ -497,7 +504,7 @@ Partial Class frmCreateMain
         Me.lstRole.ItemHeight = 21
         Me.lstRole.Items.AddRange(New Object() {"Admin", "Teacher", "Student/Parent"})
         Me.lstRole.Location = New System.Drawing.Point(730, 259)
-        Me.lstRole.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.lstRole.Margin = New System.Windows.Forms.Padding(2)
         Me.lstRole.Name = "lstRole"
         Me.lstRole.Size = New System.Drawing.Size(250, 25)
         Me.lstRole.TabIndex = 90
@@ -583,6 +590,7 @@ Partial Class frmCreateMain
         Me.Controls.Add(Me.lblEdu)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.Name = "frmCreateMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -604,7 +612,6 @@ Partial Class frmCreateMain
     Friend WithEvents AboutUsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents lblEdu As Label
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents EduTrackDBDSBindingSource As BindingSource
     Friend WithEvents EduTrackDBDS As EduTrackDBDS
     Friend WithEvents btnAddRecord As Button
@@ -644,4 +651,6 @@ Partial Class frmCreateMain
     Friend WithEvents txtUserID As TextBox
     Friend WithEvents lblPassword As Label
     Friend WithEvents lblUsername As Label
+    Friend WithEvents HowToToolStripMenuItem As ToolStripMenuItem
+    Public WithEvents DataGridView1 As DataGridView
 End Class

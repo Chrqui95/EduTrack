@@ -63,6 +63,8 @@ Partial Class frmMain
         Me.btnCreateNewRecords = New System.Windows.Forms.Button()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.btnAccount = New System.Windows.Forms.Button()
+        Me.Version = New System.Windows.Forms.Label()
+        Me.frmMind = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.pnlViewAllRecords.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -109,25 +111,26 @@ Partial Class frmMain
         'HomeToolStripMenuItem
         '
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
-        Me.HomeToolStripMenuItem.Text = "New Record"
+        Me.HomeToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.HomeToolStripMenuItem.Text = "&New Record"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.ExitToolStripMenuItem.Text = "View Records"
         '
         'LogoutToolStripMenuItem
         '
         Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.LogoutToolStripMenuItem.Text = "Logout"
         '
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(156, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(197, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'OptionsToolStripMenuItem
@@ -143,6 +146,7 @@ Partial Class frmMain
         'EditRecordToolStripMenuItem
         '
         Me.EditRecordToolStripMenuItem.Name = "EditRecordToolStripMenuItem"
+        Me.EditRecordToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
         Me.EditRecordToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.EditRecordToolStripMenuItem.Text = "Edit Record"
         '
@@ -165,19 +169,20 @@ Partial Class frmMain
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.AboutUsToolStripMenuItem.Text = "About Us"
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutUsToolStripMenuItem.Text = "About Program"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.HelpToolStripMenuItem.Text = "Help"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.HelpToolStripMenuItem.Text = "About Company"
         '
         'HowToToolStripMenuItem
         '
         Me.HowToToolStripMenuItem.Name = "HowToToolStripMenuItem"
-        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
+        Me.HowToToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1
+        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HowToToolStripMenuItem.Text = "How To"
         '
         'pnlViewAllRecords
@@ -209,7 +214,7 @@ Partial Class frmMain
         Me.btnViewAllRecords.Location = New System.Drawing.Point(17, 93)
         Me.btnViewAllRecords.Name = "btnViewAllRecords"
         Me.btnViewAllRecords.Size = New System.Drawing.Size(192, 44)
-        Me.btnViewAllRecords.TabIndex = 37
+        Me.btnViewAllRecords.TabIndex = 3
         Me.btnViewAllRecords.Text = "View All Records"
         Me.btnViewAllRecords.UseVisualStyleBackColor = False
         '
@@ -276,7 +281,7 @@ Partial Class frmMain
         Me.btnEditMainRecords.Location = New System.Drawing.Point(18, 93)
         Me.btnEditMainRecords.Name = "btnEditMainRecords"
         Me.btnEditMainRecords.Size = New System.Drawing.Size(192, 44)
-        Me.btnEditMainRecords.TabIndex = 37
+        Me.btnEditMainRecords.TabIndex = 2
         Me.btnEditMainRecords.Text = "Edit Main Records"
         Me.btnEditMainRecords.UseVisualStyleBackColor = False
         '
@@ -309,7 +314,7 @@ Partial Class frmMain
         Me.btnDelete.Location = New System.Drawing.Point(18, 93)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(192, 44)
-        Me.btnDelete.TabIndex = 37
+        Me.btnDelete.TabIndex = 0
         Me.btnDelete.Text = "Delete Records"
         Me.btnDelete.UseVisualStyleBackColor = False
         '
@@ -342,7 +347,7 @@ Partial Class frmMain
         Me.btnMyAccount.Location = New System.Drawing.Point(16, 93)
         Me.btnMyAccount.Name = "btnMyAccount"
         Me.btnMyAccount.Size = New System.Drawing.Size(192, 44)
-        Me.btnMyAccount.TabIndex = 37
+        Me.btnMyAccount.TabIndex = 1
         Me.btnMyAccount.Text = "My Account"
         Me.btnMyAccount.UseVisualStyleBackColor = False
         '
@@ -385,7 +390,7 @@ Partial Class frmMain
         Me.btnEditStudentRecords.Location = New System.Drawing.Point(18, 93)
         Me.btnEditStudentRecords.Name = "btnEditStudentRecords"
         Me.btnEditStudentRecords.Size = New System.Drawing.Size(192, 44)
-        Me.btnEditStudentRecords.TabIndex = 37
+        Me.btnEditStudentRecords.TabIndex = 4
         Me.btnEditStudentRecords.Text = "Edit Student Records"
         Me.btnEditStudentRecords.UseVisualStyleBackColor = False
         '
@@ -433,7 +438,7 @@ Partial Class frmMain
         Me.btnCreateNewRecords.Location = New System.Drawing.Point(17, 93)
         Me.btnCreateNewRecords.Name = "btnCreateNewRecords"
         Me.btnCreateNewRecords.Size = New System.Drawing.Size(192, 44)
-        Me.btnCreateNewRecords.TabIndex = 37
+        Me.btnCreateNewRecords.TabIndex = 5
         Me.btnCreateNewRecords.Text = "Create New Records"
         Me.btnCreateNewRecords.UseVisualStyleBackColor = False
         '
@@ -461,12 +466,35 @@ Partial Class frmMain
         Me.btnAccount.TabIndex = 36
         Me.btnAccount.UseVisualStyleBackColor = True
         '
+        'Version
+        '
+        Me.Version.AutoSize = True
+        Me.Version.Font = New System.Drawing.Font("Cascadia Mono Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Version.ForeColor = System.Drawing.Color.Teal
+        Me.Version.Location = New System.Drawing.Point(798, 630)
+        Me.Version.Name = "Version"
+        Me.Version.Size = New System.Drawing.Size(144, 17)
+        Me.Version.TabIndex = 43
+        Me.Version.Text = "Pre-Release 1.0.0"
+        '
+        'frmMind
+        '
+        Me.frmMind.AutoSize = True
+        Me.frmMind.Font = New System.Drawing.Font("Cascadia Mono SemiBold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.frmMind.Location = New System.Drawing.Point(411, 127)
+        Me.frmMind.Name = "frmMind"
+        Me.frmMind.Size = New System.Drawing.Size(148, 16)
+        Me.frmMind.TabIndex = 48
+        Me.frmMind.Text = "By MindFrame Studios"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(954, 656)
+        Me.Controls.Add(Me.frmMind)
+        Me.Controls.Add(Me.Version)
         Me.Controls.Add(Me.pnlEditMainRecords)
         Me.Controls.Add(Me.pnlCreateNewRecords)
         Me.Controls.Add(Me.pnlEditStudentRecords)
@@ -478,6 +506,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlDelete)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -502,6 +531,7 @@ Partial Class frmMain
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents MenuStrip1 As MenuStrip
@@ -543,4 +573,6 @@ Partial Class frmMain
     Friend WithEvents DeleteRecordToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HowToToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LogoutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Version As Label
+    Friend WithEvents frmMind As Label
 End Class

@@ -11,6 +11,20 @@ Public Class frmRecordsViewer
         txtUserID.ReadOnly = True
     End Sub
 
+    Dim connectionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
+    Private Sub LoadData()
+        Try
+            Using conn As New SqlConnection(connectionString)
+                Dim adapter As New SqlDataAdapter("SELECT * FROM [Table]", conn)
+                Dim dt As New DataTable()
+                adapter.Fill(dt)
+                dgvMainRecords.DataSource = dt
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error loading records: " & ex.Message)
+        End Try
+    End Sub
+
     Private Sub btnView_Click(sender As Object, e As EventArgs) Handles btnView.Click
         If dgvMainRecords.SelectedRows.Count = 0 Then
             MessageBox.Show("Please select a record to edit.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -54,5 +68,17 @@ Public Class frmRecordsViewer
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
         frmMain.Show()
+    End Sub
+
+    Private Sub AboutUsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutUsToolStripMenuItem.Click
+        frmAboutApp.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub frmRecordsViewer_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Escape Then
+            Me.Hide()
+            frmMain.Show()
+        End If
     End Sub
 End Class

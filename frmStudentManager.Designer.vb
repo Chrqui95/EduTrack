@@ -31,6 +31,7 @@ Partial Class frmStudentManager
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutUsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HowToToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblEdu = New System.Windows.Forms.Label()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnEdit = New System.Windows.Forms.Button()
@@ -119,7 +120,7 @@ Partial Class frmStudentManager
         '
         'AboutToolStripMenuItem
         '
-        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutUsToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutUsToolStripMenuItem, Me.HelpToolStripMenuItem, Me.HowToToolStripMenuItem})
         Me.AboutToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AboutToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
@@ -129,14 +130,20 @@ Partial Class frmStudentManager
         'AboutUsToolStripMenuItem
         '
         Me.AboutUsToolStripMenuItem.Name = "AboutUsToolStripMenuItem"
-        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.AboutUsToolStripMenuItem.Text = "About Us"
+        Me.AboutUsToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.AboutUsToolStripMenuItem.Text = "About Program"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.HelpToolStripMenuItem.Text = "Help"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HelpToolStripMenuItem.Text = "About Company"
+        '
+        'HowToToolStripMenuItem
+        '
+        Me.HowToToolStripMenuItem.Name = "HowToToolStripMenuItem"
+        Me.HowToToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.HowToToolStripMenuItem.Text = "How To"
         '
         'lblEdu
         '
@@ -522,6 +529,7 @@ Partial Class frmStudentManager
         Me.Controls.Add(Me.imgEdu)
         Me.Controls.Add(Me.lblStudent)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.Name = "frmStudentManager"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -587,4 +595,5 @@ Partial Class frmStudentManager
     Friend WithEvents StudentEmailDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents CoursesDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents msktxtPhone As MaskedTextBox
+    Friend WithEvents HowToToolStripMenuItem As ToolStripMenuItem
 End Class

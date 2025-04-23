@@ -2,7 +2,19 @@
 
 Public Class frmStudentManager
     Dim selectedUserID As String = ""
-
+    Dim connectionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
+    Private Sub LoadData()
+        Try
+            Using conn As New SqlConnection(connectionString)
+                Dim adapter As New SqlDataAdapter("SELECT * FROM [Table]", conn)
+                Dim dt As New DataTable()
+                adapter.Fill(dt)
+                dgvStudentRecord.DataSource = dt
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error loading records: " & ex.Message)
+        End Try
+    End Sub
     Private Sub frmStudentManager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Load data from StudentRecords table
         Me.StudentRecordsTableAdapter.Fill(Me.EduTrackDBDS.StudentRecords)
@@ -113,5 +125,17 @@ Public Class frmStudentManager
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
         frmMain.Show()
+    End Sub
+
+    Private Sub AboutUsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutUsToolStripMenuItem.Click
+        frmAboutApp.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub frmStudentManager_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Escape Then
+            Me.Hide()
+            frmMain.Show()
+        End If
     End Sub
 End Class
