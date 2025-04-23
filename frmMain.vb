@@ -197,10 +197,6 @@ Public Class frmMain
         End If
     End Sub
 
-    Private Sub frmMain_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Application.Exit()
-    End Sub
-
     Private Sub HowToToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HowToToolStripMenuItem.Click
         ' Path to the PDF file
         Dim pdfPath As String = "C:\path\to\your\file.pdf"
