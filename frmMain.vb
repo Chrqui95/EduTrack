@@ -1,8 +1,10 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class frmMain
+    ' Store the current user ID
     Public UserRole As String = CurrentUserID
 
+    ' On form load, configure visibility of panels based on user role
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Hide all panels initially
         pnlDelete.Visible = False
@@ -11,8 +13,10 @@ Public Class frmMain
         pnlEditMainRecords.Visible = False
         pnlViewAllRecords.Visible = False
 
+        ' Show specific panels depending on the user role
         Select Case UserRole
             Case "Admin"
+                ' Admin has access to everything
                 pnlDelete.Visible = True
                 pnlCreateNewRecords.Visible = True
                 pnlEditStudentRecords.Visible = True
@@ -20,17 +24,20 @@ Public Class frmMain
                 pnlViewAllRecords.Visible = True
 
             Case "Teacher"
+                ' Teacher can only edit student records
                 pnlEditStudentRecords.Visible = True
                 FileToolStripMenuItem.Visible = False
                 DeleteRecordToolStripMenuItem.Visible = False
 
             Case "Student/Parent"
+                ' Student/Parent can view and edit their own records
                 pnlEditMainRecords.Visible = True
                 pnlViewAllRecords.Visible = True
                 FileToolStripMenuItem.Visible = False
                 EditRecordToolStripMenuItem.Visible = False
 
             Case Else
+                ' If role is unrecognized, limit access
                 MessageBox.Show("Unknown role. Limited access.")
         End Select
     End Sub
@@ -46,6 +53,7 @@ Public Class frmMain
         lblWelcome.Text = "Logged in as: " & username
     End Sub
 
+    ' Syncs activated Student/Parent users into the StudentRecords table if they don’t already exist
     Private Sub SyncStudentRecords()
         Dim connStr As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
 
@@ -59,6 +67,7 @@ Public Class frmMain
 
                 Dim studentList As New List(Of Dictionary(Of String, Object))
 
+                ' Read the data and store in a list of dictionaries
                 Using selectCmd As New SqlCommand(selectQuery, conn)
                     Using reader As SqlDataReader = selectCmd.ExecuteReader()
                         While reader.Read()
@@ -82,6 +91,8 @@ Public Class frmMain
                     checkCmd.Parameters.AddWithValue("@StudentID", student("UserID").ToString())
 
                     Dim exists As Integer = Convert.ToInt32(checkCmd.ExecuteScalar())
+                
+                    ' If not already in the table, insert the student
                     If exists = 0 Then
                         Dim insertCmd As New SqlCommand("INSERT INTO StudentRecords (StudentID, FirstName, LastName, DOB, Gender, PhoneNumber, Address, StudentEmail, Courses) " &
                                                     "VALUES (@ID, @FName, @LName, @DOB, @Gender, @Phone, @Address, '', '')", conn)
@@ -99,21 +110,24 @@ Public Class frmMain
                 Next
             End Using
         Catch ex As Exception
+            ' Display any errors encountered during sync
             MessageBox.Show("Error during student sync: " & ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 
-    ' Button Event Handlers
+    ' Button Event Handlers - Opens the Create New Records form
     Private Sub btnCreateNewRecords_Click(sender As Object, e As EventArgs) Handles btnCreateNewRecords.Click
         Me.Hide()
         frmCreateMain.Show()
     End Sub
 
+    ' Opens the Student Records Manager form
     Private Sub btnEditStudentRecords_Click(sender As Object, e As EventArgs) Handles btnEditStudentRecords.Click
         Me.Hide()
         frmStudentManager.Show()
     End Sub
 
+    ' Opens the Delete Records form (Admin only)
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         If UserRole = "Admin" Then
             Dim deleteForm As New frmDelete()
@@ -124,11 +138,13 @@ Public Class frmMain
         End If
     End Sub
 
+    ' Opens the Grade Viewer dashboard (unused handler - no Handles clause)
     Private Sub btnDashGrades_Click(sender As Object, e As EventArgs)
         Me.Hide()
         frmGradeViewer.Show()
     End Sub
 
+    ' Opens the Main Record Viewer (unused handler - no Handles clause)
     Private Sub btnDashAttendance_Click(sender As Object, e As EventArgs)
         Me.Hide()
         frmMainRecordView.Show()
@@ -136,6 +152,7 @@ Public Class frmMain
 
 
 
+    ' Opens the Delete Records form via menu (Admin only)
     Private Sub DeleteRecordToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteRecordToolStripMenuItem.Click
         If UserRole = "Admin" Then
             Dim deleteForm As New frmDelete()
@@ -145,6 +162,7 @@ Public Class frmMain
         End If
     End Sub
 
+    ' Opens the Main Records Editor
     Private Sub btnEditMainRecords_Click(sender As Object, e As EventArgs) Handles btnEditMainRecords.Click
         Me.Hide()
         frmMainRecordView.Show()
