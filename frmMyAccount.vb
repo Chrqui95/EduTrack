@@ -125,4 +125,8 @@ Public Class frmMyAccount
         Me.Hide()
         frmAboutCompany.Show()
     End Sub
+
+    Private Sub HowToToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HowToToolStripMenuItem.Click
+        frmMain.OpenPDF()
+    End Sub
 End Class

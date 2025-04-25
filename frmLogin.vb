@@ -70,4 +70,8 @@ Public Class frmLogin
             Application.Exit()
         End If
     End Sub
+
+    Private Sub frmLogin_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Application.Exit()
+    End Sub
 End Class

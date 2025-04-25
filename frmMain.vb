@@ -3,8 +3,14 @@
 Public Class frmMain
     Public UserRole As String = CurrentUserID
 
+    Public Sub OpenPDF()
+        Dim pdfPath As String = System.IO.Path.Combine(Application.StartupPath, "Resources", "EduTrack_UserManual.pdf")
+        Process.Start(pdfPath)
+    End Sub
+
     Public Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         UserRole = Session.CurrentUserRole ' Fetches the current user role to prevent errors
+
         ' Hide all panels initially
         pnlDelete.Visible = False
         pnlCreateNewRecords.Visible = False
@@ -198,17 +204,7 @@ Public Class frmMain
     End Sub
 
     Private Sub HowToToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HowToToolStripMenuItem.Click
-        ' Path to the PDF file
-        Dim pdfPath As String = "C:\path\to\your\file.pdf"
-
-        ' Check if the file exists
-        If System.IO.File.Exists(pdfPath) Then
-            ' Open the PDF file using the default viewer
-            Process.Start(pdfPath)
-        Else
-            ' Show an error message if the file doesn't exist
-            MessageBox.Show("The file does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
+        OpenPDF()
     End Sub
 
     Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click

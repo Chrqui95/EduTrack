@@ -64,7 +64,7 @@ Partial Class frmLogin
         Me.btnLogin.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.btnLogin.Location = New System.Drawing.Point(77, 157)
-        Me.btnLogin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(2)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(244, 36)
         Me.btnLogin.TabIndex = 2
@@ -97,7 +97,7 @@ Partial Class frmLogin
         Me.btnRegister.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegister.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.btnRegister.Location = New System.Drawing.Point(223, 196)
-        Me.btnRegister.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRegister.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRegister.Name = "btnRegister"
         Me.btnRegister.Size = New System.Drawing.Size(156, 28)
         Me.btnRegister.TabIndex = 27
@@ -177,7 +177,7 @@ Partial Class frmLogin
         Me.btnPassword.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.btnPassword.Location = New System.Drawing.Point(19, 197)
-        Me.btnPassword.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnPassword.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPassword.Name = "btnPassword"
         Me.btnPassword.Size = New System.Drawing.Size(156, 28)
         Me.btnPassword.TabIndex = 4
@@ -199,7 +199,7 @@ Partial Class frmLogin
         '
         Me.btnPlaceholderExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnPlaceholderExit.Location = New System.Drawing.Point(22, 11)
-        Me.btnPlaceholderExit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnPlaceholderExit.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPlaceholderExit.Name = "btnPlaceholderExit"
         Me.btnPlaceholderExit.Size = New System.Drawing.Size(1, 1)
         Me.btnPlaceholderExit.TabIndex = 21
@@ -223,7 +223,7 @@ Partial Class frmLogin
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
