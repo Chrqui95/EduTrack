@@ -2,26 +2,36 @@
 
 Public Class frmMainRecordView
 
+    ' Stores the currently selected user's ID
     Dim selectedUserID As String = ""
 
+    ' Form load event
     Private Sub frmMainRecordView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Load data from the main table
         Me.TableTableAdapter.Fill(Me.EduTrackDBDS.Table)
+        ' Make the UserID field read-only so it cannot be changed
         txtUserID.ReadOnly = True
     End Sub
 
+    ' Edit button click event
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        ' Ensure a row is selected before proceeding
         If dgvMainRecords.SelectedRows.Count = 0 Then
             MessageBox.Show("Please select a record to edit.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
 
+        ' Get the selected row
         Dim row As DataGridViewRow = dgvMainRecords.SelectedRows(0)
+
+        
+        ' Prevent editing a new/empty row
         If row.IsNewRow Then
             MessageBox.Show("Selected row is empty. Please select a valid record.", "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
 
+        ' Extract UserID from the first cell
         Dim userID As String = row.Cells(0).Value.ToString()
 
         ' Prevent editing your own account
@@ -30,6 +40,7 @@ Public Class frmMainRecordView
             Return
         End If
 
+        ' Populate form fields with the selected user's data
         Try
             selectedUserID = userID
             txtUserID.Text = userID
@@ -47,6 +58,7 @@ Public Class frmMainRecordView
         End Try
     End Sub
 
+    ' Save button click event
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         ' Validate required fields
         If String.IsNullOrWhiteSpace(txtUserID.Text) OrElse
@@ -62,17 +74,19 @@ Public Class frmMainRecordView
             Return
         End If
 
+        ' Get current values from form
         selectedUserID = txtUserID.Text.Trim()
         Dim isActive As Boolean = clbActiveStatus.GetItemChecked(0)
         Dim selectedRole As String = lstRole.SelectedItem.ToString()
 
+        ' Connection string to local database
         Dim connStr = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
 
         Try
             Using conn As New SqlConnection(connStr)
                 conn.Open()
 
-                ' 1) Update main [Table]
+                ' 1) Update main table with new values
                 Dim updateMain As String =
                   "UPDATE [Table] SET " &
                   "[Password]=@Password, " &
@@ -100,8 +114,9 @@ Public Class frmMainRecordView
                     cmd.ExecuteNonQuery()
                 End Using
 
-                ' 2) Sync StudentRecords
+                ' 2) Sync StudentRecords table based on role and activation
                 If selectedRole = "Student/Parent" AndAlso isActive Then
+                    ' Check if student record exists
                     ' Insert or update student record
                     Dim checkSql = "SELECT COUNT(*) FROM StudentRecords WHERE StudentID=@UserID"
                     Using chk As New SqlCommand(checkSql, conn)
@@ -109,7 +124,7 @@ Public Class frmMainRecordView
                         Dim cnt = Convert.ToInt32(chk.ExecuteScalar())
 
                         If cnt > 0 Then
-                            ' Update
+                            ' Update existing student record
                             Dim updStu =
                               "UPDATE StudentRecords SET " &
                               "FirstName=@FName, " &
@@ -156,14 +171,18 @@ Public Class frmMainRecordView
                 End If
             End Using
 
+            ' Notify success and refresh the grid
             MessageBox.Show("Record updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Me.TableTableAdapter.Fill(Me.EduTrackDBDS.Table)
         Catch ex As Exception
+            ' Show error message if update fails
             MessageBox.Show("Error updating record: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 
+    ' Exit menu item event
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        ' Close current form and return to the main form
         Me.Close()
         frmMain.Show()
     End Sub
