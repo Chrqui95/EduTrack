@@ -2,7 +2,7 @@
 Public Class frmDelete
     Public Property CurrentUserID As String
 
-    Private Sub LoadData()
+    Public Sub LoadData()
         Try
             Using conn As New SqlConnection(connectionString)
                 Dim adapter As New SqlDataAdapter("SELECT * FROM [Table]", conn)

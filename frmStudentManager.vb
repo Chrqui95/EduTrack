@@ -4,7 +4,7 @@ Public Class frmStudentManager
     Dim selectedUserID As String = ""
     'Dim connectionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
     Dim connStr As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
-    Private Sub LoadData()
+    Public Sub LoadData()
         Try
             Using conn As New SqlConnection(connStr)
                 Dim adapter As New SqlDataAdapter("SELECT * FROM [Table]", conn)

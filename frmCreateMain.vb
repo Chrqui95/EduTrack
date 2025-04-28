@@ -2,7 +2,7 @@
 
 Public Class frmCreateMain
     Dim connectionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EduTrackDB.mdf;Integrated Security=True"
-    Private Sub LoadData()
+    Public Sub LoadData()
         Try
             Using conn As New SqlConnection(connectionString)
                 Dim adapter As New SqlDataAdapter("SELECT * FROM [Table]", conn)
