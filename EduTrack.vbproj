@@ -248,9 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen1.resx">
       <DependentUpon>SplashScreen1.vb</DependentUpon>
@@ -289,6 +289,13 @@
       <DependentUpon>EduTrackDB.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\IMG_74511.png" />
+    <None Include="Resources\IMG_7451.png" />
+    <None Include="Resources\unnamed1.jpg" />
+    <None Include="Resources\bf39a005-e6be-4b71-b2f1-d32b0e5d24b9.jpeg" />
+    <None Include="Resources\29062177-a283-4151-b559-c20a7f05eea4.jpeg" />
+    <None Include="Resources\1e2b8e86-469d-4552-b4b9-cff32396e8e0.jpeg" />
+    <None Include="Resources\ChatGPT Image Apr 27, 2025, 10_08_49 PM.png" />
     <Content Include="Resources\EduTrack_UserManual.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
