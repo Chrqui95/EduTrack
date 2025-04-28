@@ -1,4 +1,8 @@
-﻿Imports System.Data.SqlClient
+﻿' Christopher Quinonez, Nasir Carrillo, Lizzy Vasquez, Eiden Cob
+' April 28, 2025
+' CS206 - Programming II
+' EduTrack is a simple windows based application that carries out CRUD to manage a student database from a school.
+Imports System.Data.SqlClient
 
 Public Class frmMain
     Public UserRole As String = CurrentUserID

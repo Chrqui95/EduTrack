@@ -292,6 +292,7 @@
     <Content Include="Resources\EduTrack_UserManual.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\unnamed.jpg" />
     <None Include="Resources\power-off.png" />
     <None Include="Resources\exit %281%29.png" />
     <None Include="Resources\view.png" />
